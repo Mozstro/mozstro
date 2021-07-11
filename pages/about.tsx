@@ -10,7 +10,7 @@ export default function About() {
       <Header>
         <h1 className="text-7xl text-center text-ebonyclay">
           <span>About </span>
-          <a className="font-bold italic text-sundance cursor-pointer inline-block"
+          <a className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
              href="/"
              rel="noopener noreferrer">Mozstro.
           </a>

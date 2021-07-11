@@ -16,7 +16,7 @@ export const Posts = ({ posts }: PostProps): JSX.Element => {
     <Layout>
       <Header>
         <h1 className="text-7xl text-center text-ebonyclay">
-          <a className="font-bold italic text-sundance cursor-pointer inline-block"
+          <a className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
              href="/"
              rel="noopener noreferrer">Mozstro
           </a>

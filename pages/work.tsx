@@ -17,7 +17,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => {
       <Header>
         <h1 className="text-7xl text-center text-ebonyclay">
           <span>Work with </span>
-          <a className="font-bold italic text-sundance cursor-pointer inline-block"
+          <a className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
              href="/"
              rel="noopener noreferrer">Mozstro.
           </a>
@@ -28,15 +28,16 @@ export const Work = ({ projects }: WorkProps): JSX.Element => {
         </h2>
       </Header>
       <h3
-        className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-0 mb-4 text-ebonyclay my-1 transform -rotate-2">World
-        class clients
+        className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-0 mb-4
+                   my-1 transform -rotate-2">World
+        class businesses
         <span aria-label="love" className="text-sundance"> ♡</span>
         <a className="font-bold italic text-palesky hover:text-ebonyclay"
            href="/"
            rel="noopener noreferrer"> Mozstro!
         </a>
       </h3>
-      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mt-12">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
         {projects.map((project) => (
           <ProjectCard key={project.slug} project={project}/>
         ))}
@@ -46,7 +47,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const projects = getAllProjects(['date', 'description', 'slug', 'title', 'topic']);
+  const projects = getAllProjects(['date', 'description', 'slug', 'title', 'sector']);
 
   return {
     props: { projects },

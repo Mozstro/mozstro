@@ -7,13 +7,19 @@ import { Header } from '../components/header';
 import { GetStaticProps } from 'next';
 import { getLatestPost } from './api/posts';
 import { PostType } from '../types/post';
-
+import { getLatestProject } from './api/projects';
+import { ProjectCard } from '../components/projectCard';
+import { ProjectType } from '../types/project';
 
 type HomeProps = {
   post: PostType;
+  project: ProjectType;
 };
 
-export const Home = ({ post } : HomeProps): JSX.Element => {
+export const Home = ({
+  post,
+  project
+}: HomeProps): JSX.Element => {
   return (
     <Layout>
       <Header>
@@ -31,7 +37,8 @@ export const Home = ({ post } : HomeProps): JSX.Element => {
       </Header>
       <div className="flex justify-center">
         <h3
-          className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4 text-ebonyclay  transform -rotate-2">What
+          className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
+                     text-ebonyclay  transform -rotate-2">What
           we offer at
           <a className="font-bold italic text-palesky hover:text-ebonyclay"
              href="/"
@@ -61,6 +68,16 @@ export const Home = ({ post } : HomeProps): JSX.Element => {
             of <span className="text-palesky italic"> cloud</span>.
           </h6>
           <CallToAction link="mailto:sales@mozstro.com" text="Find out how we help"/>
+        </div>
+      </section>
+      <section className="mt-12">
+        <h3
+          className="text-ebonyclay order-1 text-4xl bg-geebung inline-block
+                p-6 text-ebonyclay transform -rotate-2">
+          What we have been building.
+        </h3>
+        <div className="grid grid-cols-1 mt-6">
+          <ProjectCard key={project.slug} project={project}/>
         </div>
       </section>
       <section className="mt-16 mb-8">
@@ -122,13 +139,17 @@ export const Home = ({ post } : HomeProps): JSX.Element => {
       </section>
     </Layout>
   );
-}
+};
 
 export const getStaticProps: GetStaticProps = async () => {
   const post = getLatestPost(['date', 'description', 'slug', 'title', 'topic']);
+  const project = getLatestProject(['date', 'description', 'slug', 'title', 'sector']);
 
   return {
-    props: { post },
+    props: {
+      post,
+      project
+    },
   };
 };
 

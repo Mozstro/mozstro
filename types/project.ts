@@ -4,5 +4,5 @@ export type ProjectType = {
   image?: string;
   slug: string;
   title: string;
-  topic: string;
+  sector: string;
 };

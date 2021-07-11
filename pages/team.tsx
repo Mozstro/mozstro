@@ -11,7 +11,7 @@ export default function Team() {
       <Header>
         <h1 className="text-7xl text-center text-ebonyclay">
           <span>Our </span>
-          <a className="font-bold italic text-sundance cursor-pointer"
+          <a className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
              href="/"
              rel="noopener noreferrer">Mozstro
           </a>

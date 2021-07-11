@@ -8,7 +8,7 @@ const Footer = function Component() {
         Built with
         <span className="text-sundance"> Next.js </span>
         &
-        <span className="text-sundance">TypeScript</span>
+        <span className="text-sundance"> TypeScript</span>
         . Hosted on Netlify.
         Find my source
         <a className="text-ebonyclay hover:text-hippiegreen"

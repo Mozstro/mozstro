@@ -1,70 +1,71 @@
-import Meta from '../components/meta';
-import Footer from '../components/footer';
+import React from 'react';
+
 import Nav from '../components/nav';
 import { TeamMember } from '../components/teamMember';
-import React from 'react';
+import Layout from '../components/layout';
+import { Header } from '../components/header';
 
 export default function Team() {
   return (
-    <div>
-      <Meta/>
-      <main className="container mx-auto px-6 mt-6">
-        <div className="bg-palesky p-6">
-          <div className="flex justify-center">
-            <img className="h-16 sm:h-24 rounded-full"
-                 src="/mozstro_logo.png"
-                 alt="Mozstro Logo"/>
-          </div>
-          <h1 className="text-7xl text-center text-ebonyclay">
-            <span>Our </span>
-            <a className="font-bold italic text-sundance cursor-pointer"
-               href="/"
-               rel="noopener noreferrer">Mozstro
-            </a>
-            <span> Family.</span>
-          </h1>
-          <h2 className="text-center text-sundance text-2xl">
-            <span className="text-ebonyclay">Supercharged</span> teams.
-          </h2>
-        </div>
-        <Nav/>
+    <Layout>
+      <Header>
+        <h1 className="text-7xl text-center text-ebonyclay">
+          <span>Our </span>
+          <a className="font-bold italic text-sundance cursor-pointer"
+             href="/"
+             rel="noopener noreferrer">Mozstro
+          </a>
+          <span> Family.</span>
+        </h1>
+        <h2 className="text-center text-ebonyclay text-2xl">
+          <span className="font-bold italic text-sundance">Supercharged&nbsp;</span>teams.
+        </h2>
+      </Header>
+      <div className="flex justify-end">
+        <h3
+          className="text-ebonyclay text-4xl bg-geebung inline-block
+                     p-6 mt-6 lg:mt-2 mb-4 text-ebonyclay  transform -rotate-2">
+          Join
+          <a className="font-bold italic text-palesky hover:text-ebonyclay"
+             href="/"
+             rel="noopener noreferrer">our&nbsp;
+          </a>
+          journey.
+        </h3>
+      </div>
 
-        <h3 className="text-ebonyclay text-center text-5xl">Join <span
-          className="text-sundance"> our</span> journey.</h3>
-        <div
-          className="flex flex-wrap mt-8 bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-full lg:w-1/2">
-          <h5 className="text-ebonyclay text-3xl">Help human advancement with cloud.</h5>
-          <p className="text-palesky text-l">
-            We want the world to perform better, by empowering everybody with the supercharged
-            cloud.
-            The opportunities for technology with business is endless.
-          </p>
-        </div>
+      <div
+        className="flex flex-wrap mt-8 bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-full lg:w-1/2">
+        <h5 className="text-ebonyclay text-3xl">Help human advancement with cloud.</h5>
+        <p className="font-serif   text-palesky text-l">
+          We want the world to perform better, by empowering everybody with the supercharged
+          cloud.
+          The opportunities for technology with business is endless.
+        </p>
+      </div>
 
-        <div className="flex flex-wrap justify-center justify-around my-9">
-          <TeamMember
-            name="Elliot Morris"
-            role="CEO / Managing consultant"
-            email="hello@elliotmorris.dev"
-            image="elliot.png"
-          />
+      <div className="flex flex-wrap justify-center justify-around my-9">
+        <TeamMember
+          name="Elliot Morris"
+          role="CEO / Managing consultant"
+          email="hello@elliotmorris.dev"
+          image="elliot.png"
+        />
 
-          <TeamMember
-            name="Freelance consultants"
-            role="Utilizing talent in our network to help get you supercharged"
-            email="hello@elliotmorris.dev"
-            image="mozstro_logo_multi.png"
-          />
+        <TeamMember
+          name="Freelance consultants"
+          role="Utilizing talent in our network to help get you supercharged"
+          email="hello@elliotmorris.dev"
+          image="mozstro_logo_multi.png"
+        />
 
-          <TeamMember
-            name="You"
-            role="Want to find out more about roles?"
-            email="hello@elliotmorris.dev"
-            image="mozstro_logo.png"
-          />
-        </div>
-      </main>
-      <Footer/>
-    </div>
+        <TeamMember
+          name="You"
+          role="Want to find out more about roles?"
+          email="hello@elliotmorris.dev"
+          image="mozstro_logo.png"
+        />
+      </div>
+    </Layout>
   );
 }

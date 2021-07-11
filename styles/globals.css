@@ -40,4 +40,36 @@
   --animation-timing-function: cubic-bezier(0.33,0,0.66,1);
 }
 
+/* Blog styling */
 
+.blog-content h2{
+  @apply text-ebonyclay my-4 text-2xl bg-sundance p-4 inline-block;
+}
+
+.blog-content p{
+  @apply font-serif text-palesky;
+}
+
+.blog-content h3{
+  @apply text-ebonyclay my-4 text-xl;
+}
+
+.blog-content h4{
+  @apply text-ebonyclay my-4 text-lg;
+}
+
+.prose code{
+  /*@apply bg-rollingstone text-ebonyclay flex;*/
+}
+
+.blog-content pre{
+  /*@apply bg-rollingstone rounded lg:py-6 lg:pl-6 my-3 inline-block;*/
+}
+
+.blog-content ul{
+  @apply lg:pl-8 list-disc py-4;
+}
+
+.blog-content li {
+  @apply font-serif text-rollingstone font-bold;
+}

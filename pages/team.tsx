@@ -21,7 +21,7 @@ export default function Team() {
           <span className="font-bold italic text-sundance">Supercharged&nbsp;</span>teams.
         </h2>
       </Header>
-      <div className="flex justify-end">
+      <div className="flex justify-center mb-12">
         <h3
           className="text-ebonyclay text-4xl bg-geebung inline-block
                      p-6 mt-6 lg:mt-2 mb-4 text-ebonyclay  transform -rotate-2">
@@ -33,7 +33,6 @@ export default function Team() {
           journey.
         </h3>
       </div>
-
       <div
         className="flex flex-wrap mt-8 bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-full lg:w-1/2">
         <h5 className="text-ebonyclay text-3xl">Help human advancement with cloud.</h5>

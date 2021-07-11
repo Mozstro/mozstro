@@ -1,12 +1,19 @@
-import Nav from '../components/nav';
 import { ServiceCard } from '../components/serviceCard';
 import React from 'react';
 import { PostCard } from '../components/postCard';
 import { CallToAction } from '../components/callToAction';
 import Layout from '../components/layout';
 import { Header } from '../components/header';
+import { GetStaticProps } from 'next';
+import { getLatestPost } from './api/posts';
+import { PostType } from '../types/post';
 
-export default function Home() {
+
+type HomeProps = {
+  post: PostType;
+};
+
+export const Home = ({ post } : HomeProps): JSX.Element => {
   return (
     <Layout>
       <Header>
@@ -64,7 +71,7 @@ export default function Home() {
                 p-6 text-ebonyclay transform -rotate-2">
               What we are talking about right now.
             </h3>
-            <PostCard title="Enclave" author="Elliot Morris" image="test" subtext="Nitro"/>
+            <PostCard post={post}/>
           </div>
           <div className="flex flex-col justify-evenly w-full lg:w-1/2">
             <div className="flex justify-end ">
@@ -74,13 +81,13 @@ export default function Home() {
                 Who have we worked with?
               </h3>
             </div>
-            <div className="flex flex-col md:pl-12 justify-between">
+            <div className="flex flex-col md:pl-12 mt-12 justify-between">
               <h3
                 className="sm:text-3xl text-2xl font-medium bg-equator
                              mb-2 text-ebonyclay inline-block p-2">
                 Experience working with:
               </h3>
-              <ul className="pl-8 flex flex-wrap list-none -mb-1 list-disc">
+              <ul className="pl-8 flex flex-wrap list-disc">
                 <li className="mb-1 w-1/2">
                   <a className="font-serif text-rollingstone font-bold">Industry leading
                     retailers.</a>
@@ -116,3 +123,13 @@ export default function Home() {
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const post = getLatestPost(['date', 'description', 'slug', 'title', 'topic']);
+
+  return {
+    props: { post },
+  };
+};
+
+export default Home;

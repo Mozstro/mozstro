@@ -13,8 +13,8 @@ import React from 'react';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import { MetaProps } from '../../types/layout';
-import { PostType } from '../../types/post';
-import { postFilePaths, POSTS_PATH } from '../../lib/mdx';
+import { ProjectType } from '../../types/project';
+import { projectFilePaths, PROJECTS_PATH } from '../../lib/mdx';
 import Layout from '../../components/layout';
 import { Header } from '../../components/header';
 
@@ -28,15 +28,15 @@ const components = {
   Link,
 };
 
-type PostPageProps = {
+type ProjectPageProps = {
   source: MDXRemoteSerializeResult;
-  frontMatter: PostType;
+  frontMatter: ProjectType;
 };
 
-const PostPage = ({
+const ProjectPage = ({
   source,
   frontMatter
-}: PostPageProps): JSX.Element => {
+}: ProjectPageProps): JSX.Element => {
   const customMeta: MetaProps = {
     title: `${frontMatter.title} - Mozstro Consulting`,
     description: frontMatter.description,
@@ -86,8 +86,8 @@ const PostPage = ({
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
-  const source = fs.readFileSync(postFilePath);
+  const projectFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
+  const source = fs.readFileSync(projectFilePath);
 
   const {
     content,
@@ -112,7 +112,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = postFilePaths
+  const paths = projectFilePaths
     // Remove file extensions for page paths
     .map((path) => path.replace(/\.mdx?$/, ''))
     // Map the path into the static paths object required by Next.js
@@ -124,4 +124,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export default PostPage;
+export default ProjectPage;

@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
 import { POSTS_PATH } from '../../lib/mdx';
+
 export function getPostSlugs(): string[] {
   return fs.readdirSync(POSTS_PATH);
 }
@@ -41,4 +42,13 @@ export function getAllPosts(fields: string[] = []): PostItems[] {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
+}
+
+export function getLatestPost(fields: string[] = []): PostItems {
+  const slugs = getPostSlugs();
+  const post = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))[0];
+  return post;
 }

@@ -1,4 +1,4 @@
-export type PostType = {
+export type ProjectType = {
   date?: string;
   description?: string;
   image?: string;

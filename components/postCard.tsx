@@ -1,49 +1,37 @@
 import React, { FunctionComponent } from 'react';
-import { CallToAction } from './callToAction';
+import { format, parseISO } from 'date-fns';
 
-type PostCardProps = {
-  title: string,
-  subtext: string,
-  author: string,
-  image: string
-}
+import Link from 'next/link';
+import { PostType } from '../types/post';
 
-export const PostCard: FunctionComponent<PostCardProps> = (
+type PostProps = {
+  post: PostType;
+};
+
+
+export const PostCard: FunctionComponent<PostProps> = (
   {
-    title,
-    subtext,
-    author,
-    image
+    post
   }) =>
-  <div
-    className="md:pr-12 mt-8 md:py-8 lg:border-r lg:border-b-0 mb-10 md:mb-0 pb-10 border-b border-palesky">
-    <div
-      className="bg-white cursor-pointer rounded shadow border-ebonyclay p-6 w-220 z-10">
-      <h3
-        className="sm:text-3xl text-2xl font-medium title-font mb-2 text-ebonyclay bg-sundance p-2 inline-block">
-        Why you need attestation in your next project.
-      </h3>
-      <div className="flex pt-2 flex-wrap justify-between items-end">
-        <h4
-          className="sm:text-3xl text-2xl font-medium mb-2
-          text-ebonyclay transform -rotate-2 pl-2 bg-equator p-2">
-          AWS Nitro Enclaves
-        </h4>
-        <h5 className="font-mono font-bold bg-geebung p-0.5">March 18th</h5>
-      </div>
-      <div className="border-ebonyclay p-4">
-        <p className="leading-relaxed font-serif pl-4 pr-4 pb-4 text-palesky">
-          Attestation is a feature available to nitro enclaves. Here's why you should be using it
-          in
-          your secure computing implementation.
-          <span
-            className="block font-bold my-2">Introduction to Nitro Enclaves & Secure Computing</span>
-          First of all, If you would like to know more about nitro enclaves please read my blog
-          post
-          about them here. Nitro enclaves are classed as trusted execution environment (TEEs).
-        </p>
-        <CallToAction link="/blog" text="Learn More"/>
-      </div>
-    </div>
-  </div>
+  <article className="border-r-2 px-4 my-4 border-palesky"  key={post.slug}>
+    <p className="mb-1 text-md text-palesky">
+      {format(parseISO(post.date), 'MMMM dd, yyyy')}
+    </p>
+    <h3 className="mb-2 text-2xl">
+      <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
+        {post.title}
+      </Link>
+    </h3>
+    <h4 className="align-middle text-lg bg-equator rounded inline-block py-0.5 mb-2 shadow-sm px-2">
+      {post.topic}
+    </h4>
+    <p className="font-serif mb-3">{post.description}</p>
+    <p className="m-4 text-indigo-500 bg-ebonyclay p-2 text-sundance text-3xl hover:bg-sundance
+       hover:text-ebonyclay hover:shadow rounded-xl inline-flex items-center
+       transform hover:scale-105 cursor-pointer mt-4 transform -rotate-1">
+      <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
+        Read More
+      </Link>
+    </p>
+  </article>
 ;

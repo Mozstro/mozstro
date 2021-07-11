@@ -1,11 +1,11 @@
-import { format, parseISO } from 'date-fns';
+import React from 'react';
+import { GetStaticProps } from 'next';
+
 import { getAllPosts } from './api/posts';
 import { PostType } from '../types/post';
 import Layout from '../components/layout';
-import Link from 'next/link';
-import { GetStaticProps } from 'next';
-import {Header} from '../components/header';
-import React from 'react';
+import { Header } from '../components/header';
+import { PostCard } from '../components/postCard';
 
 type PostProps = {
   posts: PostType[];
@@ -26,32 +26,24 @@ export const Posts = ({ posts }: PostProps): JSX.Element => {
           Browse our blog posts.
         </h2>
       </Header>
-      {posts.map((post) => (
-        <article key={post.slug} className="mt-12">
-          <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
-            {format(parseISO(post.date), 'MMMM dd, yyyy')}
-          </p>
-          <h1 className="mb-2 text-xl">
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-              <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
-                {post.title}
-              </a>
-            </Link>
-          </h1>
-          <p className="mb-3">{post.description}</p>
-          <p>
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-              <a>Read More</a>
-            </Link>
-          </p>
-        </article>
-      ))}
+      <div className="flex justify-center">
+        <h3
+          className="text-ebonyclay text-4xl bg-geebung inline-block
+                     p-6 mt-6 lg:mt-2 mb-4 text-ebonyclay  transform -rotate-2">
+          Our latest posts.
+        </h3>
+      </div>
+      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mt-12">
+        {posts.map((post) => (
+          <PostCard key={post.slug} post={post}/>
+        ))}
+      </section>
     </Layout>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(['date', 'description', 'slug', 'title']);
+  const posts = getAllPosts(['date', 'description', 'slug', 'title', 'topic']);
 
   return {
     props: { posts },

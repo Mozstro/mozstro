@@ -1,10 +1,17 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import { ClientCard } from '../components/clientCard';
+import { ProjectCard } from '../components/projectCard';
 import { Header } from '../components/header';
+import { ProjectType } from '../types/project';
+import { GetStaticProps } from 'next';
+import { getAllProjects } from './api/projects';
 
-export default function Work() {
+type WorkProps = {
+  projects: ProjectType[];
+};
+
+export const Work = ({ projects }: WorkProps): JSX.Element => {
   return (
     <Layout>
       <Header>
@@ -29,29 +36,22 @@ export default function Work() {
            rel="noopener noreferrer"> Mozstro!
         </a>
       </h3>
-      <div className="flex flex-wrap">
-        <ClientCard title="Next"
-                    subtitle="Leading retailer"
-                    paragraph="lorem ipsum"
-                    image="/"
-        />
-        <ClientCard title="NHS"
-                    subtitle="Largest Public sector organization in the UK"
-                    paragraph="lorem ipsum"
-                    image="/"
-        />
-        <ClientCard title="ASDA"
-                    subtitle="Titan supermarket"
-                    paragraph="lorem ipsum"
-                    image="/"
-        />
-        <ClientCard
-          title="Sainsbury"
-          subtitle="Titan supermarket"
-          paragraph="lorem ipsum"
-          image="/"
-        />
-      </div>
+      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mt-12">
+        {projects.map((project) => (
+          <ProjectCard key={project.slug} project={project}/>
+        ))}
+      </section>
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const projects = getAllProjects(['date', 'description', 'slug', 'title', 'topic']);
+
+  return {
+    props: { projects },
+  };
+};
+
+export default Work;
+

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Potta+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Galano Grotesque';
+    font-style: light;
+    font-weight: 100;
+    src: url('/fonts/Galano/GalanoGrotesqueLight.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Galano Grotesque';
+    font-style: bold;
+    font-weight: 700;
+    src: url('/fonts/Galano/GalanoGrotesqueBold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Galano Grotesque';
+    font-style: medium;
+    font-weight: 400;
+    src: url('/fonts/Galano/GalanoGrotesqueMedium.woff') format('woff');
+  }
+}
+
+/*.nav-container:after{*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  height: 110%;*/
+/*  width: 1px;*/
+/*  background: rgba(84, 150, 255, 0.5);*/
+/*  right: -3rem;*/
+/*  top: 0px;*/
+/*}*/
+
+:root {
+  --ebony-clay: #1C242C;
+  --sundance: #D0B863;
+  --rolling-stone: #7C848A;
+  --pale-sky: #70747C;
+  --equator: #DBBD56;
+  --geebung: #C48C1C;
+  --hippie-green: #50884C;
+
+  --animation-duration: 0.2s;
+  --animation-timing-function: cubic-bezier(0.33,0,0.66,1);
+}
+
+

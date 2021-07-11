@@ -27,16 +27,6 @@
   }
 }
 
-/*.nav-container:after{*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  height: 110%;*/
-/*  width: 1px;*/
-/*  background: rgba(84, 150, 255, 0.5);*/
-/*  right: -3rem;*/
-/*  top: 0px;*/
-/*}*/
-
 :root {
   --ebony-clay: #1C242C;
   --sundance: #D0B863;

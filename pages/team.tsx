@@ -1,7 +1,7 @@
 import Meta from '../components/meta';
 import Footer from '../components/footer';
 import Nav from '../components/nav';
-import {TeamMember} from '../components/teamMember';
+import { TeamMember } from '../components/teamMember';
 import React from 'react';
 
 export default function Team() {
@@ -9,29 +9,35 @@ export default function Team() {
     <div>
       <Meta/>
       <main className="container mx-auto px-6 mt-6">
-        <div className="flex justify-center">
-          <img className="h-16 sm:h-24 rounded-full"
-               src="/mozstro_logo.png"
-               alt="Mozstro Logo"/>
+        <div className="bg-palesky p-6">
+          <div className="flex justify-center">
+            <img className="h-16 sm:h-24 rounded-full"
+                 src="/mozstro_logo.png"
+                 alt="Mozstro Logo"/>
+          </div>
+          <h1 className="text-7xl text-center text-ebonyclay">
+            <span>Our </span>
+            <a className="font-bold italic text-sundance cursor-pointer"
+               href="/"
+               rel="noopener noreferrer">Mozstro
+            </a>
+            <span> Family.</span>
+          </h1>
+          <h2 className="text-center text-sundance text-2xl">
+            <span className="text-ebonyclay">Supercharged</span> teams.
+          </h2>
         </div>
-        <h1 className="text-7xl text-center text-ebonyclay">
-          <span>Our </span>
-          <a className="font-bold italic text-sundance cursor-pointer"
-             href="/"
-             rel="noopener noreferrer">Mozstro
-          </a>
-          <span> Family</span>
-        </h1>
-        <h2 className="text-center text-sundance text-2xl">
-          <span className="text-ebonyclay">Supercharged</span> teams
-        </h2>
         <Nav/>
 
-          <h3 className="text-ebonyclay text-center text-5xl">Join <span className="text-sundance"> our</span> journey</h3>
-        <div className="flex mt-8  bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-1/2">
-          <p className="text-ebonyclay text-1xl">
-            Come and help us to help the world perform better, by empowering everybody with the supercharged cloud.
-            The opportunities for technology with business is endless. Come help make a human advancement.
+        <h3 className="text-ebonyclay text-center text-5xl">Join <span
+          className="text-sundance"> our</span> journey.</h3>
+        <div
+          className="flex flex-wrap mt-8 bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-full lg:w-1/2">
+          <h5 className="text-ebonyclay text-3xl">Help human advancement with cloud.</h5>
+          <p className="text-palesky text-l">
+            We want the world to perform better, by empowering everybody with the supercharged
+            cloud.
+            The opportunities for technology with business is endless.
           </p>
         </div>
 

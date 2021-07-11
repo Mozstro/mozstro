@@ -19,7 +19,7 @@ export default function Videos() {
           <a className="font-bold italic text-sundance cursor-pointer"
              href="/"
              rel="noopener noreferrer"> Mozstro
-          </a> in action
+          </a> in action.
         </h1>
         <h2 className="text-center text-sundance text-2xl">
           Behind scenes of a tech consultancy. Come be a part of our journey.

@@ -4,7 +4,7 @@ const Nav = function Component() {
       <ul className="flex justify-evenly mt-6">
         <li>
           <a
-            className="text-xl cursor-pointer"
+            className="text-xl cursor-pointer font-bold text-ebonyclay"
             href="/"
             rel="noopener noreferrer"
           >
@@ -13,7 +13,7 @@ const Nav = function Component() {
         </li>
         <li>
           <a
-            className="text-xl"
+            className="text-xl font-bold text-ebonyclay"
             href="/about"
             rel="noopener noreferrer"
           >
@@ -22,7 +22,7 @@ const Nav = function Component() {
         </li>
         <li>
           <a
-            className="text-xl"
+            className="text-xl font-bold text-ebonyclay"
             href="/work"
             rel="noopener noreferrer"
           >
@@ -31,7 +31,7 @@ const Nav = function Component() {
         </li>
         <li>
           <a
-            className="text-xl"
+            className="text-xl font-bold text-ebonyclay"
             href="/posts"
             rel="noopener noreferrer"
           >
@@ -40,7 +40,7 @@ const Nav = function Component() {
         </li>
         <li>
           <a
-            className="text-xl"
+            className="text-xl font-bold text-ebonyclay"
             href="/videos"
             rel="noopener noreferrer"
           >
@@ -49,7 +49,7 @@ const Nav = function Component() {
         </li>
         <li>
           <a
-            className="text-xl"
+            className="text-xl font-bold text-ebonyclay"
             href="/team"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,7 @@ const Nav = function Component() {
           </a>
         </li>
       </ul>
-      <hr className="mt-2 lg:mb-12 mb-4"/>
+      <hr className="border-ebonyclay border-1  mt-2 lg:mb-12 mb-4"/>
     </nav>
   );
 };

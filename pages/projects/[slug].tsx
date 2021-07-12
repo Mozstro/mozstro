@@ -71,7 +71,7 @@ const ProjectPage = ({
           <h4
             className="align-middle text-lg bg-equator
                        rounded inline-block py-0.5 mt-2 mb-6 shadow-sm px-2">
-            {frontMatter.topic}
+            {frontMatter.sector}
           </h4>
           <p className="mb-10 text-lg text-palesky">
             {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}

@@ -35,33 +35,36 @@ export const Home = ({
           cloud native solutions to complex business problems.
         </h2>
       </Header>
-      <div className="flex justify-center">
-        <h3
-          className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
-                     text-ebonyclay  transform -rotate-2">What
-          we offer at
-          <a className="font-bold italic text-palesky hover:text-ebonyclay"
-             href="/"
-             rel="noopener noreferrer"> Mozstro.
-          </a>
-        </h3>
-      </div>
       <section>
-        <div>
-          <div className="flex inline-flex flex-wrap justify-center justify-around my-9">
-            <ServiceCard
-              title="Security first cloud native solutions."
-              subtitle="Want a faster time to market? Need to be more reactive to customer demands?"
-              paragraph="We provide high quality cloud native solutions
-            for complex business problems."
-            />
-            <ServiceCard
-              title="Embedded engineering consulting."
-              subtitle="Already have internal talent? Does your talent just need some guidance?"
-              paragraph="We can embed our high quality consultants to get that project over the line."
-            />
+          <div className="flex justify-center">
+            <h3
+              className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
+                     text-ebonyclay  transform -rotate-2 shadow-lg">What
+              we offer at
+              <a className="font-bold italic text-palesky hover:text-ebonyclay"
+                 href="/"
+                 rel="noopener noreferrer"> Mozstro.
+              </a>
+            </h3>
           </div>
-        </div>
+
+          <div>
+            <div className="flex inline-flex flex-wrap justify-center justify-around my-9">
+              <ServiceCard
+                title="Security first cloud native solutions."
+                questionOne="Want a faster time to market?"
+                questionTwo="Need to be more reactive to customer demands?"
+                paragraph="We provide high quality cloud native solutions
+            for complex business problems."
+              />
+              <ServiceCard
+                title="Embedded engineering consulting."
+                questionOne="Already have internal talent?"
+                questionTwo="Does your talent just need some guidance?"
+                paragraph="We can embed our high quality consultants to get that project over the line."
+              />
+            </div>
+          </div>
         <div className="bg-equator p-6">
           <h6 className="mb-2 text-2xl text-ebonyclay">
             Lets advance technology together, through the power
@@ -73,8 +76,8 @@ export const Home = ({
       <section className="mt-12">
         <h3
           className="text-ebonyclay order-1 text-4xl bg-geebung inline-block
-                p-6 text-ebonyclay transform -rotate-2">
-          What we have been building.
+                p-6 text-ebonyclay shadow-md transform -rotate-2">
+          Our latest work.
         </h3>
         <div className="grid grid-cols-1 mt-6">
           <ProjectCard key={project.slug} project={project}/>
@@ -85,7 +88,7 @@ export const Home = ({
           <div className="w-full lg:w-1/2">
             <h3
               className="text-ebonyclay order-1 text-4xl bg-geebung inline-block my-6 lg:my-1
-                p-6 text-ebonyclay transform -rotate-2">
+                p-6 text-ebonyclay transform shadow-md -rotate-2">
               What we are talking about right now.
             </h3>
             <PostCard post={post}/>
@@ -94,7 +97,7 @@ export const Home = ({
             <div className="flex justify-end ">
               <h3
                 className="text-right text-ebonyclay order-3 lg:order-2 text-4xl bg-geebung
-                   inline-block my-6 lg:my-1 p-6 text-ebonyclay transform rotate-2">
+                   inline-block my-6 lg:my-1 p-6 shadow-md text-ebonyclay transform rotate-2">
                 Who have we worked with?
               </h3>
             </div>
@@ -105,18 +108,18 @@ export const Home = ({
                 Experience working with:
               </h3>
               <ul className="pl-8 flex flex-wrap list-disc">
-                <li className="mb-1 w-1/2">
+                <li className="mb-1 w-full md:w-1/2">
                   <a className="font-serif text-rollingstone font-bold">Industry leading
                     retailers.</a>
                 </li>
-                <li className="mb-1 w-1/2">
+                <li className="mb-1 w-full md:w-1/2">
                   <a className="font-serif text-rollingstone font-bold">Uk's Largest public sector
                     organization.</a>
                 </li>
-                <li className="mb-1 w-1/2">
+                <li className="mb-1 w-full md:w-1/2">
                   <a className="font-serif text-rollingstone font-bold">Titan supermarkets.</a>
                 </li>
-                <li className="mb-1 w-1/2">
+                <li className="mb-1 w-full md:w-1/2">
                   <a className="font-serif text-rollingstone font-bold">Powerhouse sports
                     teams.</a>
                 </li>

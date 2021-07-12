@@ -29,11 +29,11 @@ export const Posts = ({ posts }: PostProps): JSX.Element => {
       <div className="flex justify-center">
         <h3
           className="text-ebonyclay text-4xl bg-geebung inline-block
-                     p-6 mt-6 lg:mt-2 mb-4 text-ebonyclay  transform -rotate-2">
+                     p-6 mt-6 lg:mt-2 mb-4 text-ebonyclay shadow-md transform -rotate-2">
           Our latest posts.
         </h3>
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mt-12">
+      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mb-8 gap-12 mt-12">
         {posts.map((post) => (
           <PostCard key={post.slug} post={post}/>
         ))}

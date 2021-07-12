@@ -2,13 +2,15 @@ import React, { FunctionComponent } from 'react';
 
 type ServiceCardProps = {
   title: string,
-  subtitle: string,
+  questionOne: string,
+  questionTwo: string,
   paragraph: string
 }
 
-export const ServiceCard:  FunctionComponent<ServiceCardProps> = ({
+export const ServiceCard: FunctionComponent<ServiceCardProps> = ({
   title,
-  subtitle,
+  questionOne,
+  questionTwo,
   paragraph
 }) =>
   <div className="bg-white transform hover:scale-105 rounded shadow border-ebonyclay
@@ -16,10 +18,15 @@ export const ServiceCard:  FunctionComponent<ServiceCardProps> = ({
     <h4 className="text-4xl bg-sundance p-4 text-ebonyclay font-bold mb-2 mt-0">
       {title}
     </h4>
-    <h5 className="text-2xl font-sans text-ebonyclay italic font-medium mb-2 mt-0">
-      {subtitle}
-    </h5>
-    <p className="font-serif text-palesky text-lg">
+    <ul className="list-disc pl-8 my-2">
+      <li className="text-2xl font-sans text-ebonyclay italic font-medium mt-0">
+        {questionOne}
+      </li>
+      <li className="text-2xl font-sans text-ebonyclay italic font-medium mt-0">
+        {questionTwo}
+      </li>
+    </ul>
+    <p className="font-serif text-sundance bg-ebonyclay shadow p-6 text-lg">
       {paragraph}
     </p>
-  </div>
+  </div>;

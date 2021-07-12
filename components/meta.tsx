@@ -33,7 +33,6 @@ const Meta = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />
       <link rel="icon" href="/favicon.ico" />
-
       {meta.date && (
         <meta property="article:published_time" content={meta.date} />
       )}

@@ -27,18 +27,18 @@ export default function Videos() {
         Upcoming content list for channel below:
       </h3>
       <ul className="pl-8 flex flex-wrap list-none -mb-1 list-disc">
-        <li className="mb-1 w-1/2">
+        <li className="mb-1 w-full md:w-1/2">
           <a className="font-serif text-rollingstone font-bold">High quality software enginering
             tutorials.</a>
         </li>
-        <li className="mb-1 w-1/2">
+        <li className="mb-1 w-full md:w-1/2">
           <a className="font-serif text-rollingstone font-bold">How to be a good consultant.</a>
         </li>
-        <li className="mb-1 w-1/2">
+        <li className="mb-1 w-full md:w-1/2">
           <a className="font-serif text-rollingstone font-bold">How to get into software engineering
             industry.</a>
         </li>
-        <li className="mb-1 w-1/2">
+        <li className="mb-1 w-full md:w-1/2">
           <a className="font-serif text-rollingstone font-bold">How our CEO became a top 10% Uk
             earner at 22 from software engineering.</a>
         </li>

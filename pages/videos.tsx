@@ -21,11 +21,22 @@ export default function Videos() {
           Behind scenes of a tech consultancy. Come be a part of our journey.
         </h2>
       </Header>
-      <h3
+      <div className="flex justify-center mb-12">
+        <h3
+          className="text-ebonyclay text-4xl bg-geebung inline-block
+                     p-6 mt-6 lg:mt-2 mb-4 shadow-lg text-ebonyclay  transform -rotate-2">
+          <a className="font-bold italic text-palesky hover:text-ebonyclay"
+             href="/"
+             rel="noopener noreferrer"> Mozstro
+          </a> on youtube.
+        </h3>
+      </div>
+
+      <h4
         className="sm:text-3xl text-2xl font-medium bg-equator
                              mb-2 text-ebonyclay inline-block p-2">
         Upcoming content list for channel below:
-      </h3>
+      </h4>
       <ul className="pl-8 flex flex-wrap list-none -mb-1 list-disc">
         <li className="mb-1 w-full md:w-1/2">
           <a className="font-serif text-rollingstone font-bold">High quality software enginering

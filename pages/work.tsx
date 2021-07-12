@@ -24,7 +24,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => {
         </h1>
         <h2 className="text-center text-sundance text-2xl">
           How we've
-          <span className="font-bold italic text-ebonyclay"> supercharged?</span>
+          <span className="text-ebonyclay"> supercharged?</span>
         </h2>
       </Header>
       <h3

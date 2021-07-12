@@ -19,10 +19,10 @@ export const ServiceCard: FunctionComponent<ServiceCardProps> = ({
       {title}
     </h4>
     <ul className="list-disc pl-8 my-2">
-      <li className="text-2xl font-sans text-ebonyclay italic font-medium mt-0">
+      <li className="text-2xl font-sans text-ebonyclay font-medium mt-0">
         {questionOne}
       </li>
-      <li className="text-2xl font-sans text-ebonyclay italic font-medium mt-0">
+      <li className="text-2xl font-sans text-ebonyclay font-medium mt-0">
         {questionTwo}
       </li>
     </ul>

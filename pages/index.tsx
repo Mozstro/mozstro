@@ -10,6 +10,8 @@ import { PostType } from '../types/post';
 import { getLatestProject } from './api/projects';
 import { ProjectCard } from '../components/projectCard';
 import { ProjectType } from '../types/project';
+import { StatCard } from '../components/statCard';
+import { faCloud, faServer, faFireAlt} from '@fortawesome/free-solid-svg-icons';
 
 type HomeProps = {
   post: PostType;
@@ -31,44 +33,72 @@ export const Home = ({
           </a>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
-          <span className="font-bold italic text-sundance">Securely Supercharged </span>
+          <span className="text-sundance">Securely supercharged </span>
           cloud native solutions to complex business problems.
         </h2>
       </Header>
       <section>
-          <div className="flex justify-center">
-            <h3
-              className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
+        <div className="flex justify-center">
+          <h3
+            className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
                      text-ebonyclay  transform -rotate-2 shadow-lg">What
-              we offer at
-              <a className="font-bold italic text-palesky hover:text-ebonyclay"
-                 href="/"
-                 rel="noopener noreferrer"> Mozstro.
-              </a>
-            </h3>
-          </div>
-
-          <div>
-            <div className="flex inline-flex flex-wrap justify-center justify-around my-9">
-              <ServiceCard
-                title="Security first cloud native solutions."
-                questionOne="Want a faster time to market?"
-                questionTwo="Need to be more reactive to customer demands?"
-                paragraph="We provide high quality cloud native solutions
+            we offer at
+            <a className="font-bold italic text-palesky hover:text-ebonyclay"
+               href="/"
+               rel="noopener noreferrer"> Mozstro.
+            </a>
+          </h3>
+        </div>
+        <div className="flex inline-flex flex-wrap justify-center justify-around my-9">
+          <ServiceCard
+            title="Security first cloud native solutions."
+            questionOne="Want a faster time to market?"
+            questionTwo="Need to be more reactive to customer demands?"
+            paragraph="We provide high quality cloud native solutions
             for complex business problems."
-              />
-              <ServiceCard
-                title="Embedded engineering consulting."
-                questionOne="Already have internal talent?"
-                questionTwo="Does your talent just need some guidance?"
-                paragraph="We can embed our high quality consultants to get that project over the line."
-              />
-            </div>
-          </div>
+          />
+          <ServiceCard
+            title="Embedded engineering consulting."
+            questionOne="Already have internal talent?"
+            questionTwo="Does your talent just need some guidance?"
+            paragraph="We can embed our high quality consultants to get that project over the line."
+          />
+        </div>
+
+        <div className="flex justify-center">
+          <h3
+            className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
+                     text-ebonyclay  transform -rotate-2 shadow-lg">
+            The state of cloud security.
+          </h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-9 gap-12">
+          <StatCard stat="66%"
+                    text="of IT professionals say security is their greatest concern when asked
+                    about adopting cloud."
+                    icon={faCloud}
+                    credit="https://www.forbes.com/sites/louiscolumbus/2018/01/07/83-of-enterprise-
+                    workloads-will-be-in-the-cloud-by-2020/#1435d8166261"
+          />
+          <StatCard stat="66%"
+                    text="of attacks are caused by accidental exposure
+                    through misconfigurations."
+                    icon={faServer}
+                    credit="https://secure2.sophos.com/en-us/content/state-of-cloud-security.aspx"
+          />
+          <StatCard stat="70%"
+                    text="of organizations hosting data or workloads in the public cloud
+                          experienced a security incident in the last year."
+                    icon={faFireAlt}
+                    credit="https://secure2.sophos.com/en-us/content/state-of-cloud-security.aspx"
+          />
+        </div>
+
         <div className="bg-equator p-6">
-          <h6 className="mb-2 text-2xl text-ebonyclay">
-            Lets advance technology together, through the power
-            of <span className="text-palesky italic"> cloud</span>.
+          <h6 className="mb-2 text-3xl text-ebonyclay">
+            Want to take advantage of cloud? Your business needs
+            <span className="text-hippiegreen"> supercharged </span> cloud
+            <span className="text-hippiegreen"> security.</span>
           </h6>
           <CallToAction link="mailto:sales@mozstro.com" text="Find out how we help"/>
         </div>
@@ -85,7 +115,7 @@ export const Home = ({
       </section>
       <section className="mt-16 mb-8">
         <div className="flex flex-wrap px-5 mx-auto">
-          <div className="w-full lg:w-1/2">
+          <div className="w-full xl:w-1/2">
             <h3
               className="text-ebonyclay order-1 text-4xl bg-geebung inline-block my-6 lg:my-1
                 p-6 text-ebonyclay transform shadow-md -rotate-2">
@@ -93,7 +123,7 @@ export const Home = ({
             </h3>
             <PostCard post={post}/>
           </div>
-          <div className="flex flex-col justify-evenly w-full lg:w-1/2">
+          <div className="flex flex-col justify-evenly w-full xl:w-1/2">
             <div className="flex justify-end ">
               <h3
                 className="text-right text-ebonyclay order-3 lg:order-2 text-4xl bg-geebung

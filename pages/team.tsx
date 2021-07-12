@@ -18,19 +18,14 @@ export default function Team() {
           <span> Family.</span>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
-          <span className="font-bold italic text-sundance">Supercharged&nbsp;</span>teams.
+          <span className="text-sundance">Supercharged&nbsp;</span>teams.
         </h2>
       </Header>
       <div className="flex justify-center mb-12">
         <h3
           className="text-ebonyclay text-4xl bg-geebung inline-block
                      p-6 mt-6 lg:mt-2 mb-4 shadow-lg text-ebonyclay  transform -rotate-2">
-          Join
-          <a className="font-bold italic text-palesky hover:text-ebonyclay"
-             href="/"
-             rel="noopener noreferrer">our&nbsp;
-          </a>
-          journey.
+          Join our journey.
         </h3>
       </div>
       <div

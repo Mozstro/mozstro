@@ -49,9 +49,12 @@ const PostPage = ({
       <Header>
         <h1 className="text-7xl text-center text-ebonyclay">
           <span>Welcome to</span>
-          <a className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
-             href="/"
-             rel="noopener noreferrer"> Mozstro.
+          <a
+            className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
+            href="/"
+            rel="noopener noreferrer"
+          >
+            Mozstro.
           </a>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
@@ -60,25 +63,44 @@ const PostPage = ({
         </h2>
       </Header>
       <article>
-        <div className="flexjustify-start">
-          <h3
-            className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
-                       text-ebonyclay transform -rotate-2">
-            {frontMatter.title}
-          </h3>
+        <div>
+          <div className="text-center">
+            <h3
+              className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-4 lg:mt-0 mb-10 lg:-mb-10
+                      transform -rotate-2"
+            >
+              {frontMatter.title}
+            </h3>
+          </div>
+          <img
+            className="blog-image"
+            alt={frontMatter.imageAlt}
+            src={frontMatter.image}
+          />
         </div>
-        <div className="flex justify-between w-full lg:w-1/3">
-          <h4
-            className="align-middle text-lg bg-equator
-                       rounded inline-block py-0.5 mt-2 mb-6 shadow-sm px-2">
-            {frontMatter.topic}
-          </h4>
-          <p className="mb-10 text-lg text-palesky">
+        <div className="flex mt-2 justify-between w-full">
+          <div className="flex flex-col">
+            <p
+              className="align-middle text-2xl bg-equator transform -rotate-2 
+                          rounded inline-block py-1 mt-2  shadow-sm px-2"
+            >
+              {frontMatter.topic}
+            </p>
+            <p
+              className="align-middle transform -rotate-2 text-sundance text-xl bg-ebonyclay
+                          rounded inline-block ml-4 py-1 mt-3 mb-2 shadow-sm px-2"
+            >
+              By&nbsp;
+              {frontMatter.author}
+            </p>
+          </div>
+
+          <p className="items-center flex text-lg text-palesky">
             {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}
           </p>
         </div>
         <div className="blog-content">
-          <MDXRemote {...source} components={components}/>
+          <MDXRemote {...source} components={components} />
         </div>
       </article>
     </Layout>

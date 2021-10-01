@@ -29,12 +29,10 @@ export const Work = ({ projects }: WorkProps): JSX.Element => {
       </Header>
       <h3
         className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-0 mb-4
-                   my-1 transform -rotate-2 shadow-md">World
-        class businesses
-        <span aria-label="love" className="text-sundance"> ♡</span>
+                   my-1 transform -rotate-2 shadow-md">Previous work before 
         <a className="font-bold italic text-palesky hover:text-ebonyclay"
            href="/"
-           rel="noopener noreferrer"> Mozstro!
+           rel="noopener noreferrer"> Mozstro
         </a>
       </h3>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 mt-12">

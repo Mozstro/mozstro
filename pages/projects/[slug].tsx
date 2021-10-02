@@ -77,7 +77,7 @@ const ProjectPage = ({
               className="align-middle text-2xl bg-equator transform -rotate-2 
                           rounded inline-block py-1 mt-2  shadow-sm px-2"
             >
-              {frontMatter.sector}
+              Industry: {frontMatter.sector}
             </p>
           </div>
           <p className="items-center flex text-lg text-palesky">

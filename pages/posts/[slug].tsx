@@ -71,6 +71,13 @@ const PostPage = ({
             >
               {frontMatter.title}
             </h3>
+            <p
+              className="align-middle transform -rotate-2 text-sundance text-xl bg-ebonyclay
+                        -mt-20 lg:-ml-32 lg:mt-20 inline-block py-1 mt-3 mb-2 shadow-sm px-2"
+            >
+              By&nbsp;
+              {frontMatter.author}
+            </p>
           </div>
           <img
             className="blog-image"
@@ -84,15 +91,9 @@ const PostPage = ({
               className="align-middle text-2xl bg-equator transform -rotate-2 
                           rounded inline-block py-1 mt-2  shadow-sm px-2"
             >
-              {frontMatter.topic}
+              Topic: {frontMatter.topic}
             </p>
-            <p
-              className="align-middle transform -rotate-2 text-sundance text-xl bg-ebonyclay
-                          rounded inline-block ml-4 py-1 mt-3 mb-2 shadow-sm px-2"
-            >
-              By&nbsp;
-              {frontMatter.author}
-            </p>
+            
           </div>
 
           <p className="items-center flex text-lg text-palesky">

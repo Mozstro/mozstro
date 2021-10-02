@@ -23,7 +23,7 @@ export const PostCard: FunctionComponent<PostProps> = (
       </Link>
     </h3>
     <h4 className="align-middle text-lg bg-equator rounded inline-block py-0.5 mb-2 shadow-sm px-2">
-      {post.topic}
+      Topic: {post.topic}
     </h4>
     <p className="font-serif mb-3">{post.description}</p>
     <p className="m-4 text-indigo-500 bg-ebonyclay p-2 text-sundance text-3xl hover:bg-sundance

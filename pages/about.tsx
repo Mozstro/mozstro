@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Nav from '../components/nav';
 import Layout from '../components/layout';
 import { Header } from '../components/header';
 
@@ -11,8 +9,8 @@ export default function About() {
         <h1 className="text-7xl text-center text-ebonyclay">
           <span>About </span>
           <a className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
-             href="/"
-             rel="noopener noreferrer">Mozstro.
+            href="/"
+            rel="noopener noreferrer">Mozstro.
           </a>
         </h1>
         <h2 className="text-center text-sundance text-2xl">
@@ -27,15 +25,15 @@ export default function About() {
                      text-ebonyclay my-1 transform -rotate-2">Who
             is
             <a className="font-bold italic text-palesky hover:text-ebonyclay"
-               href="/"> Mozstro
+              href="/"> Mozstro
             </a> ?
           </h4>
           <div className="bg-ebonyclay p-2 m-4 shadow-md">
-            <p className="text-rollingstone px-4 my-4 text-xl">
+            <p className="text-sundance px-4 my-4 text-xl">
               Mozstro is a security focused cloud consultancy based in the UK. We are remote first
               and happy to work with clients globally.
             </p>
-            <p className="text-palesky px-4 my-4 text-xl">
+            <p className="text-sundance px-4 my-4 text-xl">
               We coined the term Mozstro from a combination of the CEO's nickname
               <span className="italic font-bold"> Moz </span> combined with
               <span className="italic font-bold"> maestro </span>
@@ -48,19 +46,21 @@ export default function About() {
             className="text-ebonyclay shadow-md text-3xl bg-geebung
                      inline-block p-6 text-ebonyclay my-1 transform -rotate-2">Why
             <a className="font-bold italic text-palesky hover:text-ebonyclay"
-               href="/"> Mozstro
+              href="/"> Mozstro
             </a> ?
           </h4>
           <div className="bg-ebonyclay p-2 m-4 shadow-md">
-            <p className="text-palesky px-4 my-4 text-xl">
+            <p className="text-sundance px-4 my-4 text-xl">
               We have several years in the industry of delivering:
-              <ul className="list-decimal text-lg pl-12">
-                <li>Highly secured.</li>
-                <li>Highly scalable.</li>
-                <li>Cost efficient.</li>
-                <li>Lighting performant.</li>
-              </ul>
-            cloud solutions to complex business problems.
+            </p>
+            <ul className="list-decimal text-sundance text-lg pl-12">
+              <li>Highly secured.</li>
+              <li>Highly scalable.</li>
+              <li>Cost efficient.</li>
+              <li>Lighting performant.</li>
+            </ul>
+            <p className="text-sundance px-4 my-4 text-xl">
+              cloud solutions to complex business problems.
             </p>
           </div>
         </article>
@@ -87,16 +87,16 @@ export default function About() {
             to get started?
           </h4>
           <div className="bg-ebonyclay p-2 m-4 shadow-md">
-            <p className="text-palesky px-4 my-4 text-xl">If you would like to work with us
+            <p className="text-sundance px-4 my-4 text-xl">If you would like to work with us
               send an email to:
               <a className="text-sundance hover:text-ebonyclay"
-                 href="mailto:sales@mozstro.com"> sales@mozstro.com</a> or pick up the phone on:
+                href="mailto:sales@mozstro.com"> sales@mozstro.com</a> or pick up the phone on:
               <a className="text-sundance hover:text-ebonyclay"
-                 href="tel:07949155434"> 07949155434</a>.
+                href="tel:07949155434"> 07949155434</a>.
             </p>
           </div>
         </article>
       </section>
-    </Layout>
+    </Layout >
   );
 }

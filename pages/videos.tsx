@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Meta from '../components/meta';
-import Footer from '../components/footer';
-import Nav from '../components/nav';
 import { Header } from '../components/header';
 import Layout from '../components/layout';
 

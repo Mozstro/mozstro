@@ -105,7 +105,7 @@ export const Home = ({
       </section>
       <section className="mt-12">
         <h3
-          className="text-ebonyclay order-1 text-4xl bg-geebung inline-block
+          className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block
                 p-6 text-ebonyclay shadow-md transform -rotate-2">
           Our latest work.
         </h3>
@@ -117,7 +117,7 @@ export const Home = ({
         <div className="flex flex-wrap px-5 mx-auto">
           <div className="w-full xl:w-1/2">
             <h3
-              className="text-ebonyclay order-1 text-4xl bg-geebung inline-block my-6 lg:my-1
+              className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block my-6 lg:my-1
                 p-6 text-ebonyclay transform shadow-md -rotate-2">
               What we are talking about right now.
             </h3>
@@ -126,7 +126,7 @@ export const Home = ({
           <div className="flex flex-col justify-evenly w-full xl:w-1/2">
             <div className="flex justify-end ">
               <h3
-                className="text-right text-ebonyclay order-3 lg:order-2 text-4xl bg-geebung
+                className="text-right text-ebonyclay order-3 lg:order-2 text-2xl sm:text-4xl bg-geebung
                    inline-block my-6 lg:my-1 p-6 shadow-md text-ebonyclay transform rotate-2">
                 Who have we worked with?
               </h3>

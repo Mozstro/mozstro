@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Nav from '../components/nav';
 import { TeamMember } from '../components/teamMember';
 import Layout from '../components/layout';
 import { Header } from '../components/header';

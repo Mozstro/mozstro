@@ -42,7 +42,6 @@ export default function Team() {
           The opportunities for technology with business is endless.
         </p>
       </div>
-
       <div className="flex flex-wrap justify-center justify-around my-9">
         <TeamMember
           name="Elliot Morris"
@@ -50,14 +49,12 @@ export default function Team() {
           email="elliot@mozstro.com"
           image="elliot.png"
         />
-
         <TeamMember
           name="Freelance consultants"
           role="Utilizing talent in our network to help get you supercharged"
           email="elliot@mozstro.com"
           image="mozstro_logo_multi.png"
         />
-
         <TeamMember
           name="You"
           role="Want to find out more about roles?"

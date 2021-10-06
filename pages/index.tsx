@@ -9,9 +9,9 @@ import { Header } from '../components/header';
 import { getLatestPost } from './api/posts';
 import { PostType } from '../types/post';
 import { getLatestProject } from './api/projects';
-import { ProjectCard } from '../components/projectCard.tsx';
-import { ProjectType } from '../types/project.ts';
-import { StatCard } from '../components/statCard.tsx';
+import { ProjectCard } from '../components/projectCard';
+import { ProjectType } from '../types/project';
+import { StatCard } from '../components/statCard';
 import ContactForm from '../components/contactForm';
 
 type HomeProps = {

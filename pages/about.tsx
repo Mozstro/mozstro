@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import { Header } from '../components/header';
+import ContactForm from '../components/contactForm';
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ export default function About() {
         <h2 className="text-center text-sundance text-2xl">
           How can your business be
           <span className="text-ebonyclay"> supercharged?</span>
-        </h2>
+        </h2>   
       </Header>
       <section className="grid grid-cols-1 mt-8 lg:mt-0 lg:grid-cols-2">
         <article>
@@ -28,12 +29,12 @@ export default function About() {
               href="/"> Mozstro
             </a> ?
           </h4>
-          <div className="bg-ebonyclay p-2 m-4 shadow-md">
-            <p className="text-sundance px-4 my-4 text-xl">
+          <div className="bg-sundance p-2 m-4 shadow-md">
+            <p className="text-rolling-stone px-4 my-4 text-xl">
               Mozstro is a security focused cloud consultancy based in the UK. We are remote first
               and happy to work with clients globally.
             </p>
-            <p className="text-sundance px-4 my-4 text-xl">
+            <p className="text-rolling-stone px-4 my-4 text-xl">
               We coined the term Mozstro from a combination of the CEO's nickname
               <span className="italic font-bold"> Moz </span> combined with
               <span className="italic font-bold"> maestro </span>
@@ -49,51 +50,36 @@ export default function About() {
               href="/"> Mozstro
             </a> ?
           </h4>
-          <div className="bg-ebonyclay p-2 m-4 shadow-md">
-            <p className="text-sundance px-4 my-4 text-xl">
+          <div className="bg-sundance p-2 m-4 shadow-md">
+            <p className="text-rolling-stone px-4 my-4 text-xl">
               We have several years in the industry of delivering:
             </p>
-            <ul className="list-decimal text-sundance text-lg pl-12">
+            <ul className="list-decimal text-rolling-stone text-lg pl-12">
               <li>Highly secured.</li>
               <li>Highly scalable.</li>
               <li>Cost efficient.</li>
               <li>Lighting performant.</li>
             </ul>
-            <p className="text-sundance px-4 my-4 text-xl">
+            <p className="text-rolling-stone px-4 my-4 text-xl">
               cloud solutions to complex business problems.
             </p>
           </div>
         </article>
-        {/*<article>*/}
-        {/*  <h4*/}
-        {/*    className="text-ebonyclay text-3xl bg-geebung inline-block shadow-md*/}
-        {/*             p-6 text-ebonyclay my-1 transform -rotate-2">Do*/}
-        {/*    i need Cloud?</h4>*/}
-        {/*  <div className="bg-ebonyclay p-2 m-4 shadow-md">*/}
-        {/*    <p className="text-palesky px-4 my-4 text-xl">*/}
-        {/*      Forget about maintaining servers. Leveraging the cloud allows you to get to market quicker*/}
-        {/*      by focusing on meeting your customer demands.*/}
-        {/*    </p>*/}
-        {/*    <p className="text-palesky px-4 my-4 text-xl">*/}
-        {/*    Cloud services give enterprises a competitive advantage by providing the most*/}
-        {/*    innovative technology available.*/}
-        {/*    </p>*/}
-        {/*  </div>*/}
-        {/*</article>*/}
         <article>
           <h4
             className="text-ebonyclay text-3xl bg-geebung inline-block p-6 shadow-md
                      text-ebonyclay my-1 transform -rotate-2">How
             to get started?
           </h4>
-          <div className="bg-ebonyclay p-2 m-4 shadow-md">
-            <p className="text-sundance px-4 my-4 text-xl">If you would like to work with us
+          <div className="bg-sundance p-2 m-4 shadow-md">
+            <p className="text-rolling-stone px-4 my-4 text-xl">If you would like to work with us
               send an email to:
-              <a className="text-sundance hover:text-ebonyclay"
+              <a className="text-palesky hover:text-ebonyclay"
                 href="mailto:sales@mozstro.com"> sales@mozstro.com</a> or pick up the phone on:
-              <a className="text-sundance hover:text-ebonyclay"
+              <a className="text-ebony-clay hover:text-ebonyclay"
                 href="tel:07949155434"> 07949155434</a>.
             </p>
+            <ContactForm/>
           </div>
         </article>
       </section>

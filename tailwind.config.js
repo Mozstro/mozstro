@@ -6,7 +6,7 @@ module.exports = {
     fontFamily: {
       sans: ['Galano\\ Grotesque', 'system-ui'],
       mono: ['Ubuntu\\ Mono'],
-      serif: ['Cousine', 'serif']
+      serif: ['Cousine', 'serif'],
     },
     colors: {
       ebonyclay: 'var(--ebony-clay)',
@@ -22,4 +22,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

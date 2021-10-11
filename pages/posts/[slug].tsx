@@ -35,7 +35,7 @@ type PostPageProps = {
 
 const PostPage = ({
   source,
-  frontMatter
+  frontMatter,
 }: PostPageProps): JSX.Element => {
   const customMeta: MetaProps = {
     title: `${frontMatter.title} - Mozstro Consulting`,
@@ -62,15 +62,33 @@ const PostPage = ({
           cloud native solutions to complex business problems.
         </h2>
       </Header>
+      <div className="mt-8 lg:mt-0">
+        <a
+          className="text-4xl lg:text-3xl transform hover:scale-105 cursor-pointer font-bold
+                     text-ebonyclay hover:shadow text-center hover:bg-palesky hover:text-sundance
+                     transform hover:scale-110 border-opacity-50 border-2 border-geebung px-2"
+          href="/posts"
+          rel="noopener noreferrer"
+        >
+          ← Back
+        </a>
+      </div>
       <article>
         <div>
-          <div className="text-center">
+          <div className="text-center mt-8 lg:mt-0 mb-10 lg:-mb-10">
             <h3
-              className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-4 lg:mt-0 mb-10 lg:-mb-10
+              className="text-ebonyclay text-4xl bg-geebung inline-block p-6 xl:mt-0
                       transform -rotate-2"
             >
               {frontMatter.title}
             </h3>
+            <p
+              className="align-middle transform -rotate-2 text-sundance text-xl bg-ebonyclay
+                         lg:-ml-32 lg:mt-20 inline-block py-1 mt-3 mb-2 shadow-sm px-2"
+            >
+              By&nbsp;
+              {frontMatter.author}
+            </p>
           </div>
           <img
             className="blog-image"
@@ -78,20 +96,15 @@ const PostPage = ({
             src={frontMatter.image}
           />
         </div>
-        <div className="flex mt-2 justify-between w-full">
+        <div className="flex mt-2  my-4 lg:my-8 justify-between w-full">
           <div className="flex flex-col">
             <p
-              className="align-middle text-2xl bg-equator transform -rotate-2 
+              className="align-middle text-xl md:text-2xl bg-equator transform -rotate-2
                           rounded inline-block py-1 mt-2  shadow-sm px-2"
             >
+              Topic:
+              {' '}
               {frontMatter.topic}
-            </p>
-            <p
-              className="align-middle transform -rotate-2 text-sundance text-xl bg-ebonyclay
-                          rounded inline-block ml-4 py-1 mt-3 mb-2 shadow-sm px-2"
-            >
-              By&nbsp;
-              {frontMatter.author}
             </p>
           </div>
 
@@ -113,7 +126,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const {
     content,
-    data
+    data,
   } = matter(source);
 
   const mdxSource = await serialize(content, {

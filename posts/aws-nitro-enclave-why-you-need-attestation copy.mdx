@@ -1,12 +1,11 @@
 ---
-title: Why you need attestation
-topic: AWS Nitro Enclave
-description: Attestation is a feature available to Nitro Enclaves. The enclave uses the attestation process to prove its identity and build trust with an external service.
-date: '2021-03-20'
-image: 'https://mozstro-website-static-files.s3.eu-west-2.amazonaws.com/img/youtube_thumbnail_mozstro.png'
-imageAlt: 'Logo'
-author: 'Elliot Morris'
-
+title: AWS Nitro Enclaves - What is attestation all about?
+topic: AWS
+description: Attestation is a feature available to nitro enclaves. Heres why you should be using it in your secure computing implementation.
+date: "2021-05-15"
+image: "/attest_cover.png"
+imageAlt: "Logo"
+author: "Elliot Morris"
 ---
 
 ## Introduction to Nitro Enclaves
@@ -15,7 +14,7 @@ First of all If you would like to know more about nitro enclaves please read my 
 
 ## Cryptographic attestation​
 
-Attestation is a feature available to Nitro Enclaves. The enclave uses the attestation process to prove its identity and build trust with an external service.
+Attestation is a feature available to Nitro Enclaves. The enclave uses the attestation process to prove its identity and build trust with an external service.​
 The attestation process uses a series of measurements that are unique to an enclave. You can use these measurements to create access policies in external services to grant the enclave access to special cryptographic operations.
 
 ## Attestation implementation overview
@@ -142,4 +141,3 @@ AWS KMS provides kms:RecipientAttestation:ImageSha384 and kms:RecipientAttestati
 ## Conclusion
 
 Attestation is a great feature to enable that extra layer of security if you are using TEEs. Similarly to AWS; Azure also provides an attestation feature which can be found (here)(https://azure.microsoft.com/en-gb/services/azure-attestation/).
-```

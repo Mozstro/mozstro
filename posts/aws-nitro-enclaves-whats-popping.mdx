@@ -1,47 +1,222 @@
 ---
-title: AWS Nitro Enclaves - What's popping
-description: I care deeply for nature. Oh, you're gonna be in a coma, all right. He'll want to use your yacht, and I don't want this thing smelling like fish. Get me a vodka rocks. And a piece of toast. No! I was ashamed to be SEEN with you. I like being with you.
-date: '2021-06-20'
-image: '/enclave_blog.jpg'
-imageAlt: 'Logo'
-author: 'Elliot Morris'
-topic: 'Cloud security'
+title: AWS Nitro Enclaves - What's popping?
+description: What is Nitro and why you should care about their enclaves.
+date: "2021-01-28"
+image: "/enclave_cover.png"
+imageAlt: "Logo"
+author: "Elliot Morris"
+topic: "Cloud Security"
 ---
 
+## Introduction to Nitro
 
-## Heading H2
+First of all If you would like to know more about nitro enclaves please see my blog post [here](https://elliotmorris.dev/blog/2021-01-16-aws-nitro-enclave) which goes into detail on them I even mention it in the post briefly but I decided its cool enough for its own post.
 
-This is an example blog post with React components. This page is using the `Image` component from Next.js.
+### Use case overview
 
-```jsx:example-post.mdx
-<img
-  alt={`Bridge`}
-  src="https://mozstro-website-static-files.s3.eu-west-2.amazonaws.com/img/youtube_thumbnail_mozstro.png"
-  width={1440}
-  height={960}
-/>
+---
+
+Recently I have been working with a public sector organisation who requires maximum security as you can imagine. Enclaves are a great fit for this project as they allow you to create an isolated VM **(Virtual Machine)** that has its own Kernel, CPU, and memory.
+
+You can only talk to said enclave using a local channel in the form of a [vSocket](https://vdc-repo.vmware.com/vmwb-repository/dcr-public/c509579b-fc98-4ec2-bf0c-cadaebc51017/f572d815-0e80-4448-a354-dff39a1d545e/doc/vsockAbout.3.2.html). Meaning if an attacker managed to get on to the host machine they wouldn't be able to touch the enclave.
+
+### Key benefits of an enclave
+
+---
+
+- Cryptographic attestation
+- Flexible
+- Additional isolation and security
+
+Enclaves are great for processing sensitive data as they are fully isolated from the parent. They can also integrate with AWS KMS **(Key Management Service)**. Meaning only attested enclaves are allowed to decrypt with the KMS key. Providing them extra layers of security.
+
+## Example Implementation
+
+### Implementation overview
+
+---
+
+In this example I will show you how to set up an enclave and how to talk to it via the ec2 host using a client server model. The client will connect to the server running in the enclave. By using the enclaves `CID` **(Context Identifier)** once connected it will send the string `hi from client` into the enclave though the vSocket which will then be returned back to the client as `HI FROM CLIENT`.
+
+### Server / Enclave setup guide
+
+---
+
+- You first need to create an ec2 instance that is using the nitro system. Under configure instance you can tick to enable enclaves.
+
+![ec2 enclave](/img/ec2-enclave.PNG)
+
+- Once connected to the ec2 first setup the `nitro-cli` using this guide [here](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-cli-install.html).
+
+- To setup the enclave copy over to the ec2 the below Dockerfile, run.sh and server.py files into a folder called 'server'.
+
+**Note:** _For this example application I am using python so we are using the `python:3.9.1-slim` base image._
+
+#### Dockerfile
+
+```
+FROM python:3.9.1-slim
+
+WORKDIR /app
+
+COPY server.py ./
+COPY run.sh ./
+
+RUN chmod +x run.sh
+
+CMD ["/app/run.sh"]
 ```
 
-### Code Blocks
+Save this as `Dockerfile`.
 
-#### Hi
+#### Run script
 
-This starter also comes with fancy code blocks with code titles.
+```
+#!/bin/sh
 
-```jsx:example.jsx
-import React, { useState } from 'react';
+# Run the app
+python3 /app/server.py
+```
 
-function Example() {
-  // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
+Save this as `run.sh`.
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
+#### Server Python code
+
+```
+import socket
+import datetime
+
+def server():
+    print('Hello from enclave server!')
+
+    port = 5000
+
+    s = socket.socket(socket.AF_VSOCK, socket.SOCK_STREAM)
+
+    cid = socket.VMADDR_CID_ANY
+
+    s.bind((cid, port))
+
+    s.listen()
+
+    client_socket, address = s.accept()
+    print("Connection from: " + str(address))
+    while True:
+        data = client_socket.recv(1024).decode('utf-8')
+        if not data:
+            break
+        print('From online user: ' + data + ' | At: ' + str(datetime.datetime.now()))
+
+        # Send msg back to client but uppercase.
+        data = data.upper()
+        client_socket.send(data.encode('utf-8'))
+    client_socket.close()
+
+
+if __name__ == '__main__':
+    server()
+```
+
+Save this as `server.py`.
+
+- Now to build the enclave you use:
+
+```
+sudo nitro-cli build-enclave --docker-path . --output-file server.eif
+```
+
+- To run the built enclave image use:
+
+```
+sudo nitro-cli run-enclave --cpu-count 2 --memory 512 --eif-path server.eif --debug-mode
+```
+
+- To view the read only console of the enclave use:
+
+```
+ENCLAVE_ID=$(nitro-cli describe-enclaves | jq -r .[0].EnclaveID)
+
+nitro-cli console --enclave-id $ENCLAVE_ID
+```
+
+### Client setup guide
+
+---
+
+- Now for the client. I suggest opening another ssh connection to your ec2 so you can clearly see both outputs from the server and client easily.
+
+- Copy over the below file on to the host.
+
+#### Client python code
+
+```
+import socket
+import time
+import sys
+
+def client():
+
+    port = 5000
+
+    connected = False
+    s = socket.socket(socket.AF_VSOCK, socket.SOCK_STREAM)
+
+    cid = int(sys.argv[1])
+
+    message = 'hi from client'
+    while not connected:
+        try:
+            s.connect((cid, port))
+            connected = True
+
+            print('Connected to server... ')
+
+            # send msg via socket
+            s.send(message.encode('utf-8'))
+
+            # get back msg from server
+            data = s.recv(1024).decode('utf-8')
+
+            print('Received from server: ' + data)
+
+        except ConnectionError:
+            print('Server not available yet, trying again in 2 seconds...')
+            time.sleep(2)
+
+
+if __name__ == '__main__':
+    client()
+```
+
+Save this as `client.py`.
+
+- Now to run the client. Here we are grabbing the CID of the enclave and passing it in to the client script.
+
+```
+CID=$(nitro-cli describe-enclaves | jq -r .[0].EnclaveCID)
+
+python3 ./client.py $CID
+```
+
+- Now you can see the output from both the enclave and ec2 host.
+
+You have successfully talked to the enclave over vSocket! Let your imagination take you to the next level on what you can do with this!
+
+## Conclusion
+
+I only scratched the surface here at what enclaves are capable of but im excited what the future holds for them in regards to code security!
+
+## Bonus
+
+### Enclave tips
+
+---
+
+Heres some issues i found during my time using nitro enclaves, since they are so new I will aim to update this over time:
+
+- 'Could not open /env file: No such file or directory'
+  This error message appeared a lot and was not clear what was going on it turns out that this is caused by when the enclave runs out of memory this can be fixed by increasing the hugepages size.
+
+```
+echo "vm.nr_hugepages=1536" | sudo tee /etc/sysctl.d/99-nitro.conf; sudo sysctl -p /etc/sysctl.d/99-nitro.conf
 ```

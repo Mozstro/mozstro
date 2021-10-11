@@ -1,24 +1,22 @@
 ---
-title: Python - How we unit test python when working with AWS Lambdas 
+title: Python - How we unit test python when working with AWS Lambdas
 topic: AWS
 description: How to unit test AWS Lambdas or any python code when working with AWS services.
-date: '2021-10-04'
-image: '.'
-imageAlt: 'Logo'
-author: 'Elliot Morris'
-
+date: "2021-10-04"
+image: "/moto_cover.png"
+imageAlt: "Logo"
+author: "Elliot Morris"
 ---
 
 ## Testing serverless functions
 
-I find this is something easily overlooked if not careful. Since they code is just packaged up and deployed to be tested when working with external AWS 
+I find this is something easily overlooked if not careful. Since they code is just packaged up and deployed to be tested when working with external AWS
 services its easy too forget too test other none external logic as the thought of mocking all of the AWS services appears too much effort vs the value
 off adding the tests.
 
 ### Welcome moto
 
-This package allows you too mock any AWS service you like with ease. 
-
+This package allows you too mock any AWS service you like with ease.
 
 ## Example AWS Lambda with a moto test
 
@@ -30,10 +28,7 @@ This package allows you too mock any AWS service you like with ease.
 
 ```
 
-
 It doesnt stop with just AWS Lambda using S3 moto maintains an in memory implemenation of S3 which allows you to interact with it just like S3.
-
-
 
 ## Conclusion
 

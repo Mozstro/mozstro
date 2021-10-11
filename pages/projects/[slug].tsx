@@ -35,7 +35,7 @@ type ProjectPageProps = {
 
 const ProjectPage = ({
   source,
-  frontMatter
+  frontMatter,
 }: ProjectPageProps): JSX.Element => {
   const customMeta: MetaProps = {
     title: `${frontMatter.title} - Mozstro Consulting`,
@@ -52,9 +52,20 @@ const ProjectPage = ({
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
           <span className="font-bold italic text-sundance">Cloud Supercharged </span>
-           problems solved.
+          problems solved.
         </h2>
       </Header>
+      <div className="mt-8 lg:mt-0">
+        <a
+          className="text-4xl lg:text-3xl transform hover:scale-105 cursor-pointer font-bold
+                     text-ebonyclay hover:shadow text-center hover:bg-palesky hover:text-sundance
+                     transform hover:scale-110 border-opacity-50 border-2 border-geebung px-2"
+          href="/work"
+          rel="noopener noreferrer"
+        >
+          ← Back
+        </a>
+      </div>
       <article>
         <div>
           <div className="text-center">
@@ -71,13 +82,15 @@ const ProjectPage = ({
             src={frontMatter.image}
           />
         </div>
-        <div className="flex mt-2 justify-between w-full">
+        <div className="flex mt-2 my-4 lg:my-8 justify-between w-full">
           <div className="flex flex-col">
             <p
-              className="align-middle text-2xl bg-equator transform -rotate-2 
+              className="align-middle text-xl md:text-2xl bg-equator transform -rotate-2
                           rounded inline-block py-1 mt-2  shadow-sm px-2"
             >
-              Industry: {frontMatter.sector}
+              Industry:
+              {' '}
+              {frontMatter.sector}
             </p>
           </div>
           <p className="items-center flex text-lg text-palesky">
@@ -98,7 +111,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const {
     content,
-    data
+    data,
   } = matter(source);
 
   const mdxSource = await serialize(content, {

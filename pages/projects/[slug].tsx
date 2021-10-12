@@ -47,7 +47,7 @@ const ProjectPage = ({
   return (
     <Layout customMeta={customMeta}>
       <Header>
-        <h1 className="text-7xl text-center text-ebonyclay">
+        <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
           <span>Previous projects</span>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">

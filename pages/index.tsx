@@ -26,17 +26,17 @@ export default function Home({
   return (
     <Layout>
       <Header>
-        <h1 className="text-7xl text-center text-ebonyclay">
+        <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
           <span>Welcome to</span>
           <a
             className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
             href="/"
             rel="noopener noreferrer"
           >
-            Mozstro.
+            &nbsp;Mozstro.
           </a>
         </h1>
-        <h2 className="text-center text-ebonyclay text-2xl">
+        <h2 className="text-center text-ebonyclay text-xl lg:text-2xl">
           <span className="text-sundance">Securely supercharged </span>
           cloud native solutions to complex business problems.
         </h2>
@@ -45,7 +45,7 @@ export default function Home({
         <div className="flex justify-center">
           <h3
             className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
-                     text-ebonyclay  transform -rotate-2 shadow-lg"
+                       text-ebonyclay transform -rotate-2 shadow-lg"
           >
             What
             we offer at
@@ -78,7 +78,7 @@ export default function Home({
         <div className="flex justify-center">
           <h3
             className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
-                     text-ebonyclay  transform -rotate-2 shadow-lg"
+                     text-ebonyclay transform -rotate-2 shadow-lg"
           >
             The state of cloud security.
           </h3>
@@ -116,7 +116,7 @@ export default function Home({
             cloud
             <span className="text-hippiegreen"> security.</span>
           </h6>
-          <CallToAction link="mailto:sales@mozstro.com" text="Find out how we help" />
+          <CallToAction link="mailto:sales@mozstro.com" text="Find out more" />
         </div>
       </section>
       <section className="mt-12">
@@ -134,7 +134,7 @@ export default function Home({
         <div className="flex flex-wrap px-5 mx-auto">
           <div className="w-full xl:w-1/2">
             <h3
-              className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block my-6 lg:my-1
+              className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block mb-6 lg:my-1
                 p-6 text-ebonyclay transform shadow-md -rotate-2"
             >
               What we are talking about right now.
@@ -144,7 +144,7 @@ export default function Home({
           <div className="flex flex-col justify-evenly w-full xl:w-1/2">
             <div className="flex justify-end ">
               <h3
-                className="text-right text-ebonyclay order-3 lg:order-2 text-2xl sm:text-4xl bg-geebung
+                className="lg:text-right text-ebonyclay order-3 lg:order-2 text-4xl bg-geebung
                    inline-block my-6 lg:my-1 p-6 shadow-md text-ebonyclay transform rotate-2"
               >
                 Who have we worked with?

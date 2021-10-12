@@ -7,7 +7,7 @@ export default function Videos() {
   return (
     <Layout>
       <Header>
-        <h1 className="text-7xl text-center text-ebonyclay">
+        <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
           <span>Watch</span>
           <a
             className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"

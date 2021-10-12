@@ -72,7 +72,7 @@ function ContactForm() {
           />
         </div>
         <button
-          className="m-4 text-indigo-500 bg-ebonyclay p-3 text-sundance text-3xl hover:bg-sundance
+          className="m-4 bg-ebonyclay p-3 text-sundance lg:text-3xl hover:bg-sundance
                      hover:text-ebonyclay hover:shadow rounded-xl inline-flex items-center
                      transform hover:scale-105 cursor-pointer mt-4 transform -rotate-1 w-1/4 justify-center"
           type="submit"

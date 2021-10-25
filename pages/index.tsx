@@ -64,7 +64,7 @@ export default function Home({
             </a>
           </h3>
         </div>
-        <div className="flex inline-flex flex-wrap justify-center justify-around my-9">
+        <div className="flex inline-flex flex-wrap justify-center my-9">
           <ServiceCard
             title="Security first cloud native solutions."
             questionOne="Want a faster time to market?"
@@ -79,7 +79,6 @@ export default function Home({
             paragraph="We can embed our high quality consultants to get that project over the line."
           />
         </div>
-
         <div className="flex justify-center">
           <h3
             className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4

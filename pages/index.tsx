@@ -39,7 +39,7 @@ export default function Home({
           >
             &nbsp;Mozstro&nbsp;
           </a>
-          <span>we do cloud consultancy.</span>
+          <span>we do cloud consulting.</span>
         </h1>
         <h2 className="text-center text-ebonyclay text-xl lg:text-2xl">
           <span className="text-sundance">Securely supercharged </span>

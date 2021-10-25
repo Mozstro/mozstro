@@ -126,7 +126,7 @@ export default function Home({
       </section>
       <section className="mt-12">
         <h3
-          className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block
+          className="text-ebonyclay order-1 text-2xl text-4xl bg-geebung inline-block
                 p-6 text-ebonyclay shadowd transform -rotate-2"
         >
           Our latest work.
@@ -139,7 +139,7 @@ export default function Home({
         <div className="flex flex-wrap px-5 mx-auto">
           <div className="w-full xl:w-1/2">
             <h3
-              className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block mb-6 lg:my-1
+              className="text-ebonyclay order-1 text-4xl bg-geebung inline-block mb-6 lg:my-1
                 p-6 text-ebonyclay transform shadowd -rotate-2"
             >
               What we are talking about right now.

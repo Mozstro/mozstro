@@ -27,7 +27,7 @@ export const ServiceCard: FunctionComponent<ServiceCardProps> = ({
         {questionTwo}
       </li>
     </ul>
-    <p className="font-serif text-sundance bg-ebonyclay shadow p-6 text-md lg:text-2xl">
+    <p className="font-serif text-sundance bg-ebonyclay shadow p-6 text-md lg:text-xl">
       {paragraph}
     </p>
   </div>

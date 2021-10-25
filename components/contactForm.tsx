@@ -6,14 +6,14 @@ function ContactForm() {
     return <div className="text-equator text-center mt-2 mb-4 text-xl">Thank you for your enquiry!</div>;
   }
   return (
-    <form className="border- border-equator p-4 " onSubmit={handleSubmit}>
-      <div className="flex flex-col py-2">
-        <div className="border-b border-sundance">
+    <form className="border- border-equator p-4 bg-sundance" onSubmit={handleSubmit}>
+      <div className="flex text-lg flex-col py-2">
+        <div>
           <label htmlFor="name">
             Name
           </label>
           <input
-            className="appearance-none bg-transparent border-none w-full  text-rolling-stone mr-3 py-1 px-2 leading-tight focus:outline-none"
+            className="appearance-none border-2 border-rolling-stone w-full text-rolling-stone mr-3 py-1 px-2 leading-tight focus:outline-none"
             id="name"
             type="name"
             name="name"
@@ -24,12 +24,12 @@ function ContactForm() {
             errors={state.errors}
           />
         </div>
-        <div className="border-b border-ebonyclay">
+        <div>
           <label htmlFor="email">
             Email Address
           </label>
           <input
-            className="appearance-none bg-transparent border-none w-full text-rolling-stone mr-3 py-1 px-2 leading-tight focus:outline-none"
+            className="appearance-none w-full border-2 border-rolling-stone mr-3 py-1 px-2 leading-tight focus:outline-none"
             id="email"
             type="email"
             name="email"
@@ -40,12 +40,12 @@ function ContactForm() {
             errors={state.errors}
           />
         </div>
-        <div className="border-b border-sundance">
+        <div>
           <label htmlFor="company">
             Company
           </label>
           <input
-            className="appearance-none bg-transparent border-none w-full text-rolling-stone  py-1 px-2 leading-tight focus:outline-none"
+            className="appearance-none border-2 border-rolling-stone w-full bg-ebony-clay  py-1 px-2 leading-tight focus:outline-none"
             id="company"
             type="company"
             name="company"
@@ -56,12 +56,12 @@ function ContactForm() {
             errors={state.errors}
           />
         </div>
-        <div className="border-b border-ebonyclay">
+        <div>
           <label htmlFor="message">
             Enquiry
           </label>
           <textarea
-            className="appearance-none bg-transparent border-none w-full text-rolling-stone py-1 px-2 leading-tight focus:outline-none"
+            className="appearance-none border-2 border-rolling-stone w-full text-rolling-stone py-1 px-2 leading-tight focus:outline-none"
             id="message"
             name="message"
           />

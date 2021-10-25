@@ -102,7 +102,7 @@ export default function About() {
           <div className="bg-sundance p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               If you would like to work with us
-              send an email to:
+              email:
               <a
                 className="text-palesky hover:text-ebonyclay"
                 href="mailto:sales@mozstro.com"

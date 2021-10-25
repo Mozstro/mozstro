@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NextSeo } from 'next-seo';
 import { TeamMember } from '../components/teamMember';
 import Layout from '../components/layout';
 import { Header } from '../components/header';
@@ -7,6 +7,9 @@ import { Header } from '../components/header';
 export default function Team() {
   return (
     <Layout>
+      <NextSeo
+        title="Mozstro - Team"
+      />
       <Header>
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
           <span>Our </span>

@@ -8,9 +8,8 @@ export const WEBSITE_HOST_URL = 'https://mozstro.com';
 const Meta = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
   const router = useRouter();
   const meta: MetaProps = {
-    title: 'Mozstro - Secure cloud consulting',
-    description:
-      'Supercharged cloud native solutions to complex business problems.',
+    title: 'Mozstro - ',
+    description: 'Supercharged cloud native solutions to complex business problems.',
     image: `${WEBSITE_HOST_URL}/images/site-preview.png`,
     type: 'website',
     ...customMeta,
@@ -18,7 +17,9 @@ const Meta = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
 
   return (
     <NextHead>
-      <title>{meta.title}</title>
+      {/* <title>
+        {meta.title}
+      </title> */}
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${WEBSITE_HOST_URL}${router.asPath}`} />
       <link rel="canonical" href={`${WEBSITE_HOST_URL}${router.asPath}`} />
@@ -28,7 +29,7 @@ const Meta = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
       <meta property="og:title" content={meta.title} />
       <meta property="og:image" content={meta.image} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@mozstro_consulting" />
+      <meta name="twitter:site" content="@mozstro_" />
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />

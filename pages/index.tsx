@@ -1,4 +1,5 @@
 import React from 'react';
+import { NextSeo } from 'next-seo';
 import { GetStaticProps } from 'next';
 import { faCloud, faServer, faFireAlt } from '@fortawesome/free-solid-svg-icons';
 import { ServiceCard } from '../components/serviceCard';
@@ -25,16 +26,20 @@ export default function Home({
 }: HomeProps) {
   return (
     <Layout>
+      <NextSeo
+        title="Mozstro - Home"
+      />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-          <span>Welcome to</span>
+          <span>At</span>
           <a
             className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
             href="/"
             rel="noopener noreferrer"
           >
-            &nbsp;Mozstro.
+            &nbsp;Mozstro&nbsp;
           </a>
+          <span>we do cloud consultancy.</span>
         </h1>
         <h2 className="text-center text-ebonyclay text-xl lg:text-2xl">
           <span className="text-sundance">Securely supercharged </span>
@@ -122,7 +127,7 @@ export default function Home({
       <section className="mt-12">
         <h3
           className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block
-                p-6 text-ebonyclay shadow-md transform -rotate-2"
+                p-6 text-ebonyclay shadowd transform -rotate-2"
         >
           Our latest work.
         </h3>
@@ -135,7 +140,7 @@ export default function Home({
           <div className="w-full xl:w-1/2">
             <h3
               className="text-ebonyclay order-1 text-2xl sm:text-4xl bg-geebung inline-block mb-6 lg:my-1
-                p-6 text-ebonyclay transform shadow-md -rotate-2"
+                p-6 text-ebonyclay transform shadowd -rotate-2"
             >
               What we are talking about right now.
             </h3>
@@ -145,14 +150,14 @@ export default function Home({
             <div className="flex justify-end ">
               <h3
                 className="lg:text-right text-ebonyclay order-3 lg:order-2 text-4xl bg-geebung
-                   inline-block my-6 lg:my-1 p-6 shadow-md text-ebonyclay transform rotate-2"
+                   inline-block my-6 lg:my-1 p-6 shadowd text-ebonyclay transform rotate-2"
               >
                 Who have we worked with?
               </h3>
             </div>
             <div className="flex flex-col md:pl-12 mt-12 justify-between">
               <h3
-                className="sm:text-3xl text-2xl font-medium bg-equator
+                className="sm:text-3xl text-2xl fontedium bg-equator
                              mb-2 text-ebonyclay inline-block p-2"
               >
                 Experience working with:

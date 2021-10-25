@@ -1,4 +1,5 @@
 import { format, parseISO } from 'date-fns';
+import { NextSeo } from 'next-seo';
 import fs from 'fs';
 import matter from 'gray-matter';
 import mdxPrism from 'mdx-prism';
@@ -46,6 +47,9 @@ const ProjectPage = ({
   };
   return (
     <Layout customMeta={customMeta}>
+      <NextSeo
+        title={`Mozstro - ${frontMatter.title}`}
+      />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
           <span>Previous projects</span>

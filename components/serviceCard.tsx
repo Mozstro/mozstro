@@ -11,10 +11,11 @@ export const ServiceCard: FunctionComponent<ServiceCardProps> = ({
   title,
   questionOne,
   questionTwo,
-  paragraph
-}) =>
+  paragraph,
+}) => (
   <div className="bg-white transform hover:scale-105 rounded shadow border-ebonyclay
-                  p-6 w-10/12 md:w-11/12 xl:w-1/3 m-4 z-10">
+                  p-6 w-10/12 md:w-11/12 xl:w-1/3 m-4 z-10"
+  >
     <h4 className="text-2xl lg:text-4xl bg-sundance p-4 text-ebonyclay font-bold mb-2 mt-0">
       {title}
     </h4>
@@ -29,4 +30,5 @@ export const ServiceCard: FunctionComponent<ServiceCardProps> = ({
     <p className="font-serif text-sundance bg-ebonyclay shadow p-6 text-md lg:text-2xl">
       {paragraph}
     </p>
-  </div>;
+  </div>
+);

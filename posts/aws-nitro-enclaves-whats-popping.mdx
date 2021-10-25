@@ -8,21 +8,17 @@ author: "Elliot Morris"
 topic: "Cloud Security"
 ---
 
-## Introduction to Nitro
+## Intro to nitro
 
-First of all If you would like to know more about nitro enclaves please see my blog post [here](https://elliotmorris.dev/blog/2021-01-16-aws-nitro-enclave) which goes into detail on them I even mention it in the post briefly but I decided its cool enough for its own post.
+AWS is using nitro to power their latest generation of EC2 instances that allows for customers to innovate faster, further reduce cost for and increased security. For certain the latter is true. As nothing is sabotaging the AWS Nitro Enclave.
 
-### Use case overview
-
----
+## Use case overview
 
 Recently I have been working with a public sector organisation who requires maximum security as you can imagine. Enclaves are a great fit for this project as they allow you to create an isolated VM **(Virtual Machine)** that has its own Kernel, CPU, and memory.
 
 You can only talk to said enclave using a local channel in the form of a [vSocket](https://vdc-repo.vmware.com/vmwb-repository/dcr-public/c509579b-fc98-4ec2-bf0c-cadaebc51017/f572d815-0e80-4448-a354-dff39a1d545e/doc/vsockAbout.3.2.html). Meaning if an attacker managed to get on to the host machine they wouldn't be able to touch the enclave.
 
 ### Key benefits of an enclave
-
----
 
 - Cryptographic attestation
 - Flexible
@@ -34,17 +30,13 @@ Enclaves are great for processing sensitive data as they are fully isolated from
 
 ### Implementation overview
 
----
-
 In this example I will show you how to set up an enclave and how to talk to it via the ec2 host using a client server model. The client will connect to the server running in the enclave. By using the enclaves `CID` **(Context Identifier)** once connected it will send the string `hi from client` into the enclave though the vSocket which will then be returned back to the client as `HI FROM CLIENT`.
 
 ### Server / Enclave setup guide
 
----
-
 - You first need to create an ec2 instance that is using the nitro system. Under configure instance you can tick to enable enclaves.
 
-![ec2 enclave](/img/ec2-enclave.PNG)
+![ec2 enclave](/ec2_enclave.PNG)
 
 - Once connected to the ec2 first setup the `nitro-cli` using this guide [here](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-cli-install.html).
 
@@ -141,8 +133,6 @@ nitro-cli console --enclave-id $ENCLAVE_ID
 
 ### Client setup guide
 
----
-
 - Now for the client. I suggest opening another ssh connection to your ec2 so you can clearly see both outputs from the server and client easily.
 
 - Copy over the below file on to the host.
@@ -209,8 +199,6 @@ I only scratched the surface here at what enclaves are capable of but im excited
 ## Bonus
 
 ### Enclave tips
-
----
 
 Heres some issues i found during my time using nitro enclaves, since they are so new I will aim to update this over time:
 

@@ -96,15 +96,16 @@ If you use the item encryptor which the DynamoDB encryption SDK provides. You ha
 The KMS service then makes the attested calls to `GenerateDataKey` and `Decrypt` sending the recipient request parameter.
 
 ```
-'Recipient': {
-                'KeyEncryptionAlgorithm': 'RSAES_OAEP_SHA_256',
-                'AttestationDocument': self._get_attestation_doc_b64()
-            }
+'Recipient':
+{
+        'KeyEncryptionAlgorithm': 'RSAES_OAEP_SHA_256',
+        'AttestationDocument': self._get_attestation_doc_b64()
+}
 ```
 
 A complete example of what the KMS service should look like can be found [here](https://github.com/donkersgoed/nitropepper-enclave-app/blob/main/kms.py).
 
-![attestation](/img/attest.png)
+![attestation](/attest_process.png)
 
 ### How the attested encryption works
 
@@ -136,8 +137,8 @@ To prepare AWS KMS for attestation you must have the enclave's measurements. The
 
 AWS KMS provides kms:RecipientAttestation:ImageSha384 and kms:RecipientAttestation:PCR condition keys that enable you to create attestation-based condition keys for KMS key policies. These policies ensure that AWS KMS only allows operations using the KMS key if the enclave provides a signed attestation document that contains measurements that match the measurements specified in the KMS key policy's condition keys.
 
-![example kms policy](/img/kms-policy.png)
+![example kms policy](/kms_policy.png)
 
 ## Conclusion
 
-Attestation is a great feature to enable that extra layer of security if you are using TEEs. Similarly to AWS; Azure also provides an attestation feature which can be found (here)(https://azure.microsoft.com/en-gb/services/azure-attestation/).
+Attestation is a great feature to enable that extra layer of security if you are using TEEs. Similarly to AWS; Azure also provides an attestation feature which can be found [here](https://azure.microsoft.com/en-gb/services/azure-attestation/).

@@ -63,7 +63,7 @@
 }
 
 .blog-content pre{
-  /*@apply bg-rollingstone rounded lg:py-6 lg:pl-6 my-3 inline-block;*/
+  @apply bg-equator rounded p-1 my-3 overflow-scroll inline-block;
 }
 
 .blog-content ul{
@@ -80,6 +80,18 @@
 
 .blog-content pre {
   @apply overflow-scroll;
+}
+
+.blog-content img{
+  @apply my-8;
+  width: 100%;
+  height: 42vw;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.blog-content a{
+  @apply text-sundance hover:text-ebonyclay;
 }
 
 .blog-image {

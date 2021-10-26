@@ -45,6 +45,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
         {' '}
         Mozstro
       </a>
+      .
     </h3>
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 mt-12">
       {projects.map((project) => (

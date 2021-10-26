@@ -64,7 +64,7 @@ export default function Home({
             </a>
           </h3>
         </div>
-        <div className="flex inline-flex flex-wrap justify-center my-9">
+        <div className="flex bg-rollingstone rounded inline-flex flex-wrap justify-center my-9">
           <ServiceCard
             title="Security first cloud native solutions."
             questionOne="Want a faster time to market?"
@@ -87,7 +87,7 @@ export default function Home({
             The state of cloud security.
           </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-9 gap-12">
+        <div className="grid bg-hippiegreen rounded p-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-9 gap-12">
           <StatCard
             stat="66%"
             text="of IT professionals say security is their greatest concern when asked
@@ -111,8 +111,7 @@ export default function Home({
             credit="https://secure2.sophos.com/en-us/content/state-of-cloud-security.aspx"
           />
         </div>
-
-        <div className="bg-equator p-6">
+        <div className="bg-equator rounded p-6">
           <h6 className="mb-2 text-3xl text-ebonyclay">
             Want to take advantage of cloud? Your business needs
             <span className="text-hippiegreen"> supercharged </span>

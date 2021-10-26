@@ -42,7 +42,6 @@ export default function About() {
               {' '}
               Mozstro
             </a>
-            {' '}
             ?
           </h4>
           <div className="bg-sundance p-2 m-4 shadow-md">
@@ -73,7 +72,6 @@ export default function About() {
               {' '}
               Mozstro
             </a>
-            {' '}
             ?
           </h4>
           <div className="bg-sundance p-2 m-4 shadow-md">

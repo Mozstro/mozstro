@@ -1,4 +1,4 @@
-function Certifiation() {
+function Certification() {
   return (
     <section className="flex" />
   );

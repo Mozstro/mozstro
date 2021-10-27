@@ -8,7 +8,6 @@ export const WEBSITE_HOST_URL = 'https://mozstro.com';
 const Meta = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
   const router = useRouter();
   const meta: MetaProps = {
-    title: 'Mozstro - ',
     description: 'Supercharged cloud native solutions to complex business problems.',
     image: `${WEBSITE_HOST_URL}/images/site-preview.png`,
     type: 'website',

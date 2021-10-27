@@ -3,11 +3,11 @@ import { faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = function Component() {
   return (
-    <footer className="container rounded p-4 bg-ebonyclay mx-auto mb-4">
+    <footer className="container mt-4 rounded p-4 bg-ebonyclay mx-auto mb-4">
       <div className="flex flex-wrap md:flex-nowrap justify-around">
         <div className="mb-6 d:mb-0">
           <div className="flex mb-4 mt-6">
-            <img className="w-10 object-contain" src="mozstro_logo.png" alt="Mozstro Logo" />
+            <img className="w-10 object-contain" src="/mozstro_logo.png" alt="Mozstro Logo" />
             <p className="text-hippiegreen ml-4">Mozstro Limited. Registered in England with company number 13653603.</p>
           </div>
 

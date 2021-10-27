@@ -3,7 +3,7 @@ import { faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = function Component() {
   return (
-    <footer className="container p-4 bg-ebonyclay mx-auto mb-4">
+    <footer className="container rounded p-4 bg-ebonyclay mx-auto mb-4">
       <div className="flex flex-wrap md:flex-nowrap justify-around">
         <div className="mb-6 d:mb-0">
           <div className="flex mb-4 mt-6">

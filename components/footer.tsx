@@ -66,7 +66,7 @@ const Footer = function Component() {
             . Hosted on Vercel.
             Find my source
             <a
-              className="text-ebonyclay hover:text-hippiegreen"
+              className="text-sundance hover:text-hippiegreen"
               href="https://github.com/elliotrpmorris/mozstro"
             >
               {' '}

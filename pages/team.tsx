@@ -36,7 +36,7 @@ export default function Team() {
         </h3>
       </div>
       <div
-        className="flex flex-wrap mt-8 bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-full lg:w-1/2"
+        className="flex rounded flex-wrap mt-8 bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-full lg:w-1/2"
       >
         <h5 className="text-ebonyclay text-3xl">Help human advancement with cloud.</h5>
         <p className="font-serif   text-palesky text-l">

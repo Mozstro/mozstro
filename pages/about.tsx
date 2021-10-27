@@ -44,7 +44,7 @@ export default function About() {
             </a>
             ?
           </h4>
-          <div className="bg-sundance p-2 m-4 shadow-md">
+          <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               Mozstro is a security focused cloud consultancy based in the UK. We are remote first
               and happy to work with clients globally.
@@ -74,7 +74,7 @@ export default function About() {
             </a>
             ?
           </h4>
-          <div className="bg-sundance p-2 m-4 shadow-md">
+          <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               We have several years in the industry of delivering:
             </p>
@@ -97,7 +97,7 @@ export default function About() {
             How
             to get started?
           </h4>
-          <div className="bg-sundance p-2 m-4 shadow-md">
+          <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               If you would like to work with us
               email:

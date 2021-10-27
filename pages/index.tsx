@@ -14,6 +14,7 @@ import { ProjectCard } from '../components/projectCard';
 import { ProjectType } from '../types/project';
 import { StatCard } from '../components/statCard';
 import ContactForm from '../components/contactForm';
+import Certification from '../components/certification';
 
 type HomeProps = {
   post: PostType;
@@ -64,7 +65,7 @@ export default function Home({
             </a>
           </h3>
         </div>
-        <div className="flex bg-rollingstone rounded inline-flex flex-wrap justify-center my-9">
+        <div className="flex bg-rollingstone py-6 rounded inline-flex flex-wrap justify-center my-9">
           <ServiceCard
             title="Security first cloud native solutions."
             questionOne="Want a faster time to market?"
@@ -187,24 +188,9 @@ export default function Home({
               <h3 className="text-center text-ebonyclay mb-3 mt-16 lg:mt-24 text-5xl">
                 Get in touch!
               </h3>
-              <p className="text-center text-lg">
-                By email:
-                <a
-                  className="text-sundance hover:text-ebonyclay"
-                  href="mailto:sales@mozstro.com"
-                >
-                 &nbsp; sales@mozstro.com
-                </a>
-                &nbsp;or pick up the phone on:
-                <a
-                  className="text-sundance hover:text-ebonyclay"
-                  href="tel:07949155434"
-                >
-                  &nbsp;07949155434
-                </a>
-              </p>
               <ContactForm />
             </div>
+            <Certification />
           </div>
         </div>
       </section>

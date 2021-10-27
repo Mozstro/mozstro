@@ -11,15 +11,16 @@ type LayoutProps = {
 export const Layout: FunctionComponent<LayoutProps> = (
   {
     children,
-    customMeta
-  }) =>
+    customMeta,
+  },
+) => (
   <div>
-    <Meta customMeta={customMeta}/>
+    <Meta customMeta={customMeta} />
     <main className="min-h-screen container mx-auto mt-4 px-6">
       <div>{children}</div>
+      <Footer />
     </main>
-    <Footer/>
   </div>
-;
+);
 
 export default Layout;

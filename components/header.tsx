@@ -7,18 +7,20 @@ type HeaderProps = {
 
 export const Header: FunctionComponent<HeaderProps> = (
   {
-    children
-  }) =>
+    children,
+  },
+) => (
   <header>
-    <div className="bg-palesky p-6">
+    <div className="bg-palesky rounded p-6">
       <div className="flex justify-center">
-        <img className="h-16 sm:h-24 rounded-full"
-             src="/mozstro_logo.png"
-             alt="Mozstro Logo"/>
+        <img
+          className="h-16 sm:h-24 rounded-full"
+          src="/mozstro_logo.png"
+          alt="Mozstro Logo"
+        />
       </div>
       {children}
     </div>
-    <Nav/>
+    <Nav />
   </header>
-;
-
+);

@@ -39,7 +39,6 @@ const ProjectPage = ({
   frontMatter,
 }: ProjectPageProps): JSX.Element => {
   const customMeta: MetaProps = {
-    title: `${frontMatter.title} - Mozstro Consulting`,
     description: frontMatter.description,
     image: `${frontMatter.image}`,
     date: frontMatter.date,

@@ -61,8 +61,9 @@ export default function Home({
               rel="noopener noreferrer"
             >
               {' '}
-              Mozstro.
+              Mozstro
             </a>
+            .
           </h3>
         </div>
         <div className="flex bg-rollingstone py-6 rounded inline-flex flex-wrap justify-center my-9">
@@ -138,7 +139,7 @@ export default function Home({
         <div className="flex flex-wrap px-5 mx-auto">
           <div className="w-full xl:w-1/2">
             <h3
-              className="text-ebonyclay order-1 text-4xl bg-geebung inline-block mb-6 lg:my-1
+              className="text-ebonyclay order-1 text-4xl bg-geebung inline-block mb-6
                 p-6 text-ebonyclay transform shadowd -rotate-2"
             >
               What we are talking about right now.
@@ -157,11 +158,11 @@ export default function Home({
             <div className="flex flex-col md:pl-12 mt-8 lg:mt-12 justify-between">
               <h3
                 className="sm:text-3xl text-2xl fontedium bg-equator
-                             mb-2 text-ebonyclay inline-block p-2"
+                           text-ebonyclay inline-block p-2"
               >
                 Experience working with:
               </h3>
-              <ul className="pl-8 flex flex-wrap list-disc">
+              <ul className="pl-12 border-2 border-bg-ebonyclay p-6 flex flex-wrap list-disc">
                 <li className="font-serif text-rollingstone font-bold mb-1 w-full md:w-1/2">
                   Industry leading retailers.
                 </li>

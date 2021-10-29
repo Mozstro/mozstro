@@ -82,7 +82,7 @@ export default function Home({
         </div>
         <div className="flex justify-center">
           <h3
-            className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
+            className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mb-4
                      text-ebonyclay transform -rotate-2 shadow-lg"
           >
             The state of cloud security.
@@ -123,7 +123,7 @@ export default function Home({
           <CallToAction link="mailto:sales@mozstro.com" text="Find out more" />
         </div>
       </section>
-      <section className="mt-12">
+      <section className="mt-10">
         <h3
           className="text-ebonyclay order-1 text-2xl text-4xl bg-geebung inline-block
                 p-6 text-ebonyclay shadowd transform -rotate-2"
@@ -134,7 +134,7 @@ export default function Home({
           <ProjectCard key={project.slug} project={project} />
         </div>
       </section>
-      <section className="mt-16 mb-8">
+      <section className="mt-10 mb-8">
         <div className="flex flex-wrap px-5 mx-auto">
           <div className="w-full xl:w-1/2">
             <h3
@@ -149,12 +149,12 @@ export default function Home({
             <div className="flex justify-end ">
               <h3
                 className="lg:text-right text-ebonyclay order-3 lg:order-2 text-4xl bg-geebung
-                   inline-block my-6 lg:my-1 p-6 shadowd text-ebonyclay transform rotate-2"
+                   inline-block mt-1 p-6 shadowd text-ebonyclay transform rotate-2"
               >
                 Who have we worked with?
               </h3>
             </div>
-            <div className="flex flex-col md:pl-12 mt-12 justify-between">
+            <div className="flex flex-col md:pl-12 mt-8 lg:mt-12 justify-between">
               <h3
                 className="sm:text-3xl text-2xl fontedium bg-equator
                              mb-2 text-ebonyclay inline-block p-2"

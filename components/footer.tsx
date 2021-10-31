@@ -16,9 +16,9 @@ const Footer = function Component() {
               Email:
               <a
                 className="text-sundance hover:text-hippiegreen"
-                href="mailto:sales@mozstro.com"
+                href="mailto:elliot@mozstro.com"
               >
-                 &nbsp; sales@mozstro.com
+                 &nbsp; elliot@mozstro.com
               </a>
             </li>
 

@@ -121,7 +121,7 @@ export default function Home({
             cloud
             <span className="text-hippiegreen"> security.</span>
           </h6>
-          <CallToAction link="mailto:sales@mozstro.com" text="Find out more" />
+          <CallToAction link="mailto:elliot@mozstro.com" text="Find out more" />
         </div>
       </section>
       <section className="mt-10">

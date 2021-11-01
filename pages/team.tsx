@@ -32,37 +32,35 @@ export default function Team() {
           className="text-ebonyclay text-4xl bg-geebung inline-block
                      p-6 mt-6 lg:mt-2 mb-4 shadow-lg text-ebonyclay  transform -rotate-2"
         >
-          Join our journey.
+          Get invovled.
         </h3>
       </div>
-      <div
-        className="flex rounded flex-wrap mt-8 bg-sundance inline-block p-6 text-ebonyclay transform -rotate-2 w-full lg:w-1/2"
+      <div className="bg-hippiegreen -rotate-2 transform hover:scale-105 rounded shadow border-ebonyclay
+                      p-6 md:w-11/12 xl:w-1/2 m-4 z-10"
       >
-        <h5 className="text-ebonyclay text-3xl">Help human advancement with cloud.</h5>
-        <p className="font-serif   text-palesky text-l">
+        <h3 className="text-2xl lg:text-4xl bg-sundance p-4 text-ebonyclay font-bold mt-0">
+          We are always on the lookout for talent.
+        </h3>
+        <p className="font-serif text-sundance bg-ebonyclay shadow p-4 lg:p-6 text-md lg:text-xl">
           We want the world to perform better, by empowering everybody with the supercharged
           cloud.
           The opportunities for technology with business is endless.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center justify-around my-9">
+      <div className="flex justify-center mb-8">
+        <h3
+          className="text-ebonyclay text-4xl bg-geebung inline-block
+                     p-6 mt-6 lg:mt-2 mb-4 shadow-lg text-ebonyclay transform -rotate-2"
+        >
+          Our team.
+        </h3>
+      </div>
+      <div className="flex flex-wrap justify-center justify-around">
         <TeamMember
           name="Elliot Morris"
           role="CEO / Managing consultant"
           email="elliot@mozstro.com"
           image="elliot.png"
-        />
-        <TeamMember
-          name="Freelance consultants"
-          role="Utilizing talent in our network to help get you supercharged"
-          email="elliot@mozstro.com"
-          image="mozstro_logo_multi.png"
-        />
-        <TeamMember
-          name="You"
-          role="Want to find out more about roles?"
-          email="elliot@mozstro.com"
-          image="mozstro_logo.png"
         />
       </div>
     </Layout>

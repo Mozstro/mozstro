@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
 import { GetStaticProps } from 'next';
-import { faCloud, faServer, faFireAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faPoll, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons';
 import { ServiceCard } from '../components/serviceCard';
 import { PostCard } from '../components/postCard';
 import { CallToAction } from '../components/callToAction';
@@ -12,7 +12,7 @@ import { PostType } from '../types/post';
 import { getLatestProject } from './api/projects';
 import { ProjectCard } from '../components/projectCard';
 import { ProjectType } from '../types/project';
-import { StatCard } from '../components/statCard';
+import { ChooseCard } from '../components/chooseCard';
 import ContactForm from '../components/contactForm';
 import Certification from '../components/certification';
 
@@ -32,7 +32,7 @@ export default function Home({
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-          <span>At</span>
+          
           <a
             className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
             href="/"
@@ -40,11 +40,12 @@ export default function Home({
           >
             &nbsp;Mozstro&nbsp;
           </a>
-          <span>we do cloud consulting.</span>
         </h1>
         <h2 className="text-center text-ebonyclay text-xl lg:text-2xl">
-          <span className="text-sundance">Securely supercharged </span>
-          cloud native solutions to complex business problems.
+          <span className="text-sundance">Reliable Cloud Consulting Services.
+          </span>
+          {' '}
+          Your Secure Cloud Journey Starts Here.
         </h2>
       </Header>
       <section>
@@ -52,9 +53,8 @@ export default function Home({
           <h3
             className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
                        text-ebonyclay transform -rotate-2 shadow-lg"
-          >
-            What
-            we offer at
+          >           
+            Robust Cloud Solutions By
             <a
               className="font-bold italic text-palesky hover:text-ebonyclay"
               href="/"
@@ -66,19 +66,17 @@ export default function Home({
             .
           </h3>
         </div>
-        <div className="flex bg-rollingstone py-6 rounded inline-flex flex-wrap justify-center my-9">
+        <div className="flex bg-rollingstone py-6 p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center my-9">
           <ServiceCard
-            title="Security first cloud native solutions."
-            questionOne="Want a faster time to market?"
-            questionTwo="Need to be more reactive to customer demands?"
-            paragraph="We provide high quality cloud native solutions
-            for complex business problems."
+            title="Migration. Security. Infrastructure Management"
+            paragraph="As leading cloud consultants operating from the UK, we start by understanding your technology, goals, 
+            and challenges before providing solutions to help you on your cloud journey. 
+            Whether you need cloud migration, security, or cloud infrastructure management consulting, 
+            we’ll guide you through from start to finish."
           />
           <ServiceCard
-            title="Embedded engineering consulting."
-            questionOne="Already have internal talent?"
-            questionTwo="Does your talent just need some guidance?"
-            paragraph="We can embed our high quality consultants to get that project over the line."
+            title="Cloud Consulting & Training."
+            paragraph="Our team of cloud experts will work as an extension of your enterprise, providing best-in-class cloud strategies to bring your projects to completion. With our cloud solutions, you can increase your team’s productivity through onboarding and training. We’re here to help you unlock your IT cloud potentials."
           />
         </div>
         <div className="flex justify-center">
@@ -86,31 +84,24 @@ export default function Home({
             className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mb-4
                      text-ebonyclay transform -rotate-2 shadow-lg"
           >
-            The state of cloud security.
+           Why choose us?
           </h3>
         </div>
         <div className="grid bg-hippiegreen rounded p-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-9 gap-12">
-          <StatCard
-            stat="66%"
-            text="of IT professionals say security is their greatest concern when asked
-                    about adopting cloud."
+          <ChooseCard
+            title="Experience"
+            text="Mozstro professional cloud consultants have the experience to help you scale and secure your cloud technologies."
             icon={faCloud}
-            credit="https://www.forbes.com/sites/louiscolumbus/2018/01/07/83-of-enterprise-
-                    workloads-will-be-in-the-cloud-by-2020/#1435d8166261"
           />
-          <StatCard
-            stat="66%"
-            text="of attacks are caused by accidental exposure
-                    through misconfigurations."
-            icon={faServer}
-            credit="https://secure2.sophos.com/en-us/content/state-of-cloud-security.aspx"
+          <ChooseCard
+            title="Result-driven"
+            text="We have a track record of success implementing cloud strategies and driving cloud adoption ROI."
+            icon={faPoll}
           />
-          <StatCard
-            stat="70%"
-            text="of organizations hosting data or workloads in the public cloud
-                          experienced a security incident in the last year."
-            icon={faFireAlt}
-            credit="https://secure2.sophos.com/en-us/content/state-of-cloud-security.aspx"
+          <ChooseCard
+            title="Cost-effective"
+            text="We deliver cost-effective cloud consulting solutions for businesses and organisations around the world."
+            icon={faMoneyBillAlt}
           />
         </div>
         <div className="bg-equator rounded p-6">

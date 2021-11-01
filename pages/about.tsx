@@ -29,63 +29,49 @@ export default function About() {
       </Header>
       <section className="grid grid-cols-1 mt-8 lg:mt-0 lg:grid-cols-2">
         <article>
-          <h4
+          <h3
             className="text-ebonyclay shadow-md text-3xl bg-geebung inline-block p-6
                      text-ebonyclay my-1 transform -rotate-2"
           >
-            Who
-            is
-            <a
-              className="font-bold italic text-palesky hover:text-ebonyclay"
-              href="/"
-            >
-              {' '}
-              Mozstro
-            </a>
-            ?
-          </h4>
+            Who are we?
+          </h3>
           <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              Mozstro is a security focused cloud consultancy based in the UK. We are remote first
-              and happy to work with clients globally.
+            Mozstro is a global cloud consulting company operating from the UK. 
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              We coined the term Mozstro from a combination of the CEO's nickname
-              <span className="italic font-bold"> Moz </span>
-              {' '}
-              combined with
-              <span className="italic font-bold"> maestro </span>
-              as this how we aim to be perceived in the industry.
+            We are a cloud security and infrastructure-focused company that delivers high-value consultancy services to clients through reliable and cost-effective solutions.  
+            </p>
+            <p className="text-rolling-stone px-4 my-4 text-xl">
+            As one of the best cloud consulting agencies, we are trusted by dozens of small businesses and large corporations whom we enable to overcome critical cloud challenges.
+            </p>
+            <p className="text-rolling-stone px-4 my-4 text-xl">
+            With our cutting-edge service approach, we can become a seamless extension of your team, providing dynamic, resilient, and scalable solutions that make a difference in your business.
+            </p>
+            <p className="text-rolling-stone px-4 my-4 text-xl">
+            We gauge our success with results delivered while ensuring our clients are satisfied and derive value from using our services.
             </p>
           </div>
         </article>
         <article>
-          <h4
+          <h3
             className="text-ebonyclay shadow-md text-3xl bg-geebung
                      inline-block p-6 text-ebonyclay my-1 transform -rotate-2"
           >
-            Why
-            <a
-              className="font-bold italic text-palesky hover:text-ebonyclay"
-              href="/"
-            >
-              {' '}
-              Mozstro
-            </a>
-            ?
-          </h4>
+            Our mission 
+          </h3>
           <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              We have several years in the industry of delivering:
+            We aim to deliver powerful, secure cloud consulting solutions to our clients.
             </p>
-            <ul className="list-decimal text-rolling-stone text-lg pl-12">
-              <li>Highly secured.</li>
-              <li>Highly scalable.</li>
-              <li>Cost efficient.</li>
-              <li>Lighting performant.</li>
-            </ul>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              cloud solutions to complex business problems.
+             We’re here to support you in every step of your cloud journey, making sure you understand the complexities of cloud technology.
+             </p>
+             <p className="text-rolling-stone px-4 my-4 text-xl"> 
+            With Mozstro cloud consulting team, you're in capable hands. 
+            </p>
+            <p className="text-rolling-stone px-4 my-4 text-xl">
+            You’ll have access to the expertise, knowledge, and professionalism of a technical team with the experience you need to innovate, secure your cloud systems, improve performance and overcome complex business challenges. Get in touch with us today.
             </p>
           </div>
         </article>

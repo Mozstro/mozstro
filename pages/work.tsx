@@ -6,6 +6,7 @@ import { ProjectCard } from '../components/projectCard';
 import { Header } from '../components/header';
 import { ProjectType } from '../types/project';
 import { getAllProjects } from './api/projects';
+import { SectionText } from '../components/sectionText';
 
 type WorkProps = {
   projects: ProjectType[];
@@ -32,22 +33,10 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
         <span className="text-ebonyclay"> supercharged?</span>
       </h2>
     </Header>
-    <h3
-      className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-0 mb-4
-                   my-1 transform -rotate-2 shadow-md"
-    >
-      Previous work before
-      <a
-        className="font-bold italic text-palesky hover:text-ebonyclay"
-        href="/"
-        rel="noopener noreferrer"
-      >
-        {' '}
-        Mozstro
-      </a>
-      .
-    </h3>
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 mt-12">
+    <div className="flex my-4 justify-center">
+      <SectionText text="Previous work." />
+    </div>
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
       {projects.map((project) => (
         <ProjectCard key={project.slug} project={project} />
       ))}

@@ -28,7 +28,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
         </h5>
       </div>
       <hr className="px-12  border-ebonyclay border-2" />
-      <p className="text-palesky px-4 mt-2 text-xl">
+      <p className="text-palesky font-serif px-4 mt-2 text-md lg:text-xl">
         {project.description}
       </p>
       <p className="m-4 text-indigo-500 bg-ebonyclay p-3 text-sundance text-3xl hover:bg-sundance

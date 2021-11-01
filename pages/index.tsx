@@ -14,7 +14,7 @@ import { ProjectCard } from '../components/projectCard';
 import { ProjectType } from '../types/project';
 import { ChooseCard } from '../components/chooseCard';
 import ContactForm from '../components/contactForm';
-import Certification from '../components/certification';
+import { SectionText } from '../components/sectionText';
 
 type HomeProps = {
   post: PostType;
@@ -32,7 +32,7 @@ export default function Home({
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-          
+
           <a
             className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
             href="/"
@@ -41,7 +41,7 @@ export default function Home({
             &nbsp;Mozstro&nbsp;
           </a>
         </h1>
-        <h2 className="text-center text-ebonyclay text-xl lg:text-2xl">
+        <h2 className="text-center text-ebonyclay text-2xl">
           <span className="text-sundance">Reliable Cloud Consulting Services.
           </span>
           {' '}
@@ -49,24 +49,10 @@ export default function Home({
         </h2>
       </Header>
       <section>
-        <div className="flex justify-center">
-          <h3
-            className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mt-6 lg:mt-2 mb-4
-                       text-ebonyclay transform -rotate-2 shadow-lg"
-          >           
-            Robust Cloud Solutions By
-            <a
-              className="font-bold italic text-palesky hover:text-ebonyclay"
-              href="/"
-              rel="noopener noreferrer"
-            >
-              {' '}
-              Mozstro
-            </a>
-            .
-          </h3>
+        <div className="flex my-4 justify-center">
+          <SectionText text="Robust cloud solutions by Mozstro." />
         </div>
-        <div className="flex bg-rollingstone py-6 p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center my-9">
+        <div className="flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
           <ServiceCard
             title="Migration. Security. Infrastructure Management"
             paragraph="As leading cloud consultants operating from the UK, we start by understanding your technology, goals, 
@@ -79,15 +65,12 @@ export default function Home({
             paragraph="Our team of cloud experts will work as an extension of your enterprise, providing best-in-class cloud strategies to bring your projects to completion. With our cloud solutions, you can increase your team’s productivity through onboarding and training. We’re here to help you unlock your IT cloud potentials."
           />
         </div>
-        <div className="flex justify-center">
-          <h3
-            className="text-ebonyclay text-4xl bg-geebung inline-block p-6 mb-4
-                     text-ebonyclay transform -rotate-2 shadow-lg"
-          >
-           Why choose us?
-          </h3>
+      </section>
+      <section>
+        <div className="flex my-4 justify-center">
+          <SectionText text="Why choose us?" />
         </div>
-        <div className="grid bg-hippiegreen rounded p-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-9 gap-12">
+        <div className="grid bg-hippiegreen rounded p-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
           <ChooseCard
             title="Experience"
             text="Mozstro professional cloud consultants have the experience to help you scale and secure your cloud technologies."
@@ -104,85 +87,48 @@ export default function Home({
             icon={faMoneyBillAlt}
           />
         </div>
-        <div className="bg-equator rounded p-6">
-          <h6 className="mb-2 text-3xl text-ebonyclay">
-            Want to take advantage of cloud? Your business needs
-            <span className="text-hippiegreen"> supercharged </span>
-            {' '}
-            cloud
-            <span className="text-hippiegreen"> security.</span>
-          </h6>
+      </section>
+      <section>
+        <div className="flex my-4 justify-center">
+          <SectionText text="Contact us." />
+        </div>
+        <div className="bg-rollingstone rounded p-6">
+          <div className="bg-ebonyclay p-6">
+            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
+              Have a cloud-related project in mind?
+            </p>
+            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
+              Mozstro cloud consulting team can help.
+            </p>
+            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
+              We’ll assist you in optimizing your cloud security so that you can take advantage of the immense potentials of your cloud infrastructure.
+            </p>
+            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
+              Fill out and submit the form below or contact us today via phone or email and we’ll be happy to help.
+            </p>
+          </div>
           <CallToAction link="mailto:elliot@mozstro.com" text="Find out more" />
         </div>
       </section>
-      <section className="mt-10">
-        <h3
-          className="text-ebonyclay order-1 text-2xl text-4xl bg-geebung inline-block
-                p-6 text-ebonyclay shadowd transform -rotate-2"
-        >
-          Our latest work.
-        </h3>
-        <div className="grid grid-cols-1 mt-6">
+      <section>
+        <div className="flex my-4 justify-center">
+          <SectionText text="Out latest work." />
+        </div>
+        <div className="grid grid-cols-1">
           <ProjectCard key={project.slug} project={project} />
         </div>
       </section>
       <section className="mt-10 mb-8">
         <div className="flex flex-wrap px-5 mx-auto">
           <div className="w-full xl:w-1/2">
-            <h3
-              className="text-ebonyclay order-1 text-4xl bg-geebung inline-block mb-6
-                p-6 text-ebonyclay transform shadowd -rotate-2"
-            >
-              What we are talking about right now.
-            </h3>
+            <SectionText text="What we are talking about right now." />
             <PostCard post={post} />
           </div>
-          <div className="flex flex-col justify-evenly w-full xl:w-1/2">
-            <div className="flex justify-end ">
-              <h3
-                className="lg:text-right text-ebonyclay order-3 lg:order-2 text-4xl bg-geebung
-                   inline-block mt-1 p-6 shadowd text-ebonyclay transform rotate-2"
-              >
-                Who have we worked with?
-              </h3>
+          <div className="flex xl:pl-8 flex-col justify-evenly w-full xl:mt-2 xl:w-1/2">
+            <div className="flex mb-4 justify-end ">
+            <SectionText text=" Get in touch!" />
             </div>
-            <div className="flex flex-col md:pl-12 mt-8 lg:mt-12 justify-between">
-              <h3
-                className="sm:text-3xl text-2xl fontedium bg-equator
-                           text-ebonyclay inline-block p-2"
-              >
-                Experience working with:
-              </h3>
-              <ul className="pl-12 border-2 border-bg-ebonyclay p-6 flex flex-wrap list-disc">
-                <li className="font-serif text-rollingstone font-bold mb-1 w-full md:w-1/2">
-                  Industry leading retailers.
-                </li>
-                <li className="font-serif text-rollingstone font-bold mb-1 w-full md:w-1/2">
-                  Uk's Largest public sector organization.
-                </li>
-                <li className="font-serif text-rollingstone font-bold mb-1 w-full md:w-1/2">
-                  Titan supermarkets.
-                </li>
-                <li className="font-serif text-rollingstone font-bold mb-1 w-full md:w-1/2">
-                  Powerhouse sports teams.
-                </li>
-              </ul>
-              <p className="text-center mt-4 text-lg">
-                Further details on some of these projects can be found
-                <a
-                  className="text-sundance hover:text-ebonyclay cursor-pointer"
-                  href="/work"
-                >
-                 &nbsp;here
-                </a>
-                !
-              </p>
-              <h3 className="text-center text-ebonyclay mb-3 mt-16 lg:mt-24 text-5xl">
-                Get in touch!
-              </h3>
-              <ContactForm />
-            </div>
-            <Certification />
+            <ContactForm />
           </div>
         </div>
       </section>

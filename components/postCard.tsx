@@ -3,6 +3,7 @@ import { format, parseISO } from 'date-fns';
 
 import Link from 'next/link';
 import { PostType } from '../types/post';
+import { CallToAction } from './callToAction';
 
 type PostProps = {
   post: PostType;
@@ -27,14 +28,7 @@ export const PostCard: FunctionComponent<PostProps> = (
       {' '}
       {post.topic}
     </h4>
-    <p className="font-serif mb-3">{post.description}</p>
-    <p className="m-4 text-indigo-500 bg-ebonyclay p-3 text-sundance text-3xl hover:bg-sundance
-       hover:text-ebonyclay hover:shadow rounded-xl inline-flex items-center
-       transform hover:scale-105 cursor-pointer mt-4 transform -rotate-1"
-    >
-      <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
-        Read More
-      </Link>
-    </p>
+    <p className="font-serif text-md lg:text-xl mb-3">{post.description}</p>
+    <CallToAction text="Read more" link={`/posts/${post.slug}`}  />
   </article>
 );

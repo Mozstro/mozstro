@@ -24,7 +24,7 @@ export default function Team() {
           <span> family.</span>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
-          Cloud Solutions Experts.
+          Cloud solution experts.
         </h2>
       </Header>
       <div className="flex justify-center my-4">

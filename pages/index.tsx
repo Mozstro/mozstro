@@ -42,10 +42,10 @@ export default function Home({
           </a>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
-          <span className="text-sundance">Reliable Cloud Consulting Services.
+          <span className="text-sundance">Reliable cloud consulting services.
           </span>
           {' '}
-          Your Secure Cloud Journey Starts Here.
+          Your secure cloud journey starts here.
         </h2>
       </Header>
       <section>

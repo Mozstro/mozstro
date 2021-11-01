@@ -67,7 +67,7 @@ const Footer = function Component() {
             Find my source
             <a
               className="text-sundance hover:text-hippiegreen"
-              href="https://github.com/elliotrpmorris/mozstro"
+              href="https://github.com/mozstro/mozstro"
             >
               {' '}
               here!

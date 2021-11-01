@@ -55,15 +55,29 @@ export default function Home({
         <div className="flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
           <ServiceCard
             title="Migration. Security. Infrastructure Management"
-            paragraph="As leading cloud consultants operating from the UK, we start by understanding your technology, goals, 
-            and challenges before providing solutions to help you on your cloud journey. 
-            Whether you need cloud migration, security, or cloud infrastructure management consulting, 
-            we’ll guide you through from start to finish."
-          />
+          >
+            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
+              As leading cloud consultants operating from the UK, we start by understanding your technology, goals,
+              and challenges before providing solutions to help you on your cloud journey.
+            </p>
+            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
+              Whether you need cloud migration, security, or cloud infrastructure management consulting,
+              we’ll guide you through from start to finish.
+            </p>
+          </ServiceCard>
           <ServiceCard
             title="Cloud Consulting & Training."
-            paragraph="Our team of cloud experts will work as an extension of your enterprise, providing best-in-class cloud strategies to bring your projects to completion. With our cloud solutions, you can increase your team’s productivity through onboarding and training. We’re here to help you unlock your IT cloud potentials."
-          />
+          >
+            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
+              Our team of cloud experts will work as an extension of your enterprise, providing best-in-class cloud strategies to bring your projects to completion.
+            </p>
+            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
+              With our cloud solutions, you can increase your team’s productivity through onboarding and training.
+            </p>
+            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
+              We’re here to help you unlock your IT cloud potentials.
+            </p>
+          </ServiceCard>
         </div>
       </section>
       <section>
@@ -126,7 +140,7 @@ export default function Home({
           </div>
           <div className="flex xl:pl-8 flex-col justify-evenly w-full xl:mt-2 xl:w-1/2">
             <div className="flex mb-4 justify-end ">
-            <SectionText text=" Get in touch!" />
+              <SectionText text=" Get in touch!" />
             </div>
             <ContactForm />
           </div>

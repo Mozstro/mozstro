@@ -79,7 +79,7 @@ export default function About() {
             <h5 className="text-rolling-stone px-4 my-4 text-2xl">
               We would love to work with you!
             </h5>
-            <ul className="text-rolling-stone px-4  text-xl">
+            <ul className="text-rolling-stone px-4 text-md lg:text-xl">
               <li>
                 Email us on:
                 <a
@@ -87,12 +87,12 @@ export default function About() {
                   href="mailto:sales@mozstro.com"
                 >
                   {' '}
-                  sales @mozstro.com
+                  sales@mozstro.com
                 </a>
               </li>
               <li> Phone us on:
                 <a
-                  className="text-palesky hover:text-ebonyclay"
+                  className="text-palesky text-md lg:text-xl hover:text-ebonyclay"
                   href="tel:07949155434"
                 >
                   {' '}
@@ -100,7 +100,7 @@ export default function About() {
                 </a>
               </li>
             </ul>
-            <p className="text-rolling-stone px-4 mt-4 text-xl">Submit the form below and we will be in touch
+            <p className="text-rolling-stone px-4 mt-4 text-md lg:text-xl">Submit the form below and we will be in touch
             <FontAwesomeIcon
               className="text-rolling-stone ml-1 inline"
               width="24"

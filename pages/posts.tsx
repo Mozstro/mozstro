@@ -25,9 +25,9 @@ export const Posts = ({ posts }: PostProps): JSX.Element => (
           href="/"
           rel="noopener noreferrer"
         >
-          Mozstro
+          Mozstro's
         </a>
-        <span> spotlight.</span>
+        <span> posts.</span>
       </h1>
       <h2 className="text-center text-ebonyclay text-2xl">
         Browse our blog posts.

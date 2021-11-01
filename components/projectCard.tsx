@@ -13,13 +13,13 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
     <div className="bg-white rounded shadow border-ebonyclay p-6 w-full z-10">
       <div className="bg-sundance">
         <h4 className="text-3xl  pt-4 px-4 text-ebonyclay font-medium mb-2 mt-0">
-          <span className="bg-palesky text-sundance px-2"> Client:</span>
+          <span className="bg-palesky rounded text-sundance px-2"> Client:</span>
           {' '}
           {project.sector}
           .
         </h4>
         <h5 className="text-lg px-4 pb-1 text-rollingstone mt-0">
-          <span className="bg-rollingstone text-equator px-0.5"> Project name:&nbsp;</span>
+          <span className="bg-rollingstone rounded text-equator px-1"> Project name:&nbsp;</span>
           <span className="font-medium text-ebonyclay">
             {' '}
             {project.title}

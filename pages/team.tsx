@@ -13,7 +13,7 @@ export default function Team() {
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
-          <span>Our</span>
+          <span>Our </span>
           <a
             className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
             href="/"
@@ -21,7 +21,7 @@ export default function Team() {
           >
             Mozstro
           </a>
-          <span> Family.</span>
+          <span> family.</span>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
           Cloud Solutions Experts.
@@ -39,7 +39,7 @@ export default function Team() {
         />
       </div>
       <div className="bg-hippiegreen -rotate-2 transform hover:scale-105 rounded shadow border-ebonyclay
-                      p-6 md:w-11/12 xl:w-1/2 m-4 my-8 z-10"
+                      p-6 md:w-11/12 xl:w-1/2 my-10 z-10"
       >
         <h3 className="text-2xl lg:text-4xl bg-sundance p-4 text-ebonyclay font-bold mt-0">
           We are always on the lookout for talent.

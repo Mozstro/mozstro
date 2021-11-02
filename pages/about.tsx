@@ -17,8 +17,7 @@ export default function About() {
           About us.
         </h1>
         <h2 className="text-center text-sundance text-2xl">
-          How can your business be
-          <span className="text-ebonyclay"> supercharged?</span>
+          We Make Cloud Work For You.
         </h2>
       </Header>
       <section className="grid grid-cols-1 mt-8 lg:mt-0 lg:grid-cols-2">

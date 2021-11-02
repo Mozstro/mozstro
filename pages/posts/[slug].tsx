@@ -18,6 +18,7 @@ import { PostType } from '../../types/post';
 import { postFilePaths, POSTS_PATH } from '../../lib/mdx';
 import Layout from '../../components/layout';
 import { Header } from '../../components/header';
+import { NavButton } from '../../components/navButton';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -65,16 +66,8 @@ const PostPage = ({
           cloud native solutions to complex business problems.
         </h2>
       </Header>
-      <div className="mt-8 lg:mt-0">
-        <a
-          className="text-4xl lg:text-3xl transform hover:scale-105 cursor-pointer font-bold
-                     text-ebonyclay hover:shadow text-center hover:bg-palesky hover:text-sundance
-                     transform hover:scale-110 border-opacity-50 border-2 border-geebung px-2"
-          href="/posts"
-          rel="noopener noreferrer"
-        >
-          ← Back
-        </a>
+      <div className="my-8 md:mb-0 md:ml-12 md:mt-16">
+        <NavButton text="← Back" link="/work" />
       </div>
       <article>
         <div>

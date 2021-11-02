@@ -19,7 +19,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
     />
     <Header>
       <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-        Work page.
+        Work.
       </h1>
       <h2 className="text-center text-sundance text-2xl">
         Helping You Take Advantage Of Cloud.

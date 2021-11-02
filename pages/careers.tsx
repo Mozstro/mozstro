@@ -13,10 +13,10 @@ export default function Careers() {
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
-          Careers
+          Careers.
         </h1>
-        <h2 className="text-center text-ebonyclay text-2xl">
-          Reimagine Your Career With Mozstro
+        <h2 className="text-center text-sundance text-2xl">
+          Reimagine Your Career With Mozstro.
         </h2>
       </Header>
       <div className="flex justify-center my-4">

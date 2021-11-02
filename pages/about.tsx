@@ -4,9 +4,6 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import { Header } from '../components/header';
 import ContactForm from '../components/contactForm';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { SectionText } from '../components/sectionText';
 
 export default function About() {
@@ -100,13 +97,8 @@ export default function About() {
                 </a>
               </li>
             </ul>
-            <p className="text-rolling-stone px-4 mt-4 text-md lg:text-xl">Submit the form below and we will be in touch
-            <FontAwesomeIcon
-              className="text-rolling-stone ml-1 inline"
-              width="24"
-              height="24"
-              icon={faArrowDown}
-            />
+            <p className="text-rolling-stone px-4 mt-4 text-md lg:text-xl">
+              Submit the form below and we will be in touch.
             </p>
             <ContactForm />
           </div>

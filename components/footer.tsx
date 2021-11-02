@@ -11,7 +11,7 @@ const Footer = function Component() {
             <p className="text-hippiegreen ml-4">Mozstro Limited. Registered in England with company number 13653603.</p>
           </div>
 
-          <ul className="text-center flex-wrap md:flex-nowrap flex justify-between text-lg">
+          <ul className="text-center flex-wrap lg:flex-nowrap flex justify-between text-lg">
             <li className="mr-2 text-hippiegreen">
               Email:
               <a

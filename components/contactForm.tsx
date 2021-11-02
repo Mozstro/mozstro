@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
   const [state, handleSubmit] = useForm('mayakpeg');
   if (state.succeeded) {
-    return <div className="text-sundance text-center mt-2 mb-4 text-xl">Thank you for your enquiry!</div>;
+    return <div className="text-ebonyclay font-bold bg-hippiegreen p-4 text-center mt-2 mb-4 text-2xl">Thank you for your enquiry!</div>;
   }
   return (
     <form className="rounded border-equator p-4 bg-sundance" onSubmit={handleSubmit}>
@@ -72,9 +72,9 @@ function ContactForm() {
           />
         </div>
         <button
-          className="m-4 bg-ebonyclay p-3 text-sundance lg:text-3xl hover:bg-sundance
-                     hover:text-ebonyclay hover:shadow rounded-xl inline-flex items-center
-                     transform hover:scale-105 cursor-pointer mt-4 transform -rotate-1 w-1/4 justify-center"
+          className="m-4 bg-ebonyclay p-2 text-sundance text-3xl hover:bg-sundance
+          hover:text-ebonyclay hover:shadow rounded-xl inline-flex items-center
+          transform hover:scale-105 cursor-pointer mt-4 transform -rotate-11 w-1/2 lg:w-1/4 justify-center"
           type="submit"
           disabled={state.submitting}
         >

@@ -27,7 +27,7 @@ export const ChooseCard: FunctionComponent<ChooseCardProps> = ({
             icon={icon}
           />
         </div>
-        <div className="bg-ebonyclay p-4">
+        <div className="bg-ebonyclay p-2 sm:p-4">
           <h3 className="text-lg lg:text-2xl text-hippiegreen font-bold">{title}</h3>
           <p className="font-serif text-md lg:text-xl text-sundance">
             {text}

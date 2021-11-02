@@ -104,7 +104,7 @@ export default function Home({
           <SectionText text="Contact us." />
         </div>
         <div className="bg-rollingstone rounded p-6">
-          <div className="bg-ebonyclay p-6">
+          <div className="bg-ebonyclay p-4 sm:p-6">
             <p className="font-serif py-1 text-md lg:text-xl text-sundance">
               Have a cloud-related project in mind?
             </p>

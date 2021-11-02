@@ -19,18 +19,10 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
     />
     <Header>
       <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-        <span>Work with </span>
-        <a
-          className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
-          href="/"
-          rel="noopener noreferrer"
-        >
-          Mozstro.
-        </a>
+        Work page.
       </h1>
       <h2 className="text-center text-sundance text-2xl">
-        How we've
-        <span className="text-ebonyclay"> supercharged?</span>
+        Helping You Take Advantage Of Cloud.
       </h2>
     </Header>
     <div className="flex my-4 justify-center">

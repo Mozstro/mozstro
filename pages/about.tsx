@@ -14,14 +14,7 @@ export default function About() {
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-          <span>About </span>
-          <a
-            className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
-            href="/"
-            rel="noopener noreferrer"
-          >
-            Mozstro.
-          </a>
+          About us.
         </h1>
         <h2 className="text-center text-sundance text-2xl">
           How can your business be
@@ -30,7 +23,7 @@ export default function About() {
       </Header>
       <section className="grid grid-cols-1 mt-8 lg:mt-0 lg:grid-cols-2">
         <article>
-          <SectionText text="Who are we?"/>
+          <SectionText text="Who we are?" />
           <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               Mozstro is a global cloud consulting company operating from the UK.
@@ -50,7 +43,7 @@ export default function About() {
           </div>
         </article>
         <article>
-        <SectionText text="Our mission."/>
+          <SectionText text="Our mission." />
           <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               We aim to deliver powerful, secure cloud consulting solutions to our clients.
@@ -71,7 +64,7 @@ export default function About() {
           </div>
         </article>
         <article>
-        <SectionText text="How to get started?"/>
+          <SectionText text="How to get started?" />
           <div className="bg-sundance rounded p-2 m-4 shadow-md">
             <h5 className="text-rolling-stone px-4 my-4 text-2xl">
               We would love to work with you!

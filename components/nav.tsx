@@ -14,10 +14,10 @@ const Nav = function Component() {
           <NavButton text="About" link="/about" />
           <NavButton text="Work" link="/work" />
           <NavButton text="Posts" link="/posts" />
-          <NavButton text="Team" link="/team" />
+          <NavButton text="Careers" link="/careers" />
         </nav>
       </section>
-      <div className="bg-hippiegreen rounded drop-shadow-xl w-100 h-96 -mt-96 mb-12 md:h-44 md:-mt-40" />
+      <div className="bg-transparent sm:bg-hippiegreen rounded drop-shadow-xl w-100 h-96 -mt-96 mb-12 md:h-44 md:-mt-44" />
     </div>
   );
 };

@@ -5,30 +5,22 @@ import Layout from '../components/layout';
 import { Header } from '../components/header';
 import { SectionText } from '../components/sectionText';
 
-export default function Team() {
+export default function Careers() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro - Team"
+        title="Mozstro - Careers"
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
-          <span>Our </span>
-          <a
-            className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
-            href="/"
-            rel="noopener noreferrer"
-          >
-            Mozstro
-          </a>
-          <span> family.</span>
+          Careers
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
-          Cloud solution experts.
+          Reimagine Your Career With Mozstro
         </h2>
       </Header>
       <div className="flex justify-center my-4">
-        <SectionText text="Our team."/>
+        <SectionText text="Our team." />
       </div>
       <div className="flex flex-wrap justify-center justify-around">
         <TeamMember
@@ -45,10 +37,10 @@ export default function Team() {
           We are always on the lookout for talent.
         </h3>
         <p className="font-serif text-sundance bg-ebonyclay shadow p-2 lg:p-6 text-md lg:text-xl">
-          Unleash the power of cloud with the support of the Mozstro team of certified experts.
+          Join a team of cloud consulting professionals harnessing the power of cloud to deliver game-changing value to businesses and leading organisations.
         </p>
         <p className="font-serif text-sundance bg-ebonyclay shadow p-2 lg:p-6 text-md lg:text-xl">
-        Together we provide a comprehensively powerful solution for your cloud infrastructure.
+          You’ll be a part of a family that appreciates your contributions and is ready to help take your career to the next level.
         </p>
       </div>
     </Layout>

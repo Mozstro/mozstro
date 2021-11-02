@@ -84,7 +84,7 @@ export default function Home({
         <div className="flex my-4 justify-center">
           <SectionText text="Why choose us?" />
         </div>
-        <div className="grid bg-hippiegreen rounded p-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+        <div className="grid bg-hippiegreen rounded p-6 grid-cols-1 xl:grid-cols-3 gap-12">
           <ChooseCard
             title="Experience"
             text="Mozstro professional cloud consultants have the experience to help you scale and secure your cloud technologies."

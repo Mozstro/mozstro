@@ -38,7 +38,7 @@ export default function Home({
             href="/"
             rel="noopener noreferrer"
           >
-            &nbsp;Mozstro&nbsp;
+            Mozstro.
           </a>
         </h1>
         <h2 className="text-center text-ebonyclay text-2xl">
@@ -51,7 +51,7 @@ export default function Home({
         </div>
         <div className="flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
           <ServiceCard
-            title="Migration. Security. Infrastructure Management"
+            title="Migration. Security. Infrastructure Management."
           >
             <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
               As leading cloud consultants operating from the UK, we start by understanding your technology, goals,

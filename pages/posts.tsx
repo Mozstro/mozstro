@@ -29,7 +29,7 @@ export const Posts = ({ posts }: PostProps): JSX.Element => (
         </a>
         <span> posts.</span>
       </h1>
-      <h2 className="text-center text-sundance text-2xl">
+      <h2 className="text-center text-sundance text-3xl">
         Browse our blog posts.
       </h2>
     </Header>

@@ -15,7 +15,7 @@ export default function Careers() {
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
           Careers.
         </h1>
-        <h2 className="text-center text-sundance text-2xl">
+        <h2 className="text-center text-sundance text-3xl">
           Reimagine Your Career With Mozstro.
         </h2>
       </Header>

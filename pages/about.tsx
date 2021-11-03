@@ -16,7 +16,7 @@ export default function About() {
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
           About us.
         </h1>
-        <h2 className="text-center text-sundance text-2xl">
+        <h2 className="text-center text-sundance text-3xl">
           We Make Cloud Work For You.
         </h2>
       </Header>
@@ -79,7 +79,9 @@ export default function About() {
                   sales@mozstro.com
                 </a>
               </li>
-              <li> Phone us on:
+              <li>
+                {' '}
+                Phone us on:
                 <a
                   className="text-palesky text-md lg:text-xl hover:text-ebonyclay"
                   href="tel:07949155434"

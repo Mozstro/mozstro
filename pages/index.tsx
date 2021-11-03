@@ -32,7 +32,6 @@ export default function Home({
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-
           <a
             className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
             href="/"
@@ -41,8 +40,8 @@ export default function Home({
             Mozstro.
           </a>
         </h1>
-        <h2 className="text-center text-ebonyclay text-2xl">
-          Reliable cloud consulting services.       
+        <h2 className="text-center text-ebonyclay text-3xl">
+          Reliable cloud consulting services.
         </h2>
       </Header>
       <section>

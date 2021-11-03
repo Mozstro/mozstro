@@ -21,7 +21,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
       <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
         Work.
       </h1>
-      <h2 className="text-center text-sundance text-2xl">
+      <h2 className="text-center text-sundance text-3xl">
         Helping You Take Advantage Of Cloud.
       </h2>
     </Header>

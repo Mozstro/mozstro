@@ -17,6 +17,8 @@ function ContactForm() {
             id="name"
             type="name"
             name="name"
+            required
+            minLength={2}
           />
           <ValidationError
             prefix="Email"
@@ -33,6 +35,8 @@ function ContactForm() {
             id="email"
             type="email"
             name="email"
+            required
+            minLength={2}
           />
           <ValidationError
             prefix="Email"
@@ -49,6 +53,7 @@ function ContactForm() {
             id="company"
             type="company"
             name="company"
+            required
           />
           <ValidationError
             prefix="Email"
@@ -64,6 +69,8 @@ function ContactForm() {
             className="appearance-none border-2 border-rolling-stone w-full text-rolling-stone py-1 px-2 leading-tight focus:outline-none"
             id="message"
             name="message"
+            required
+            minLength={10}
           />
           <ValidationError
             prefix="Message"

@@ -99,10 +99,7 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className="flex my-4 justify-center">
-          <SectionText text="Contact us." />
-        </div>
-        <div className="bg-rollingstone rounded p-6">
+        <div className="mt-4 bg-rollingstone rounded p-6">
           <div className="bg-ebonyclay p-4 sm:p-6">
             <p className="font-serif py-1 text-md lg:text-xl text-sundance">
               Have a cloud-related project in mind?
@@ -117,7 +114,7 @@ export default function Home({
               Fill out and submit the form below or contact us today via phone or email and we’ll be happy to help.
             </p>
           </div>
-          <CallToAction link="mailto:elliot@mozstro.com" text="Find out more" />
+          <CallToAction link="mailto:sales@mozstro.com" text="Contact us" />
         </div>
       </section>
       <section>

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = function Component() {
   return (
@@ -49,6 +49,15 @@ const Footer = function Component() {
                   className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
                   width="48"
                   icon={faTwitterSquare}
+                />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/channel/UCCRAvf8iziQdd1LDv2MZBiQ" rel="noreferrer">
+                <FontAwesomeIcon
+                  className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
+                  width="48"
+                  icon={faYoutubeSquare}
                 />
               </a>
             </li>

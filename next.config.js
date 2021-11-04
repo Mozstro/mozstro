@@ -1,7 +1,20 @@
 module.exports = {
+  async headers() {
+    return [
+      {
+        source: '/:all*(svg|jpg|png)',
+        locale: false,
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=9999999999, must-revalidate',
+          },
+        ],
+      },
+    ];
+  },
   purge: ['./components/*.tsx', './pages/*.tsx', './pages/**/*.tsx'],
   eslint: {
-    // TODO: Sort out the ESlint issues
     ignoreDuringBuilds: true,
   },
 };

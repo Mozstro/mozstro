@@ -121,7 +121,7 @@ export default function Home({
         <div className="flex my-4 justify-center">
           <SectionText text="Out latest work." />
         </div>
-        <div className="grid grid-cols-1">
+        <div className="grid grid-cols-1 md:w-2/3 lg:w-1/2">
           <ProjectCard key={project.slug} project={project} />
         </div>
       </section>

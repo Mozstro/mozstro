@@ -11,12 +11,19 @@ module.exports = {
           },
         ],
       },
+      {
+        source: '/(.*)?', // Matches all pages
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+        ],
+      },
     ];
   },
   purge: ['./components/*.tsx', './pages/*.tsx', './pages/**/*.tsx'],
   eslint: {
     ignoreDuringBuilds: true,
   },
-  siteUrl: process.env.SITE_URL || 'https://www.mozstro.com',
-  generateRobotsTxt: true,
 };

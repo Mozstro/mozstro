@@ -17,4 +17,6 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  siteUrl: process.env.SITE_URL || 'https://www.mozstro.com',
+  generateRobotsTxt: true,
 };

@@ -9,21 +9,21 @@
     font-family: 'Galano Grotesque';
     font-style: light;
     font-weight: 100;
-    src: url('/fonts/Galano/GalanoGrotesqueLight.woff') format('woff');
+    src: url('/fonts/Galano/GalanoGrotesqueLight.woff2') format('woff2');
   }
 
   @font-face {
     font-family: 'Galano Grotesque';
     font-style: bold;
     font-weight: 700;
-    src: url('/fonts/Galano/GalanoGrotesqueBold.woff') format('woff');
+    src: url('/fonts/Galano/GalanoGrotesqueBold.woff2') format('woff2');
   }
 
   @font-face {
     font-family: 'Galano Grotesque';
     font-style: medium;
     font-weight: 400;
-    src: url('/fonts/Galano/GalanoGrotesqueMedium.woff') format('woff');
+    src: url('/fonts/Galano/GalanoGrotesqueMedium.woff2') format('woff2');
   }
 }
 

@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import {
+  faLinkedin, faTwitterSquare, faYoutubeSquare, faFacebookSquare,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = function Component() {
   return (
@@ -61,7 +63,17 @@ const Footer = function Component() {
                 />
               </a>
             </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/mozstro" rel="noreferrer">
+                <FontAwesomeIcon
+                  className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
+                  width="48"
+                  icon={faFacebookSquare}
+                />
+              </a>
+            </li>
           </ul>
+
         </div>
         <div>
           <p className="text-center mt-6 text-hippiegreen">

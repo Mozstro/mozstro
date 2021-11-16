@@ -22,7 +22,6 @@ export const getServerSideProps = async ({ res }) => {
       '404.tsx',
       'api',
       '.DS_Store',
-      'posts',
     ].includes(page))
     .map((pagePath) => `${baseUrl}/${pagePath}`);
 

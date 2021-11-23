@@ -10,6 +10,7 @@ export default function Careers() {
     <Layout>
       <NextSeo
         title="Mozstro - Careers"
+        description="See who is involved and learn more about opportunities at Mozstro."
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">

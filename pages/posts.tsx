@@ -17,6 +17,7 @@ export const Posts = ({ posts }: PostProps): JSX.Element => (
   <Layout>
     <NextSeo
       title="Mozstro - Posts"
+      description="Read our latest blog posts to find out what we are talking about."
     />
     <Header>
       <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">

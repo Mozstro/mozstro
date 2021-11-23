@@ -9,6 +9,7 @@ export default function Custom500() {
     <Layout>
       <NextSeo
         title="Mozstro - Internal server error"
+        description="Internal server error on our side."
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">

@@ -16,6 +16,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
   <Layout>
     <NextSeo
       title="Mozstro - Work"
+      description="View our work and see what projects we have delivered."
     />
     <Header>
       <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">

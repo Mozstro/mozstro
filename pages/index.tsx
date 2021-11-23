@@ -29,6 +29,7 @@ export default function Home({
     <Layout>
       <NextSeo
         title="Mozstro - Home"
+        description="Reliable Cloud Consulting Services. Your Secure Cloud Journey Starts Here."
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">

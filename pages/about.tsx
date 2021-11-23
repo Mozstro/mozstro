@@ -11,6 +11,7 @@ export default function About() {
     <Layout>
       <NextSeo
         title="Mozstro - About Us"
+        description="Find out more about who we are and what our cloud computing  mission is."
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">

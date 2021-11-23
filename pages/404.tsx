@@ -9,6 +9,7 @@ export default function Custom404() {
     <Layout>
       <NextSeo
         title="Mozstro - Not found"
+        description="Page not found. Please return home."
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">

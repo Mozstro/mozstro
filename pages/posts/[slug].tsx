@@ -67,7 +67,7 @@ const PostPage = ({
         </h2>
       </Header>
       <div className="my-8 md:mb-0 md:ml-12 md:mt-16">
-        <NavButton text="← Back" link="/work" />
+        <NavButton text="← Back" link="/posts" />
       </div>
       <article>
         <div>

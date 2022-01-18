@@ -1,0 +1,120 @@
+---
+title: Security best practice - AWS S3
+description: Security best practices to keep in mind when using AWS S3.
+date: "2022-01-20"
+image: "/s3.png"
+imageAlt: "Logo"
+author: "Elliot Morris"
+topic: "Security"
+---
+
+Security best practices to keep in mind when using AWS S3.
+
+## Service overview
+
+Simple storage service or better know as AWS S3. Is a cloud object storage that can be used for many use cases in modern cloud applications.
+
+As more applications start to utilize S3. Heres how to ensure you stay protected.
+
+### Bucket policies and IAM policies
+
+There are two ways to allow access via policies for S3 both use JSON for the policy format.
+
+Bucket policies are great for multiple use cases such as
+
+- Enforcing SSL
+- Enforcing uploads to be encrypted.
+
+#### Policy examples
+
+Bucket Policy to enforce SSL:
+
+```
+
+  "Id": "ExamplePolicy",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowOnlySSL",
+      "Action": "s3:*",
+      "Effect": "Deny",
+      "Resource": [
+        "arn:aws:s3:::my-bucket",
+        "arn:aws:s3:::my-bucket/*"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      },
+      "Principal": "*"
+    }
+  ]
+}
+```
+
+Bucket policy to enforce SSE-S3 (S3 managed encryption):
+
+```
+ {
+     "Version": "2012-10-17",
+     "Id": "PutObjPolicy",
+     "Statement": [
+           {
+                "Sid": "DenyIncorrectEncryptionHeader",
+                "Effect": "Deny",
+                "Principal": "*",
+                "Action": "s3:PutObject",
+                "Resource": "arn:aws:s3:::my-bucket/*",
+                "Condition": {
+                        "StringNotEquals": {
+                               "s3:x-amz-server-side-encryption": "AES256"
+                         }
+                }
+           },
+           {
+                "Sid": "DenyPlaintextUploads",
+                "Effect": "Deny",
+                "Principal": "*",
+                "Action": "s3:PutObject",
+                "Resource": "arn:aws:s3:::my-bucket/*",
+                "Condition": {
+                        "Null": {
+                               "s3:x-amz-server-side-encryption": true
+                        }
+               }
+           }
+     ]
+ }
+```
+
+IAM polices can be added inline to users or attached to roles which can then be assumed by users or AWS services to allow access to S3.
+
+#### Implement least privilege access
+
+With both bucket a user polices a key principal you should keep in mind is least privilege access.
+Which means only give access at the lowest level required.
+For example a user only has the actions they need (A read only user cannot edit or delete any objects in the bucket only view).
+
+### Public access
+
+When creating a bucket via the AWS by default the settings are ticked to disable public access to the bucket.
+
+If your project is using Terraform ensure this is still the case when creating buckets.
+
+The below snippet will block public access for a supplied bucket:
+
+```
+resource "aws_s3_bucket_public_access_block" "my_bucket_public_block" {
+    bucket = "${aws_s3_bucket.my_bucket.id}"
+    block_public_acls = true
+    block_public_policy = true
+    restrict_public_buckets = true
+}
+```
+
+### Bucket encryption
+
+### Object lock
+
+Read the full official AWS security best practices [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html).

@@ -58,7 +58,7 @@ export default function Home({
               and challenges before providing solutions to help you on your cloud journey.
             </p>
             <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              Whether you need cloud migration, security, or cloud infrastructure management consulting,
+              Whether you need cloud migration, cloud security, or cloud application consulting,
               we’ll guide you through from start to finish.
             </p>
           </ServiceCard>
@@ -109,7 +109,7 @@ export default function Home({
               Mozstro cloud consulting team can help.
             </p>
             <p className="font-serif py-1 text-md lg:text-xl text-sundance">
-              We’ll assist you in optimizing your cloud security so that you can take advantage of the immense potentials of your cloud infrastructure.
+              We’ll assist you in optimizing your cloud security so that you can take advantage of the immense potentials of your cloud applications.
             </p>
             <p className="font-serif py-1 text-md lg:text-xl text-sundance">
               Fill out and submit the form below or contact us today via phone or email and we’ll be happy to help.

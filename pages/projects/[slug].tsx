@@ -52,11 +52,10 @@ const ProjectPage = ({
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-          <span>Previous projects</span>
+          Portfolio.
         </h1>
-        <h2 className="text-center text-ebonyclay text-2xl">
-          <span className="font-bold italic text-sundance">Cloud Supercharged </span>
-          problems solved.
+        <h2 className="text-center text-sundance text-3xl">
+          Problems solved.
         </h2>
       </Header>
       <div className="my-8 md:mb-0 md:ml-12 md:mt-16">

@@ -21,14 +21,7 @@ export const Posts = ({ posts }: PostProps): JSX.Element => (
     />
     <Header>
       <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
-        <a
-          className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
-          href="/"
-          rel="noopener noreferrer"
-        >
-          Mozstro's
-        </a>
-        <span> posts.</span>
+        Posts.
       </h1>
       <h2 className="text-center text-sundance text-3xl">
         Browse our blog posts.

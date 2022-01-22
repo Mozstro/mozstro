@@ -52,18 +52,10 @@ const PostPage = ({
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-          <span>Welcome to</span>
-          <a
-            className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
-            href="/"
-            rel="noopener noreferrer"
-          >
-            Mozstro.
-          </a>
+          Our voice.
         </h1>
-        <h2 className="text-center text-ebonyclay text-2xl">
-          <span className="font-bold italic text-sundance">Securely Supercharged </span>
-          cloud native solutions to complex business problems.
+        <h2 className="text-center text-sundance text-3xl">
+          What we are talking about.
         </h2>
       </Header>
       <div className="my-8 md:mb-0 md:ml-12 md:mt-16">
@@ -80,7 +72,7 @@ const PostPage = ({
             </h3>
             <p
               className="align-middle transform -rotate-2 text-sundance text-xl bg-ebonyclay
-                         lg:-ml-32 lg:mt-20 inline-block py-1 mt-3 mb-2 shadow-sm px-2"
+                         xl:-ml-32 xl:mt-20 inline-block py-1 md:mt-3 lg:-mt-4 mb-2 shadow-sm px-2"
             >
               By&nbsp;
               {frontMatter.author}
@@ -92,18 +84,17 @@ const PostPage = ({
             src={frontMatter.image}
           />
         </div>
-        <div className="flex mt-2  my-4 lg:my-8 justify-between w-full">
+        <div className="flex mt-2 my-4 lg:my-8 justify-between w-full">
           <div className="flex flex-col">
             <p
               className="align-middle text-xl md:text-2xl bg-equator transform -rotate-2
-                          rounded inline-block py-1 mt-2  shadow-sm px-2"
+                         rounded inline-block py-1 mt-2 shadow-sm px-2"
             >
               Topic:
               {' '}
               {frontMatter.topic}
             </p>
           </div>
-
           <p className="items-center flex text-lg text-palesky">
             {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}
           </p>

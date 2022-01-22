@@ -1,7 +1,7 @@
 ---
-title: Security best practice - AWS S3
+title: Security best practices - AWS S3
 description: Security best practices to keep in mind when using AWS S3.
-date: "2022-01-20"
+date: "2022-01-24"
 image: "/s3.png"
 imageAlt: "Logo"
 author: "Elliot Morris"
@@ -22,12 +22,12 @@ There are two ways to allow access via policies for S3 both use JSON for the pol
 
 Bucket policies are great for multiple use cases such as
 
-- Enforcing SSL
+- Enforcing SSL.
 - Enforcing uploads to be encrypted.
 
 #### Policy examples
 
-Bucket Policy to enforce SSL:
+Bucket Policy to enforce TLS / SSL:
 
 ```
 
@@ -115,6 +115,40 @@ resource "aws_s3_bucket_public_access_block" "my_bucket_public_block" {
 
 ### Bucket encryption
 
+Encryption at rest is a measure to prevent attackers accessing data on disk. It can be done both at server and client side.
+
+Server side:
+Request that S3 encrypts the data before saving it to a disk in the data centre.
+The data is then decrypted when it is requested for download.
+
+There are 3 ways to encrypt a file within S3:
+
+- S3 managed keys SSE-S3.
+- KMS managed keys SSE-KMS.
+- Customer managed keys SSE-C.
+
+Client side:
+The data is already encrypted before being sent to S3 which means you manage the encryption process and keys.
+
+Encryption in transit is a measure to prevent attacks such as man in the middle and manipulating network traffic to steal data.
+
+To protect yourself from this ensure you only use HTTPS (TLS). THe bucket policy shown above can be used to enforce TLS on a bucket.
+
 ### Object lock
+
+Object locking allows you to store objects using the WORM (Write Once Read Many) model and is useful to prevent accidental deletion of data.
+
+### Versioning
+
+Enabling bucket versioning is a must to be able to keep an audit history of object changes and any accidental overwrites of objects.
+With versioning enabled you can also enable MFA delete adding an extra layer of security for:
+
+- Changing the versioning state of your bucket.
+- Permanently deleting an object version.
+
+### VPC endpoints
+
+VPC endpoint for S3 is a logical entity that only allows for connectivity to S3.
+Instead of opening your S3 bucket to the open internet using VPC endpoints allows you restrict connectivity to just VPCs and VPC endpoints that you allow.
 
 Read the full official AWS security best practices [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html).

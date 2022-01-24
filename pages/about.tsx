@@ -29,10 +29,7 @@ export default function About() {
               Mozstro is a global cloud consulting company operating from the UK.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              We are a cloud security and infrastructure-focused company that delivers high-value consultancy services to clients through reliable and cost-effective solutions.
-            </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-              As one of the best cloud consulting agencies, we are trusted by dozens of small businesses and large corporations whom we enable to overcome critical cloud challenges.
+              We are a cloud security, cloud application, and cloud infrastructure-focused company that delivers high-value consultancy services to clients through reliable and cost-effective solutions.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
               With our cutting-edge service approach, we can become a seamless extension of your team, providing dynamic, resilient, and scalable solutions that make a difference in your business.

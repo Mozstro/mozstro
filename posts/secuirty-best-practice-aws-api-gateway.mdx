@@ -1,0 +1,84 @@
+---
+title: Security best practices - AWS API Gateway
+description: Security best practices to keep in mind when using AWS API Gateway.
+date: "2022-02-04"
+image: "/apig.png"
+imageAlt: "Logo"
+author: "Elliot Morris"
+topic: "Security"
+---
+
+Security best practices to keep in mind when using AWS API Gateway.
+
+## Service overview
+
+API Gateway is a fully managed service for APIs. They are considered the 'front door' for exposing your backend services.
+
+Within API Gateway there are three types of APIS you can create:
+
+- RESTful
+- Websocket
+- HTTP APIs
+
+### Implement least privilege access
+
+Restrict access on preforming CRUD (create, read, update, delete) actions against your API Gateway APIs. To ensure no bad actors can use your API in an unauthorized manor.
+
+There are a handful of ways to restrict access to your API such as:
+
+- Amazon Cognito user pools
+- Resource policies
+- IAM policies
+- Lambda / JWT authorizers
+- Endpoint policies for interface VPC endpoint
+
+### Cross-origin resource sharing (CORS)
+
+Enabling CORS is a great recommendation if you are sending HTTP requests to a different domain or subdomain which in most cases you will be.
+
+CORS works by sending a preflight request to the server and waits for approval before sending the actual request.
+The preflight request is in the form of a OPTIONS method containing the following headers:
+
+- Origin
+- Access-Control-Request-Method
+- Access-Control-Request-Header
+
+To support CORS on the API side you need to implement an OPTIONS method that can respond to the preflight OPTIONS request.
+Containing these headers:
+
+- Access-Control-Allow-Methods
+- Access-Control-Allow-Headers
+- Access-Control-Allow-Origin
+
+More details [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html) can be found on how to enable this for API Gateway depending on your integration type.
+
+### Client-side SSL certificates
+
+This is great if your backend is publicly accessible. You can generate a client certificate for your API. You then configure your backend to validate the certificate using the public key.
+Then when you send a HTTP request to your backend it will only accept requests that originate from API gateway.
+
+### AWS WAF
+
+WAF (Web application firewall) helps you protect your API from attacks. Using a feature called web ACL's (access control list) these are used to allow, block or count web requests based on custom configured rules.
+
+WAF is a great service to defend against attacks such as SQL injection and cross-site scripting (XXS).
+Rules can contain things such as blocking IP ranges, requests from a specific region/country or even requests that contain potentially malicious SQL.
+
+### Implement logging
+
+Logging should be implemented to log requests to your API using Cloudwatch logs or Amazon Kinesis data firehose.
+
+### Implement Amazon CloudWatch alarms
+
+Cloudwatch alarms are a powerful tool for alerting you to issues. You can watch a metric over a period of time and if it exceeds the given threshold. A notification can be sent out via AWS SNS or instances modified using a AWS auto scaling policy.
+
+### Enable AWS Config
+
+This is a great way to track configuration change history for API Gateway resources which is useful for operational troubleshooting, audit, and compliance use cases.
+
+### Conclusion
+
+In this post we covered some key security best practices to keep in mind when using API Gateway. If you would like to learn more about how we can secure your cloud applications.
+Get in touch with us.
+
+Read the full official AWS security best practices [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/security-best-practices.html).

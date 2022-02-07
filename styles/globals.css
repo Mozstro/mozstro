@@ -67,7 +67,7 @@
 }
 
 .blog-content li {
-  @apply font-serif text-rollingstone font-bold;
+  @apply ml-4 lg:ml-0 font-serif text-rollingstone font-bold;
 }
 
 .blog-content {

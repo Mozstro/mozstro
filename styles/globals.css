@@ -47,7 +47,7 @@
 }
 
 .blog-content p{
-  @apply font-serif text-palesky;
+  @apply font-serif text-palesky my-2;
 }
 
 .blog-content h3{

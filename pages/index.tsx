@@ -47,11 +47,11 @@ export default function Home({
       </Header>
       <section>
         <div className="flex my-4 justify-center">
-          <SectionText text="Robust cloud solutions by Mozstro." />
+          <SectionText text="What we offer." />
         </div>
         <div className="flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
           <ServiceCard
-            title="Migration. Security. Infrastructure Management."
+            title="Digital transformation."
           >
             <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
               As leading cloud consultants operating from the UK, we start by understanding your technology, goals,
@@ -63,16 +63,14 @@ export default function Home({
             </p>
           </ServiceCard>
           <ServiceCard
-            title="Cloud Consulting & Training."
+            title="Exclusive Mozstro service model."
           >
             <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              Our team of cloud experts will work as an extension of your enterprise, providing best-in-class cloud strategies to bring your projects to completion.
+              Our team of cloud experts will work as an extension of your enterprise,
+              solving your toughest challenges placing you on the path to digital success.
             </p>
             <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              With our cloud solutions, you can increase your team’s productivity through onboarding and training.
-            </p>
-            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              We’re here to help you unlock your IT cloud potentials.
+              Providing business value is at the core of our service model.
             </p>
           </ServiceCard>
         </div>
@@ -100,44 +98,29 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className="mt-4 bg-rollingstone rounded p-6">
-          <div className="bg-ebonyclay p-4 sm:p-6">
-            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
-              Have a cloud-related project in mind?
-            </p>
-            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
-              Mozstro cloud consulting team can help.
-            </p>
-            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
-              We’ll assist you in optimizing your cloud security so that you can take advantage of the immense potentials of your cloud applications.
-            </p>
-            <p className="font-serif py-1 text-md lg:text-xl text-sundance">
-              Fill out and submit the form below or contact us today via phone or email and we’ll be happy to help.
-            </p>
-          </div>
-          <CallToAction link="mailto:sales@mozstro.com" text="Contact us" />
-        </div>
-      </section>
-      <section>
-        <div className="flex my-4 justify-center">
-          <SectionText text="Our latest work." />
-        </div>
-        <div className="grid grid-cols-1 md:w-2/3 lg:w-1/2">
-          <ProjectCard key={project.slug} project={project} />
-        </div>
-      </section>
-      <section className="mt-10 mb-8">
-        <div className="flex flex-wrap px-5 mx-auto">
-          <div className="w-full xl:w-1/2">
+        <div className="grid lg:ml-8 mt-8 grid-cols-1 lg:grid-cols-2">
+          <div>
             <SectionText text="What we are talking about right now." />
             <PostCard post={post} />
           </div>
-          <div className="flex xl:pl-8 flex-col justify-evenly w-full xl:mt-2 xl:w-1/2">
-            <div className="flex mb-4 justify-end ">
-              <SectionText text=" Get in touch!" />
-            </div>
+          <div>
+            <SectionText text="Our latest work." />
+            <ProjectCard key={project.slug} project={project} />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="mt-4 rounded p-6">
+          <div className="bg-ebonyclay p-4 sm:p-6">
+            <h3 className="font-bold py-1 text-xl lg:text-2xl text-hippiegreen">
+              Find out what we bring to the table.
+            </h3>
+            <p className="font-serif py-1 mb-6 text-md lg:text-xl text-sundance">
+              Fill out and submit the form below and we will be in touch!
+            </p>
             <ContactForm />
           </div>
+
         </div>
       </section>
     </Layout>

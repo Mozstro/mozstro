@@ -30,9 +30,9 @@ export const Nav = () => {
           onClick={handleClick}
         >
           <div className="flex justify-center">
-            <span aria-hidden="true" className={`${!active ? '-translate-y-1.5' : 'rotate-45'} bg-ebonyclay block absolute h-1 w-8 transform transition duration-500 ease-in-out`} />
-            <span aria-hidden="true" className={`${active ? 'opacity-0' : ''} bg-ebonyclay block absolute  h-1 w-8 bg-current  transform transition duration-500 ease-in-out`} />
-            <span aria-hidden="true" className={`${active ? '-rotate-45' : 'translate-y-1.5'} bg-ebonyclay block absolute  h-1 w-8  transform  transition duration-500 ease-in-out`} />
+            <span aria-hidden="true" className={`${!active ? '-translate-y-1.5' : 'rotate-45'} bg-ebonyclay block absolute h-1 w-10 transform transition duration-500 ease-in-out`} />
+            <span aria-hidden="true" className={`${active ? 'opacity-0' : ''} bg-ebonyclay block absolute  h-1 w-10 bg-current  transform transition duration-500 ease-in-out`} />
+            <span aria-hidden="true" className={`${active ? '-rotate-45' : 'translate-y-1.5'} bg-ebonyclay block absolute  h-1 w-10  transform  transition duration-500 ease-in-out`} />
           </div>
         </button>
         <nav

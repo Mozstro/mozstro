@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/fontawesome-svg-core": "~1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@fortawesome/react-fontawesome": "^0.1.17",
     "@testing-library/react": "^12.1.2",
     "date-fns": "^2.25.0",
     "file-loader": "^6.2.0",

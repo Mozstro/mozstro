@@ -54,7 +54,7 @@ export default function Home({
             title="Digital transformation."
           >
             <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              As leading cloud consultants operating from the UK, we start by understanding your technology, goals,
+              As leading cloud consultants based in Leeds, Uk, we start by understanding your technology, goals,
               and challenges before providing solutions to help you on your cloud journey.
             </p>
             <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">

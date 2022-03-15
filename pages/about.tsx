@@ -14,17 +14,17 @@ export default function About() {
         description="Find out more about who we are and what our cloud computing  mission is."
       />
       <Header>
-        <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
+        <h1 className="text-4xl font-bold lg:text-7xl text-center text-sundance">
           About us.
         </h1>
         <h2 className="text-center text-sundance text-3xl">
           We we make cloud work for you.
         </h2>
       </Header>
-      <section className="grid grid-cols-1 mt-8 lg:mt-0 lg:grid-cols-2">
+      <section className="grid grid-cols-1 mt-8 lg:mt-12 lg:grid-cols-2">
         <article>
           <SectionText text="Who we are?" />
-          <div className="bg-sundance rounded p-2 m-4 shadow-md">
+          <div className="bg-hippiegreen rounded p-4  m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               Mozstro is a global cloud consulting company operating from the UK.
             </p>
@@ -41,7 +41,7 @@ export default function About() {
         </article>
         <article>
           <SectionText text="Our mission." />
-          <div className="bg-sundance rounded p-2 m-4 shadow-md">
+          <div className="bg-hippiegreen rounded p-4 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               We aim to deliver powerful, secure cloud consulting solutions to our clients.
             </p>
@@ -62,7 +62,7 @@ export default function About() {
         </article>
         <article>
           <SectionText text="How to get started?" />
-          <div className="bg-sundance rounded p-2 m-4 shadow-md">
+          <div className="bg-hippiegreen rounded p-4  m-4 shadow-md">
             <h5 className="text-rolling-stone px-4 my-4 text-2xl">
               We would love to work with you!
             </h5>
@@ -70,7 +70,7 @@ export default function About() {
               <li>
                 Email us on:
                 <a
-                  className="text-palesky hover:text-ebonyclay"
+                  className="text-sundance hover:text-ebonyclay"
                   href="mailto:sales@mozstro.com"
                 >
                   {' '}
@@ -81,7 +81,7 @@ export default function About() {
                 {' '}
                 Phone us on:
                 <a
-                  className="text-palesky text-md lg:text-xl hover:text-ebonyclay"
+                  className="text-sundance text-md lg:text-xl hover:text-ebonyclay"
                   href="tel:07949155434"
                 >
                   {' '}

@@ -21,7 +21,7 @@ export const ChooseCard: FunctionComponent<ChooseCardProps> = ({
       <div className="m-auto">
         <div className="flex">
           <FontAwesomeIcon
-            className="text-equator transform z -rotate-12 lg:-mt-6 -ml-3 -mb-6 inline"
+            className="text-sundance transform z -rotate-12 lg:-mt-6 -ml-3 -mb-6 inline"
             width="48"
             height="48"
             icon={icon}

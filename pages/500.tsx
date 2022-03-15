@@ -12,7 +12,7 @@ export default function Custom500() {
         description="Internal server error on our side."
       />
       <Header>
-        <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
+        <h1 className="text-4xl  font-bold lg:text-7xl  text-center text-ebonyclay">
           Internal server error.
         </h1>
         <h2 className="text-center text-ebonyclay text-3xl">

@@ -20,7 +20,7 @@ export const Posts = ({ posts }: PostProps): JSX.Element => (
       description="Read our latest blog posts to find out what we are talking about."
     />
     <Header>
-      <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
+      <h1 className="text-4xl font-bold lg:text-7xl  text-center text-sundance">
         Posts.
       </h1>
       <h2 className="text-center text-sundance text-3xl">

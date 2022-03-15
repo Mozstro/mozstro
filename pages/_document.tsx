@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html className="bg-equator" lang="en">
         <Head />
         <body>
           <Main />

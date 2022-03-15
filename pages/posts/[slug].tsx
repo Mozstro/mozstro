@@ -51,8 +51,8 @@ const PostPage = ({
         title={`Mozstro - ${frontMatter.title}`}
       />
       <Header>
-        <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
-          Our voice.
+        <h1 className="text-4xl font-bold lg:text-7xl text-center text-sundance">
+          Blog.
         </h1>
         <h2 className="text-center text-sundance text-3xl">
           What we are talking about.
@@ -65,7 +65,7 @@ const PostPage = ({
         <div>
           <div className="text-center mt-8 lg:mt-0 mb-10 lg:-mb-10">
             <h3
-              className="text-ebonyclay text-4xl bg-geebung inline-block p-6 xl:mt-0
+              className="text-equator text-4xl bg-sundance inline-block p-6 xl:mt-0
                       transform -rotate-2"
             >
               {frontMatter.title}
@@ -87,7 +87,7 @@ const PostPage = ({
         <div className="flex mt-2 my-4 lg:my-8 justify-between w-full">
           <div className="flex flex-col">
             <p
-              className="align-middle text-xl md:text-2xl bg-equator transform -rotate-2
+              className="align-middle text-xl md:text-2xl bg-sundance transform -rotate-2
                          rounded inline-block py-1 mt-2 shadow-sm px-2"
             >
               Topic:
@@ -95,7 +95,7 @@ const PostPage = ({
               {frontMatter.topic}
             </p>
           </div>
-          <p className="items-center flex text-lg text-palesky">
+          <p className="items-center flex text-lg text-sundance">
             {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}
           </p>
         </div>

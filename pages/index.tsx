@@ -98,12 +98,12 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className="grid lg:ml-8 mt-8 grid-cols-1 lg:grid-cols-2">
+        <div className="grid mt-8 grid-cols-1 lg:grid-cols-2">
           <div>
             <SectionText text="What we are talking about right now." />
             <PostCard post={post} />
           </div>
-          <div>
+          <div className="lg:ml-8">
             <SectionText text="Our latest work." />
             <ProjectCard key={project.slug} project={project} />
           </div>

@@ -19,7 +19,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
       description="View our work and see what projects we have delivered."
     />
     <Header>
-      <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
+      <h1 className="text-4xl font-bold lg:text-7xl text-center text-sundance">
         Work.
       </h1>
       <h2 className="text-center text-sundance text-3xl">

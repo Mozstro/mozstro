@@ -12,7 +12,7 @@ export default function About() {
         description="Find out more about who we are and what our cloud computing  mission is."
       />
       <Header>
-        <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
+        <h1 className="text-4xl font-bold lg:text-7xl text-center text-ebonyclay">
           What we offer.
         </h1>
         <h2 className="text-center text-sundance text-3xl">

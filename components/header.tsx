@@ -11,7 +11,7 @@ export const Header: FunctionComponent<HeaderProps> = (
   },
 ) => (
   <header>
-    <div className="bg-palesky rounded pb-8 p-4">
+    <div className=" rounded pb-8 p-4">
       <div className="flex justify-center">
         <img
           className="h-16 sm:h-24 rounded-full"

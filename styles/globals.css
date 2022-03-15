@@ -30,10 +30,10 @@
 :root {
   --ebony-clay: #1C242C;
   --sundance: #D0B863;
-  --rolling-stone: #7C848A;
   --pale-sky: #70747C;
-  --equator: #DBBD56;
-  --geebung: #C48C1C;
+  /* --equator: #DBBD56; */
+  --equator: #1C242C;
+  /* --geebung: #C48C1C; */
   --hippie-green: #50884C;
 
   --animation-duration: 0.2s;
@@ -43,23 +43,23 @@
 /* Blog styling */
 
 .blog-content h2{
-  @apply text-ebonyclay my-4 text-2xl bg-sundance p-4 inline-block;
+  @apply text-equator my-4 text-2xl bg-hippiegreen p-4 inline-block;
 }
 
 .blog-content p{
-  @apply font-serif text-palesky my-2;
+  @apply font-serif text-sundance my-2;
 }
 
 .blog-content h3{
-  @apply text-sundance bg-ebonyclay p-4 my-4 text-xl;
+  @apply text-equator bg-sundance p-4 my-2 text-xl;
 }
 
 .blog-content h4{
-  @apply text-ebonyclay my-4 text-lg;
+  @apply text-sundance my-2 text-lg;
 }
 
 .blog-content pre{
-  @apply bg-equator rounded p-1 my-3 overflow-scroll inline-block;
+  @apply bg-sundance rounded p-1 my-2 overflow-scroll inline-block;
 }
 
 .blog-content ul{
@@ -67,7 +67,7 @@
 }
 
 .blog-content li {
-  @apply ml-4 lg:ml-0 font-serif text-rollingstone font-bold;
+  @apply ml-4 lg:ml-0 font-serif text-sundance font-bold;
 }
 
 .blog-content {

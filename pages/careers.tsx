@@ -13,7 +13,7 @@ export default function Careers() {
         description="See who is involved and learn more about opportunities at Mozstro."
       />
       <Header>
-        <h1 className="text-4xl lg:text-7xl  text-center text-ebonyclay">
+        <h1 className="text-4xl font-bold lg:text-7xl  text-center text-sundance">
           Careers.
         </h1>
         <h2 className="text-center text-sundance text-3xl">

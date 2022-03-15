@@ -10,7 +10,7 @@ export const Nav = () => {
 
   return (
     <div>
-      <section className="bg-equator hidden lg:block rounded drop-shadow-lg py-5 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 lg:-rotate-2 mx-auto my-0 lg:my-0">
+      <section className="bg-sundance hidden lg:block rounded drop-shadow-lg py-5 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 lg:-rotate-2 mx-auto my-0 lg:my-0">
         <nav
           className="flex items-center flex-col justify-center transform rotate-2 md:flex-row md:space-x-3 lg:space-x-6
                    font-semibold w-full lg:w-auto md:my-4 space-y-3 md:space-y-0
@@ -24,15 +24,15 @@ export const Nav = () => {
           <NavButton text="Careers" link="/careers" />
         </nav>
       </section>
-      <section className="bg-equator text-center lg:hidden rounded drop-shadow-lg pt-5 pb-6 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 mx-auto my-0 lg:my-0">
+      <section className="bg-sundance text-center lg:hidden rounded drop-shadow-lg pt-5 pb-6 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 mx-auto my-0 lg:my-0">
         <button
-          className=" text-ebonyclay hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
+          className=" text-ebonyclay hover:bg-hippiegreen rounded lg:hidden text-white ml-auto hover:text-white outline-none"
           onClick={handleClick}
         >
           <div className="flex justify-center">
-            <span aria-hidden="true" className={`${!active ? '-translate-y-1.5' : 'rotate-45'} bg-ebonyclay block absolute h-1 w-10 transform transition duration-500 ease-in-out`} />
-            <span aria-hidden="true" className={`${active ? 'opacity-0' : ''} bg-ebonyclay block absolute  h-1 w-10 bg-current  transform transition duration-500 ease-in-out`} />
-            <span aria-hidden="true" className={`${active ? '-rotate-45' : 'translate-y-1.5'} bg-ebonyclay block absolute  h-1 w-10  transform  transition duration-500 ease-in-out`} />
+            <span aria-hidden="true" className={`${!active ? '-translate-y-1.5' : 'rotate-45'} bg-equator block absolute h-1 w-10 transform transition duration-500 ease-in-out`} />
+            <span aria-hidden="true" className={`${active ? 'opacity-0' : ''} bg-equator block absolute  h-1 w-10 bg-current  transform transition duration-500 ease-in-out`} />
+            <span aria-hidden="true" className={`${active ? '-rotate-45' : 'translate-y-1.5'} bg-equator block absolute  h-1 w-10  transform  transition duration-500 ease-in-out`} />
           </div>
         </button>
         <nav
@@ -50,9 +50,7 @@ export const Nav = () => {
             <NavButton text="Careers" link="/careers" />
           </div>
         </nav>
-
       </section>
-      <div className="bg-transparent sm:bg-hippiegreen rounded drop-shadow-xl w-100 h-96 -mt-96 sm:mb-12 md:h-44 md:-mt-48" />
     </div>
   );
 };

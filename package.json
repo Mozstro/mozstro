@@ -21,7 +21,7 @@
     "date-fns": "^2.25.0",
     "file-loader": "^6.2.0",
     "gray-matter": "^4.0.3",
-    "mdx-prism": "^0.3.4",
+    "mdx-prism": "0.3.4",
     "next": "10.0.5",
     "next-mdx-remote": "^3.0.5",
     "next-on-netlify": "^3.0.1",
@@ -37,6 +37,7 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "@types/react": "^17.0.27",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
@@ -49,6 +50,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.16",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.3",
+    "webpack-obfuscator": "^2.6.0"
   }
 }

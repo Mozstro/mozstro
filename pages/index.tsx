@@ -34,14 +34,14 @@ export default function Home({
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
           <a
-            className="font-bold italic text-sundance hover:text-ebonyclay cursor-pointer"
+            className="font-bold  text-sundance cursor-pointer"
             href="/"
             rel="noopener noreferrer"
           >
             Mozstro.
           </a>
         </h1>
-        <h2 className="text-center text-ebonyclay text-3xl">
+        <h2 className="text-center text-sundance text-3xl">
           Reliable cloud consulting services.
         </h2>
       </Header>
@@ -98,29 +98,32 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className="grid mt-8 grid-cols-1 lg:grid-cols-2">
+        <div className="grid my-12 grid-cols-1 lg:grid-cols-2">
           <div>
             <SectionText text="What we are talking about right now." />
-            <PostCard post={post} />
+            <div className="mt-4">
+              <PostCard post={post} />
+            </div>
           </div>
-          <div className="lg:ml-8">
+          <div className="my-8 lg:my-0 lg:ml-8">
             <SectionText text="Our latest work." />
-            <ProjectCard key={project.slug} project={project} />
+            <div className="my-4">
+              <ProjectCard key={project.slug} project={project} />
+            </div>
           </div>
         </div>
       </section>
       <section>
-        <div className="mt-4 rounded p-6">
-          <div className="bg-ebonyclay p-4 sm:p-6">
-            <h3 className="font-bold py-1 text-xl lg:text-2xl text-hippiegreen">
+        <div className="lg:mt-4 flex justify-center rounded p-2">
+          <div className="p-4 bg-hippiegreen sm:p-6">
+            <h3 className="font-bold py-1 text-xl lg:text-2xl text-equator">
               Find out what we bring to the table.
             </h3>
-            <p className="font-serif py-1 mb-6 text-md lg:text-xl text-sundance">
+            <p className="font-serif py-1 text-lg lg:text-xl text-equator">
               Fill out and submit the form below and we will be in touch!
             </p>
             <ContactForm />
           </div>
-
         </div>
       </section>
     </Layout>

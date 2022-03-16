@@ -10,7 +10,7 @@ function ContactForm() {
       <div className="flex text-lg flex-col py-2">
         <div className="flex flex-wrap flex-col">
           <label className="text-2xl mb-2 mr-2" htmlFor="name">
-            Name:
+            Name
           </label>
           <input
             className="appearance-non mb-4 rounded-lg max-w-md border-2 border-rolling-stone w-full text-rolling-stone mr-3 py-1 px-2 leading-tight focus:outline-none"
@@ -28,7 +28,7 @@ function ContactForm() {
         </div>
         <div className="flex flex-wrap flex-col">
           <label className="text-2xl mb-2 mr-2" htmlFor="email">
-            Email:
+            Email
           </label>
           <input
             className="appearance-none rounded-lg mb-4  max-w-md w-full border-2 border-rolling-stone mr-3 py-1 px-2 leading-tight focus:outline-none"
@@ -46,7 +46,7 @@ function ContactForm() {
         </div>
         <div className="flex flex-wrap flex-col">
           <label className="text-2xl mb-2 mr-2" htmlFor="company">
-            Company:
+            Company name
           </label>
           <input
             className="appearance-none mb-4 rounded-lg max-w-md border-2 border-rolling-stone w-full bg-ebony-clay  py-1 px-2 leading-tight focus:outline-none"
@@ -63,7 +63,7 @@ function ContactForm() {
         </div>
         <div className="flex flex-wrap flex-col">
           <label className="text-2xl mb-2 mr-2 " htmlFor="message">
-            Enquiry:
+            How can we help?
           </label>
           <textarea
             className="appearance-none rounded-lg max-w-lg border-2 border-rolling-stone w-full text-rolling-stone py-1 px-2 leading-tight focus:outline-none"
@@ -71,6 +71,7 @@ function ContactForm() {
             name="message"
             required
             minLength={10}
+            placeholder="Tell us the details of your digital project."
           />
           <ValidationError
             prefix="Message"

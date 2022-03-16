@@ -11,7 +11,7 @@ export const NavButton: FunctionComponent<NavButtonProps> = ({
   link,
 }) => (
   <a
-    className="bg-ebonyclay w-1/2 my-2 lg:my-0 sm:w-auto px-4 py-2 text-sundance justify-center text-3xl sm:text-2xl hover:bg-sundance
+    className="bg-equator w-1/2 my-2 lg:my-0 sm:w-auto px-4 py-2 text-sundance justify-center text-3xl sm:text-2xl hover:bg-sundance
               hover:text-ebonyclay hover:shadow rounded-xl inline-flex
                lg:rotate-2 hover:scale-105 cursor-pointer"
     href={`${link}`}

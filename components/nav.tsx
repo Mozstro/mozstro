@@ -17,8 +17,8 @@ export const Nav = () => {
                     p-6 md:p-0 "
         >
           <NavButton text="Home" link="/" />
+          <NavButton text="Services" link="/services" />
           <NavButton text="About" link="/about" />
-          {/* <NavButton text="Services" link="/services" /> */}
           <NavButton text="Work" link="/work" />
           <NavButton text="Posts" link="/posts" />
           <NavButton text="Careers" link="/careers" />
@@ -43,8 +43,8 @@ export const Nav = () => {
 
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full items-center items-start flex flex-col lg:h-auto">
             <NavButton text="Home" link="/" />
+            <NavButton text="Services" link="/services" />
             <NavButton text="About" link="/about" />
-            {/* <NavButton text="Services" link="/services" /> */}
             <NavButton text="Work" link="/work" />
             <NavButton text="Posts" link="/posts" />
             <NavButton text="Careers" link="/careers" />

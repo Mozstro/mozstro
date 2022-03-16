@@ -46,7 +46,7 @@ export default function Home({
         </h2>
       </Header>
       <section>
-        <div className="flex my-4 justify-center">
+        <div className="flex mt-8 mb-4 justify-center">
           <SectionText text="What we offer." />
         </div>
         <div className="flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
@@ -98,7 +98,7 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className="grid my-12 grid-cols-1 lg:grid-cols-2">
+        <div className="grid lg:mb-8 mt-12 grid-cols-1 lg:grid-cols-2">
           <div>
             <SectionText text="What we are talking about right now." />
             <div className="mt-4">

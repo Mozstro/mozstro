@@ -2,9 +2,9 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 import { GetStaticProps } from 'next';
 import { faCloud, faPoll, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons';
-import { ServiceCard } from '../components/serviceCard';
+import { OfferCard } from '../components/offerCard';
 import { PostCard } from '../components/postCard';
-import { CallToAction } from '../components/callToAction';
+
 import Layout from '../components/layout';
 import { Header } from '../components/header';
 import { getLatestPost } from './api/posts';
@@ -15,6 +15,7 @@ import { ProjectType } from '../types/project';
 import { ChooseCard } from '../components/chooseCard';
 import ContactForm from '../components/contactForm';
 import { SectionText } from '../components/sectionText';
+import { CallToAction } from '../components/callToAction';
 
 type HomeProps = {
   post: PostType;
@@ -46,61 +47,70 @@ export default function Home({
         </h2>
       </Header>
       <section>
-        <div className="flex mt-8 mb-4 justify-center">
+        <div className="flex mt-8 mb-0 justify-center">
           <SectionText text="What we offer." />
         </div>
         <div className="flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
-          <ServiceCard
-            title="Digital transformation."
+          <div className="bg-hippiegreen  rounded shadow border-ebonyclay
+                  p-2 m-4 z-10"
           >
-            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              As leading cloud consultants based in Leeds, Uk, we start by understanding your technology, goals,
-              and challenges before providing solutions to help you on your cloud journey.
-            </p>
-            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              Whether you need cloud migration, cloud security, or cloud application consulting,
-              we’ll guide you through from start to finish.
-            </p>
-          </ServiceCard>
-          <ServiceCard
-            title="Exclusive Mozstro service model."
-          >
-            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              Our team of cloud experts will work as an extension of your enterprise,
-              solving your toughest challenges placing you on the path to digital success.
-            </p>
-            <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-              Providing business value is at the core of our service model.
-            </p>
-          </ServiceCard>
+            <h3 className="text-2xl lg:text-4xl bg-sundance mt-4 mx-2 p-4 text-ebonyclay font-bold mt-0">
+              Exclusive Mozstro service model.
+            </h3>
+            <div className="flex flex-wrap justify-center xl:flex-nowrap m-4">
+              <div className=" p-4">
+                <img className="object-cover md:max-w-xl rounded-3xl" src="home.png" alt="home" />
+              </div>
+
+              <div className="mt-4 xl:mt-20">
+                <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-6 py-2 lg:px-6 text-md lg:text-xl">
+                  Our team of cloud experts will work as an extension of your enterprise,
+                  solving your toughest challenges placing you on the path to digital success.
+                </p>
+                <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
+                  Providing business value is at the core of our service model.
+                </p>
+                <div className="bg-equator text-center">
+                  <CallToAction text="Discover our model" link="/service-model" />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
       <section>
         <div className="flex my-4 justify-center">
-          <SectionText text="Why choose us?" />
+          <SectionText text="What we bring." />
         </div>
-        <div className="grid bg-hippiegreen rounded p-6 grid-cols-1 xl:grid-cols-3 gap-12">
-          <ChooseCard
-            title="Experience"
-            text="Mozstro professional cloud consultants have the experience to help you scale and secure your cloud technologies."
-            icon={faCloud}
-          />
-          <ChooseCard
-            title="Result-driven"
-            text="We have a track record of success implementing cloud strategies and driving cloud adoption ROI."
-            icon={faPoll}
-          />
-          <ChooseCard
-            title="Cost-effective"
-            text="We deliver cost-effective cloud consulting solutions for businesses and organisations around the world."
-            icon={faMoneyBillAlt}
-          />
+        <div className="grid bg-hippiegreen justify-items-center py-10 text-center rounded p-6 grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="lg:w-3/4">
+            <ChooseCard
+              title="Experience"
+              text="Mozstro professional cloud consultants have the experience to help you scale and secure your cloud technologies."
+              icon={faCloud}
+            />
+          </div>
+          <div className="lg:w-3/4">
+            <ChooseCard
+              title="Result-driven"
+              text="We have a track record of success implementing cloud strategies and driving cloud adoption ROI."
+              icon={faPoll}
+            />
+          </div>
+          <div className="lg:w-2/4 md:col-span-2">
+            <ChooseCard
+              title="Cost-effective"
+              text="We deliver cost-effective cloud consulting solutions for businesses and organisations around the world."
+              icon={faMoneyBillAlt}
+            />
+          </div>
         </div>
       </section>
       <section>
         <div className="grid lg:mb-8 mt-12 grid-cols-1 lg:grid-cols-2">
           <div>
-            <SectionText text="What we are talking about right now." />
+            <SectionText text="Hot topic." />
             <div className="mt-4">
               <PostCard post={post} />
             </div>

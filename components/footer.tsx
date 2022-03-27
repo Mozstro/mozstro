@@ -6,13 +6,13 @@ import {
 const Footer = function Component() {
   return (
     <footer className="container mt-4 rounded p-4 bg-ebonyclay mx-auto mb-4">
+      <hr className="my-2 text-sundance" />
       <div className="flex flex-wrap md:flex-nowrap justify-around">
         <div className="mb-6 d:mb-0">
           <div className="flex mb-4 mt-6">
             <img className="w-10 object-contain" src="/mozstro_logo.png" alt="Mozstro Logo" />
             <p className="text-hippiegreen ml-4">Mozstro Limited. Registered in England with company number 13653603.</p>
           </div>
-
           <ul className="text-center flex-wrap lg:flex-nowrap flex justify-between text-lg">
             <li className="mr-2 text-hippiegreen">
               Email:

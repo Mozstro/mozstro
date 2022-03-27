@@ -73,6 +73,27 @@ const Footer = function Component() {
               </a>
             </li>
           </ul>
+          <div className="flex justify-between">
+            <ul className="mt-2">
+              <li>
+                <a className="text-sundance hover:text-hippiegreen" href="/Mozstro_Policy_Modern_Slavery_and_Human_Trafficking.pdf" rel="noreferrer">Modern Slavery Statement</a>
+              </li>
+              <li>
+                <a className="text-sundance hover:text-hippiegreen" href="/service-model" rel="noreferrer">Service model</a>
+              </li>
+              <li>
+                <a className="text-sundance hover:text-hippiegreen" href="/services" rel="noreferrer">Services</a>
+              </li>
+            </ul>
+            <ul className="mt-2">
+              <li>
+                <a className="text-sundance hover:text-hippiegreen" href="/about" rel="noreferrer">About us</a>
+              </li>
+              <li>
+                <a className="text-sundance hover:text-hippiegreen" href="/contact-us" rel="noreferrer">Contact us</a>
+              </li>
+            </ul>
+          </div>
 
         </div>
         <div>

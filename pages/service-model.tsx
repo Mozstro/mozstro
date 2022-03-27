@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import { Header } from '../components/header';
 import { ServiceModelCard } from '../components/serviceModelCard';
 import { SectionText } from '../components/sectionText';
+import { CallToAction } from '../components/callToAction';
 
 export default function Careers() {
   return (
@@ -20,15 +21,15 @@ export default function Careers() {
           Exclusive Mozstro delivery.
         </h2>
       </Header>
-      <section className="mt-20">
+      <section className="mt-8 xl:mt-20">
         <ServiceModelCard image="pathfinders" title="Pathfinders" subtitle="Collaboration at its peak">
-          <p className="font-serif text-ebonyclay py-2   text-md lg:text-xl">
+          <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
             Having a clear plan for your project allows for
             maximum performance for both now and also for in the future.
             Landscapes are ever changing,
             therefore it is important to have complete control over them.
           </p>
-          <p className="font-serif text-ebonyclay  py-y  text-md lg:text-xl">
+          <p className="font-serif text-ebonyclay  py-y text-md lg:text-xl">
             Our highly collaborative team of engineers
             will aid you throughout your journey, bringing in crisp new ideas for your brand.
           </p>
@@ -117,11 +118,14 @@ export default function Careers() {
               Our thought out internal processes have proven this since our conception.
             </p>
           </details>
-          <p className="font-serif text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
+          <p className="font-serif  mt-6 text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
             If you feel like our services would be beneficial to
             any of your upcoming projects going forward,
             then we would love to hear from you down below!
           </p>
+          <div className="bg-equator text-center">
+            <CallToAction text="Get in touch" link="/contact-us" />
+          </div>
         </div>
       </section>
     </Layout>

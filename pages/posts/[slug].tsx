@@ -58,12 +58,12 @@ const PostPage = ({
           What we are talking about.
         </h2>
       </Header>
-      <div className="my-8 md:mb-0 md:ml-12 md:mt-16">
+      <div className="mt-4 md:mb-0 md:ml-12 md:mt-16">
         <NavButton text="← Back" link="/posts" />
       </div>
       <article>
         <div>
-          <div className="text-center mt-8 lg:mt-0 mb-10 lg:-mb-10">
+          <div className="text-center mt-8  lg:mt-0 mb-2">
             <h3
               className="text-equator text-4xl bg-sundance inline-block p-6 xl:mt-0
                       transform -rotate-2"
@@ -84,7 +84,7 @@ const PostPage = ({
             src={frontMatter.image}
           />
         </div>
-        <div className="flex mt-2 my-4 lg:my-8 justify-between w-full">
+        <div className="flex flex-wrap lg:flex-nowrap mt-2 my-4 lg:my-8 justify-between w-full">
           <div className="flex flex-col">
             <p
               className="align-middle text-xl md:text-2xl bg-sundance transform -rotate-2
@@ -95,7 +95,7 @@ const PostPage = ({
               {frontMatter.topic}
             </p>
           </div>
-          <p className="items-center flex text-lg text-sundance">
+          <p className="mt-4 lg:mt-4  items-center flex text-lg text-sundance">
             {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}
           </p>
         </div>

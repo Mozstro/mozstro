@@ -15,7 +15,7 @@ export const PostCard: FunctionComponent<PostProps> = (
   },
 ) => (
   <article className="border-r-2 bg-hippiegreen p-6 " key={post.slug}>
-    <div className="bg-equator p-4">
+    <div className="bg-equator min-h-full p-4">
       <p className="mb-1 text-md text-sundance">
         {format(parseISO(post.date), 'MMMM dd, yyyy')}
       </p>

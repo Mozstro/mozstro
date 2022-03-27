@@ -16,7 +16,7 @@ export const ChooseCard: FunctionComponent<ChooseCardProps> = ({
   <div>
 
     <div className="flex flex-col transform
-                  hover:scale-105 lg:h-56 text-center"
+                  hover:scale-105 lg:h-30 text-center"
     >
       <div className="m-auto">
         <div className="flex">

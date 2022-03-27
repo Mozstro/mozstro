@@ -27,6 +27,7 @@ export const TeamMember: FunctionComponent<TeamMemberProps> = ({
             <h5 className="text-2xl rounded mb-2 bg-sundance p-2 leading-tight text-ebonyclay">{name}</h5>
             <p className="text-lg leading-tight text-ebonyclay">
               Role:
+              {' '}
               {role}
             </p>
           </div>

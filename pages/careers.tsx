@@ -28,7 +28,7 @@ export default function Careers() {
           name="Elliot Morris"
           role="CEO / Managing consultant"
           email="elliot@mozstro.com"
-          image="elliot.png"
+          image="profile.png"
         />
       </div>
       <div className="bg-hippiegreen -rotate-2 transform hover:scale-105 rounded shadow border-ebonyclay
@@ -38,10 +38,12 @@ export default function Careers() {
           We are always on the lookout for talent.
         </h3>
         <p className="font-serif text-sundance bg-ebonyclay shadow p-2 lg:p-6 text-md lg:text-xl">
-          Join a team of cloud consulting professionals harnessing the power of cloud to deliver game-changing value to businesses and leading organisations.
+          Join a team of cloud consulting professionals harnessing
+          the power of cloud to deliver game-changing value to businesses and leading organisations.
         </p>
         <p className="font-serif text-sundance bg-ebonyclay shadow p-2 lg:p-6 text-md lg:text-xl">
-          You’ll be a part of a family that appreciates your contributions and is ready to help take your career to the next level.
+          You’ll be a part of a family that appreciates
+          your contributions and is ready to help take your career to the next level.
         </p>
       </div>
     </Layout>

@@ -58,6 +58,10 @@
   @apply text-sundance my-2 text-lg;
 }
 
+.blog-content h5, h6{
+  @apply text-sundance my-2 text-md;
+}
+ 
 .blog-content pre{
   @apply bg-sundance rounded p-1 my-2 overflow-scroll inline-block;
 }

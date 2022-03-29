@@ -59,7 +59,7 @@
 }
 
 .blog-content h5, h6{
-  @apply text-sundance my-2 text-md;
+  @apply text-sundance my-2 text-lg;
 }
  
 .blog-content pre{

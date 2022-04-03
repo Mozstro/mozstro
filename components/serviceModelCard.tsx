@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import Image from 'next/image';
 
 type ServiceModelCardProps = {
   title: string,
@@ -15,8 +16,14 @@ export const ServiceModelCard: FunctionComponent<ServiceModelCardProps> = ({
 }) => (
   <article className=" bg-sundance p-12 mt-10 flex flex-wrap xl:flex-nowrap justify-center rounded p-2">
     <div>
-      {' '}
-      <img className="md:max-w-xl rounded-3xl" src={`/${image}.png`} alt={`${image}`} />
+         <Image 
+          className="rounded-3xl"
+          src={`/${image}.png`}
+          alt={`${image}`}
+          width={1400}
+          height={800}
+          priority
+        />
     </div>
     <div className="py-2 lg:px-6 ">
       <h3 className="text-3xl mt-4 xl:mt-0 text-equator font-bold">{title}</h3>

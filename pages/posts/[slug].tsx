@@ -48,7 +48,7 @@ const PostPage = ({
   return (
     <Layout customMeta={customMeta}>
       <NextSeo
-        title={`Mozstro - ${frontMatter.title}`}
+        title={`Mozstro Cloud Consulting - ${frontMatter.title}`}
       />
       <Header>
         <h1 className="text-4xl font-bold lg:text-7xl text-center text-sundance">
@@ -78,11 +78,15 @@ const PostPage = ({
               {frontMatter.author}
             </p>
           </div>
-          <img
-            className="blog-image"
-            alt={frontMatter.imageAlt}
-            src={frontMatter.image}
-          />
+          <div className="blog-image">
+            <Image
+              alt={frontMatter.imageAlt}
+              src={frontMatter.image}        
+              width={1200}
+              height={600}
+              priority
+                  />
+          </div>
         </div>
         <div className="flex flex-wrap lg:flex-nowrap mt-2 my-4 lg:my-8 justify-between w-full">
           <div className="flex flex-col">

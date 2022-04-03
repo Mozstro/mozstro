@@ -1,4 +1,6 @@
 import React, { FunctionComponent } from 'react';
+import Image from 'next/image';
+import mozstro from '../public/mozstro_logo.png';
 import Nav from './nav';
 
 type HeaderProps = {
@@ -13,10 +15,13 @@ export const Header: FunctionComponent<HeaderProps> = (
   <header>
     <div className=" rounded pb-8 p-4">
       <div className="flex justify-center">
-        <img
-          className="h-16 sm:h-24 rounded-full"
-          src="/mozstro_logo.png"
-          alt="Mozstro Logo"
+        <Image
+            className="rounded-full"
+          src={mozstro}
+          alt="Mozstro logo"
+          width={96}
+          height={96}
+          
         />
       </div>
       {children}

@@ -10,7 +10,7 @@ export default function About() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro - About Us"
+        title="Mozstro Cloud Consulting - About Us"
         description="Find out more about who we are and what our cloud computing  mission is."
       />
       <Header>
@@ -46,13 +46,13 @@ export default function About() {
               We aim to deliver powerful, secure cloud consulting solutions to our clients.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              We’re here to support you in every step of your cloud journey, making sure you understand the complexities of cloud technology.
+              We&apos;re here to support you in every step of your cloud journey, making sure you understand the complexities of cloud technology.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              With Mozstro cloud consulting team, you're in capable hands.
+              With Mozstro cloud consulting team, you&apos;re in capable hands.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              You’ll have access to the expertise, knowledge, and professionalism of a technical team with the experience you need to innovate, secure your cloud systems, improve performance and overcome complex business challenges.
+              You&apos;ll have access to the expertise, knowledge, and professionalism of a technical team with the experience you need to innovate, secure your cloud systems, improve performance and overcome complex business challenges.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
               Get in touch with us today.

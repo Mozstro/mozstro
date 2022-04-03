@@ -33,7 +33,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
       <p className="text-sundance font-serif px-4 mt-2 text-md lg:text-xl">
         {project.description}
       </p>
-      <CallToAction text="Find out more" link={`/projects/${project.slug}`} />
+      <CallToAction text={`Learn about this ${project.sector} project`} link={`/projects/${project.slug}`} />
     </div>
   </article>
 );

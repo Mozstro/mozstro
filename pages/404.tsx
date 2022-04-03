@@ -8,7 +8,7 @@ export default function Custom404() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro - Not found"
+        title="Mozstro Cloud Consulting - Not found"
         description="Page not found. Please return home."
       />
       <Header>

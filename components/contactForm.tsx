@@ -66,7 +66,7 @@ function ContactForm() {
             How can we help?
           </label>
           <textarea
-            className="appearance-none rounded-lg max-w-lg border-2 border-rolling-stone w-full text-rolling-stone py-1 px-2 leading-tight focus:outline-none"
+            className="appearance-none rounded-lg max-w-lg border-2 border-rolling-stone w-full text-rolling-stone p-2 leading-tight focus:outline-none"
             id="message"
             name="message"
             required

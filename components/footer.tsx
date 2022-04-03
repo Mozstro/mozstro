@@ -2,6 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin, faTwitterSquare, faYoutubeSquare, faFacebookSquare,
 } from '@fortawesome/free-brands-svg-icons';
+import Image from 'next/image';
+import mozstro from '../public/mozstro_logo.png';
+import Link from 'next/link';
 
 const Footer = function Component() {
   return (
@@ -10,7 +13,13 @@ const Footer = function Component() {
       <div className="flex flex-wrap md:flex-nowrap justify-around">
         <div className="mb-6 d:mb-0">
           <div className="flex mb-4 mt-6">
-            <img className="w-10 object-contain" src="/mozstro_logo.png" alt="Mozstro Logo" />
+             <Image
+              className="object-contain"
+              src={mozstro}
+              alt="Mozstro logo"
+              width={40}
+              height={40}
+            />
             <p className="text-hippiegreen ml-4">Mozstro Limited. Registered in England with company number 13653603.</p>
           </div>
           <ul className="text-center flex-wrap lg:flex-nowrap flex justify-between text-lg">
@@ -37,7 +46,7 @@ const Footer = function Component() {
           </ul>
           <ul className="flex">
             <li>
-              <a target="_blank" href="https://www.linkedin.com/company/mozstro/" rel="noreferrer">
+              <a target="_blank" aria-label='Mozstro Linkedin' href="https://www.linkedin.com/company/mozstro/" rel="noreferrer">
                 <FontAwesomeIcon
                   className="text-sundance hover:text-hippiegreen w-8 inline"
                   width="48"
@@ -46,7 +55,7 @@ const Footer = function Component() {
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://twitter.com/mozstro_" rel="noreferrer">
+              <a target="_blank" aria-label='Mozstro Twitter' href="https://twitter.com/mozstro_" rel="noreferrer">
                 <FontAwesomeIcon
                   className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
                   width="48"
@@ -55,7 +64,7 @@ const Footer = function Component() {
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.youtube.com/channel/UCCRAvf8iziQdd1LDv2MZBiQ" rel="noreferrer">
+              <a target="_blank" aria-label='Mozstro Youtube' href="https://www.youtube.com/channel/UCCRAvf8iziQdd1LDv2MZBiQ" rel="noreferrer">
                 <FontAwesomeIcon
                   className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
                   width="48"
@@ -64,7 +73,7 @@ const Footer = function Component() {
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.facebook.com/mozstro" rel="noreferrer">
+              <a target="_blank" aria-label='Mozstro Facebook' href="https://www.facebook.com/mozstro" rel="noreferrer">
                 <FontAwesomeIcon
                   className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
                   width="48"
@@ -76,21 +85,29 @@ const Footer = function Component() {
           <div className="flex justify-between">
             <ul className="mt-2">
               <li>
-                <a className="text-sundance hover:text-hippiegreen" href="/Mozstro_Policy_Modern_Slavery_and_Human_Trafficking.pdf" rel="noreferrer">Modern Slavery Statement</a>
+                <a className="text-sundance text-lg hover:text-hippiegreen" href="/Mozstro_Policy_Modern_Slavery_and_Human_Trafficking.pdf" rel="noreferrer">Modern Slavery Statement</a>
               </li>
               <li>
-                <a className="text-sundance hover:text-hippiegreen" href="/service-model" rel="noreferrer">Service model</a>
+                <Link href="/service-model">
+                <a className="text-sundance text-lg hover:text-hippiegreen" rel="noreferrer">Service model</a>
+                </Link>
               </li>
               <li>
-                <a className="text-sundance hover:text-hippiegreen" href="/services" rel="noreferrer">Services</a>
+                 <Link href="/services">
+                <a className="text-sundance text-lg hover:text-hippiegreen" rel="noreferrer">Services</a>
+                </Link>
               </li>
             </ul>
             <ul className="mt-2">
               <li>
-                <a className="text-sundance hover:text-hippiegreen" href="/about" rel="noreferrer">About us</a>
+                 <Link href="/about">
+                <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">About us</a>
+              </Link>
               </li>
               <li>
-                <a className="text-sundance hover:text-hippiegreen" href="/contact-us" rel="noreferrer">Contact us</a>
+                <Link href="/contact-us">
+                <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">Contact us</a>
+                </Link>
               </li>
             </ul>
           </div>

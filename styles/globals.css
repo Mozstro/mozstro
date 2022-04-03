@@ -99,4 +99,5 @@
   height: 42vw;
   max-height: 600px;
   object-fit: contain;
+  text-align: center;
 }

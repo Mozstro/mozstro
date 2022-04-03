@@ -2,7 +2,8 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 import { GetStaticProps } from 'next';
 import { faCloud, faPoll, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons';
-import { OfferCard } from '../components/offerCard';
+import Image from 'next/image';
+import home from '../public/home.png';
 import { PostCard } from '../components/postCard';
 
 import Layout from '../components/layout';
@@ -16,6 +17,7 @@ import { ChooseCard } from '../components/chooseCard';
 import ContactForm from '../components/contactForm';
 import { SectionText } from '../components/sectionText';
 import { CallToAction } from '../components/callToAction';
+import Link from 'next/link';
 
 type HomeProps = {
   post: PostType;
@@ -29,18 +31,19 @@ export default function Home({
   return (
     <Layout>
       <NextSeo
-        title="Mozstro - Home"
+        title="Mozstro Cloud Consulting - Home"
         description="Reliable Cloud Consulting Services. Your Secure Cloud Journey Starts Here."
       />
       <Header>
         <h1 className="text-4xl lg:text-7xl text-center text-ebonyclay">
+          <Link  href="/">
           <a
             className="font-bold  text-sundance cursor-pointer"
-            href="/"
             rel="noopener noreferrer"
           >
             Mozstro.
           </a>
+          </Link>
         </h1>
         <h2 className="text-center text-sundance text-3xl">
           Reliable cloud consulting services.
@@ -58,10 +61,15 @@ export default function Home({
               Exclusive Mozstro service model.
             </h3>
             <div className="flex flex-wrap justify-center xl:flex-nowrap m-4">
-              <div className=" p-4">
-                <img className="object-cover md:max-w-xl rounded-3xl" src="home.png" alt="home" />
+              <div className="object-cover md:max-w-xl lg:mr-4 rounded-3xl">
+                <Image
+                  src={home}
+                  alt="Home Mozstro image"
+                  width={1400}
+                  height={1000}
+                  priority
+                />
               </div>
-
               <div className="mt-4 xl:mt-20">
                 <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-6 py-2 lg:px-6 text-md lg:text-xl">
                   Our team of cloud experts will work as an extension of your enterprise,
@@ -76,7 +84,6 @@ export default function Home({
               </div>
             </div>
           </div>
-
         </div>
       </section>
       <section>

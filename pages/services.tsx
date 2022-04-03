@@ -9,7 +9,7 @@ export default function About() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro - Services"
+        title="Mozstro Cloud Consulting - Services"
         description="Find out more about what we offer from cloud services to complete full stack engineering across."
       />
       <Header>
@@ -25,7 +25,7 @@ export default function About() {
           title="Digital transformation."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-            The digital age is here and it's here to change your business and industry,
+            The digital age is here and it&apos;s here to change your business and industry,
             for the better.
           </p>
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">

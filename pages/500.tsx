@@ -8,7 +8,7 @@ export default function Custom500() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro - Internal server error"
+        title="Mozstro Cloud Consulting - Internal server error"
         description="Internal server error on our side."
       />
       <Header>

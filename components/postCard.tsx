@@ -30,7 +30,7 @@ export const PostCard: FunctionComponent<PostProps> = (
         {post.topic}
       </h4>
       <p className="font-serif text-sundance text-md lg:text-xl mb-3">{post.description}</p>
-      <CallToAction text="Read more" link={`/posts/${post.slug}`} />
+      <CallToAction text={`Read more ${post.topic}`} link={`/posts/${post.slug}`} />
     </div>
   </article>
 );

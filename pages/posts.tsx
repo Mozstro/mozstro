@@ -16,7 +16,7 @@ type PostProps = {
 export const Posts = ({ posts }: PostProps): JSX.Element => (
   <Layout>
     <NextSeo
-      title="Mozstro - Posts"
+      title="Mozstro Cloud Consulting - Posts"
       description="Read our latest blog posts to find out what we are talking about."
     />
     <Header>

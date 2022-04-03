@@ -8,7 +8,7 @@ export default function Careers() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro - Contact us"
+        title="Mozstro Cloud Consulting - Contact us"
         description="Get in touch with us."
       />
       <Header>

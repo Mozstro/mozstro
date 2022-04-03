@@ -15,7 +15,7 @@ type WorkProps = {
 export const Work = ({ projects }: WorkProps): JSX.Element => (
   <Layout>
     <NextSeo
-      title="Mozstro - Work"
+      title="Mozstro Cloud Consulting - Work"
       description="View our work and see what projects we have delivered."
     />
     <Header>

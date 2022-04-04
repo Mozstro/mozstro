@@ -82,7 +82,7 @@ const Footer = function Component() {
               </a>
             </li>
           </ul>
-          <div className="flex justify-between">
+          <div className="flex flex-wrap flex-col lg:flex-row justify-between">
             <ul className="mt-2">
               <li>
                 <a className="text-sundance text-lg hover:text-hippiegreen" href="/Mozstro_Policy_Modern_Slavery_and_Human_Trafficking.pdf" rel="noreferrer">Modern Slavery Statement</a>

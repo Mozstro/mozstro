@@ -109,6 +109,11 @@ const Footer = function Component() {
                 <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">Contact us</a>
                 </Link>
               </li>
+               <li>
+                <Link href="/privacy-policy">
+                <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">Privacy policy</a>
+                </Link>
+              </li>
             </ul>
           </div>
 

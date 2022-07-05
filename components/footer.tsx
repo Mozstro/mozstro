@@ -137,9 +137,9 @@ const Footer = function Component() {
               here!
             </a>
           </p>
-          <ul className="flex my-4 justify-center">
-            <li><img src="/aws_sa_asso.png" alt="AWS SA Associate certification" /></li>
-            <li><img src="/aws_dev_asso.png" alt="AWS Developer Associate certification" /></li>
+          <ul className="flex items-center my-4 justify-around">
+            <li><img className='w-40' src="/css.png" alt="CCS" /></li>
+             <li><img className='w-40 p-2 bg-white' src="/apn.png" alt="CCS" /></li>
           </ul>
         </div>
       </div>

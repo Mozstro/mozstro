@@ -15,6 +15,7 @@ module.exports = {
       equator: 'var(--equator)',
       geebung: 'var(--geebung)',
       hippiegreen: 'var(--hippie-green)',
+      white: 'var(--white)',
     },
   },
   variants: {

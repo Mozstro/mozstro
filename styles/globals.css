@@ -92,7 +92,9 @@
 }
 
 .blog-content a{
-  @apply text-sundance hover:text-ebonyclay;
+  @apply text-palesky hover:text-hippiegreen;
+  text-underline-offset: 4px;
+  text-decoration: underline;
 }
 
 

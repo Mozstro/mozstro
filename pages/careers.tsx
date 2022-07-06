@@ -26,9 +26,9 @@ export default function Careers() {
       <div className="flex flex-wrap justify-center justify-around">
         <TeamMember
           name="Elliot Morris"
-          role="CEO / Managing consultant"
+          role="Chief executive officer"
           email="elliot@mozstro.com"
-          image="profile.png"
+          image="elliot.jpg"
         />
       </div>
       <div className="bg-hippiegreen -rotate-2 transform hover:scale-105 rounded shadow border-ebonyclay

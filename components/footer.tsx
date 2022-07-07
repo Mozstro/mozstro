@@ -137,9 +137,10 @@ const Footer = function Component() {
               here!
             </a>
           </p>
-          <ul className="flex items-center my-4 justify-around">
+          <ul className="flex flex-wrap md:flex-nowrap items-center my-4 justify-around">
             <li><img className='w-40' src="/css.png" alt="CCS" /></li>
            <li><img className='w-40 p-2 bg-white' src="/apn.png" alt="CCS" /></li>
+           <li><img className='w-40 p-2 bg-white' src="/ttc.png" alt="CCS" /></li>
           </ul>
         </div>
       </div>

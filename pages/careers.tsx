@@ -30,6 +30,12 @@ export default function Careers() {
           email="elliot@mozstro.com"
           image="elliot.jpg"
         />
+          <TeamMember
+          name="Tom France"
+          role="Head Of Content"
+          email="tom@mozstro.com"
+          image="tom.png"
+        />
       </div>
       <div className="bg-hippiegreen -rotate-2 transform hover:scale-105 rounded shadow border-ebonyclay
                       p-6 md:w-11/12 xl:w-1/2 my-10 z-10"

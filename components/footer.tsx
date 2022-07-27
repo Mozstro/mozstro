@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faLinkedin, faTwitterSquare, faYoutubeSquare, faFacebookSquare,
+  faLinkedin, faTwitterSquare, faYoutubeSquare, faFacebookSquare, faInstagramSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 import mozstro from '../public/mozstro_logo.png';
@@ -55,6 +55,15 @@ const Footer = function Component() {
               </a>
             </li>
             <li>
+              <a target="_blank" aria-label='Mozstro Linkedin' href="https://instagram.com/mozstro" rel="noreferrer">
+                <FontAwesomeIcon
+                  className="text-sundance hover:text-hippiegreen ml-3 w-8 inline"
+                  width="48"
+                  icon={faInstagramSquare}
+                />
+              </a>
+            </li>
+            <li>
               <a target="_blank" aria-label='Mozstro Twitter' href="https://twitter.com/mozstro_" rel="noreferrer">
                 <FontAwesomeIcon
                   className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
@@ -69,15 +78,6 @@ const Footer = function Component() {
                   className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
                   width="48"
                   icon={faYoutubeSquare}
-                />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" aria-label='Mozstro Facebook' href="https://www.facebook.com/mozstro" rel="noreferrer">
-                <FontAwesomeIcon
-                  className="text-sundance ml-3 hover:text-hippiegreen w-8 inline"
-                  width="48"
-                  icon={faFacebookSquare}
                 />
               </a>
             </li>

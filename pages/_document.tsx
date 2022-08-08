@@ -12,6 +12,7 @@ class MyDocument extends Document {
     return (
       <Html className="bg-equator" lang="en">
         <Head />
+          <script src="https://js.tito.io/v2" async></script>
         <body>
           <Main />
           <NextScript />

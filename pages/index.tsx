@@ -143,6 +143,15 @@ export default function Home({
           </div>
         </div>
       </section>
+      <section>
+         <div className='mt-8 text-center'>
+                      <SectionText text="Cloud - 9 Cloud Security" />
+              
+      <p>Mozstro's first tech event.</p>
+            </div>
+      <tito-widget event="mozstro/cloud-9"></tito-widget>
+
+      </section>
     </Layout>
   );
 }

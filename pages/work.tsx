@@ -26,7 +26,7 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
         Helping You Take Advantage Of Cloud.
       </h2>
     </Header>
-    <div className="flex my-4 justify-center">
+    <div className="flex my-8 justify-center">
       <SectionText text="Previous work." />
     </div>
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">

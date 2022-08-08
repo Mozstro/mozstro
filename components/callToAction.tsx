@@ -10,7 +10,7 @@ export const CallToAction: FunctionComponent<CallToActionProps> = ({
   text,
   link,
 }) => (
-  <Link  href={`${link}`}> 
+  <Link href={`${link}`}> 
   <a
     href={`${link}`}
     className="m-4 bg-hippiegreen p-4 text-equator text-2xl lg:text-3xl hover:bg-sundance

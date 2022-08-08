@@ -20,7 +20,7 @@ export default function Careers() {
           Reimagine Your Career With Mozstro.
         </h2>
       </Header>
-      <div className="flex justify-center my-4">
+      <div className="flex my-8 justify-center my-4">
         <SectionText text="Our team." />
       </div>
       <div className="flex flex-wrap justify-center justify-around">
@@ -37,6 +37,7 @@ export default function Careers() {
           image="tom.png"
         />
       </div>
+      <div className='flex justify-center my-4'>
       <div className="bg-hippiegreen -rotate-2 transform hover:scale-105 rounded shadow border-ebonyclay
                       p-6 md:w-11/12 xl:w-1/2 my-10 z-10"
       >
@@ -51,6 +52,7 @@ export default function Careers() {
           You’ll be a part of a family that appreciates
           your contributions and is ready to help take your career to the next level.
         </p>
+      </div>
       </div>
     </Layout>
   );

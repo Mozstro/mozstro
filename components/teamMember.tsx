@@ -16,9 +16,9 @@ export const TeamMember: FunctionComponent<TeamMemberProps> = ({
   image,
 }) => (
   <article className="m-4">
-    <div className="bg-sundance mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden">
-      <div className="sm:flex sm:items-center px-6 py-4">
-        <div   className=" text-center mr-4 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0">
+    <div className="bg-sundance mx-auto max-w-sm shadow-lg  rounded-lg overflow-hidden">
+      <div className="sm:flex sm:items-center flex-col px-6 py-4">
+        <div   className=" pt-6 text-center mr-4 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0">
            <Image
                 className="rounded-full"
                   src={`/${image}`}
@@ -31,14 +31,14 @@ export const TeamMember: FunctionComponent<TeamMemberProps> = ({
       </div>
         <div className="text-center sm:text-left sm:flex-grow">
           <div className="mb-4">
-            <h5 className="text-2xl rounded mb-2 bg-sundance p-2 leading-tight text-ebonyclay">{name}</h5>
-            <p className="text-lg leading-tight text-ebonyclay">
+            <h5 style={ {width: "350px"}} className="text-2xl text-center rounded mb-2 bg-sundance p-2 leading-tight text-ebonyclay">{name}</h5>
+            <p className="text-lg text-center leading-tight text-ebonyclay">
               Role:
               {' '}
               {role}
             </p>
           </div>
-          <div>
+          <div className='text-center'>
             <CallToAction text="Message" link={`mailto:${email}`} />
           </div>
         </div>

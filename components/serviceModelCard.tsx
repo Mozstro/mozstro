@@ -15,13 +15,13 @@ export const ServiceModelCard: FunctionComponent<ServiceModelCardProps> = ({
   children,
 }) => (
   <article className=" bg-sundance p-12 mt-10 flex flex-wrap xl:flex-nowrap justify-center rounded p-2">
-    <div>
+    <div className='w-full'>
          <Image 
           className="rounded-3xl"
-          src={`/${image}.png`}
+          src={`/${image}.webp`}
           alt={`${image}`}
-          width={1400}
-          height={800}
+          width={700}
+          height={400}
           priority
         />
     </div>

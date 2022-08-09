@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
-import { Header } from '../components/header';
+
 import mozstro from '../public/mozstro_logo.png';
 import Image from 'next/image';
 import { CallToAction } from '../components/callToAction';
@@ -9,8 +9,8 @@ export default function Careers() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro Cloud Consulting - Service model"
-        description="Learn more about how we accelerate your delivery."
+        title="Mozstro Cloud Consulting - Welcome to Cloud{9}"
+        description="Your number one hub for all things Cloud computing!" 
       />
   <header>
      <div className="flex justify-center">

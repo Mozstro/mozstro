@@ -39,27 +39,7 @@ export default function About() {
             </p>
           </div>
         </article>
-        <article>
-          <SectionText text="Our mission." />
-          <div className="bg-hippiegreen rounded p-4 m-4 shadow-md">
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-              We aim to deliver powerful, secure cloud consulting solutions to our clients.
-            </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-              We&apos;re here to support you in every step of your cloud journey, making sure you understand the complexities of cloud technology.
-            </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-              With Mozstro cloud consulting team, you&apos;re in capable hands.
-            </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-              You&apos;ll have access to the expertise, knowledge, and professionalism of a technical team with the experience you need to innovate, secure your cloud systems, improve performance and overcome complex business challenges.
-            </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-              Get in touch with us today.
-            </p>
-
-          </div>
-        </article>
+       
         <article>
           <SectionText text="How to get started?" />
           <div className="bg-hippiegreen rounded p-4  m-4 shadow-md">

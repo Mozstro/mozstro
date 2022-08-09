@@ -26,6 +26,24 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
         Helping You Take Advantage Of Cloud.
       </h2>
     </Header>
+    <div>
+       <article className='mb-10 md:mt-16'>
+        <div className='text-center md:text-left'>   
+          <SectionText text="Our mission." />
+          </div>
+          <div className="bg-hippiegreen rounded p-4 m-4 shadow-md">
+            <p className="text-rolling-stone px-4 my-4 text-xl">
+             Through Mozstro, you are gaining access to a capable team of Cloud specialists who are here to guide you in your journey to the Cloud. 
+            </p>
+            <p className="text-rolling-stone px-4 my-4 text-xl">
+             Our consulting team are highly collaborative and are determined to improve your businesses performance through secure cloud consulting solutions. 
+            </p>
+            <p className="text-rolling-stone px-4 my-4 text-xl">
+              Get in touch with us today. 
+            </p>
+          </div>
+        </article>
+    </div>
     <div className="flex my-8 justify-center">
       <SectionText text="Previous work." />
     </div>

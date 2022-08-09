@@ -32,7 +32,7 @@ export default function Careers() {
        
        <div className='flex mt-10 justify-center'>
           <Image
-                  src={"/mozstro-board.jpg"}
+                  src={"/mozstro-board.webp"}
                   alt="Cloud 9 bill board"
                   width={800}
                   height={400}

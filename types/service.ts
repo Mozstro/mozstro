@@ -4,7 +4,5 @@ export type ServiceType = {
   image?: string;
   imageAlt?: string;
   slug: string;
-  author: string;
   title: string;
-  topic: string;
 };

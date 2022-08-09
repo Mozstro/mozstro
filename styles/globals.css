@@ -27,6 +27,10 @@
   }
 }
 
+a {
+    @apply cursor-pointer;
+}
+
 :root {
   --ebony-clay: #1C242C;
   --sundance: #D0B863;

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",
+    "@fortawesome/fontawesome-common-types": "^6.1.2",
     "@fortawesome/fontawesome-svg-core": "~1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",

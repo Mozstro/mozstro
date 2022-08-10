@@ -26,4 +26,7 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   swcMinify: true,
+  images: {
+    minimumCacheTTL: 31536000,
+},
 };

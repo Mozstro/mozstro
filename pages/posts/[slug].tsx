@@ -81,9 +81,9 @@ const PostPage = ({
           <div className="blog-image">
             <Image
               alt={frontMatter.imageAlt}
-              src={frontMatter.image}        
-              width={1200}
-              height={600}
+              src={frontMatter.image}
+              width={800}
+              height={400}
               priority
                   />
           </div>

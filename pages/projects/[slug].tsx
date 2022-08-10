@@ -76,8 +76,8 @@ const ProjectPage = ({
               alt={frontMatter.imageAlt}
               src={frontMatter.image}
                   
-              width={1200}
-              height={600}
+              width={800}
+              height={400}
               priority
             />
           </div>

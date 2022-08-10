@@ -18,6 +18,7 @@ import ContactForm from '../components/contactForm';
 import { SectionText } from '../components/sectionText';
 import { CallToAction } from '../components/callToAction';
 import Link from 'next/link';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 type HomeProps = {
   post: PostType;
@@ -95,21 +96,21 @@ export default function Home({
             <ChooseCard
               title="Experience"
               text="Mozstro professional cloud consultants have the experience to help you scale and secure your cloud technologies."
-              icon={faCloud}
+              icon={faCloud as IconProp}
             />
           </div>
           <div className="lg:w-3/4">
             <ChooseCard
               title="Result-driven"
               text="We have a track record of success implementing cloud strategies and driving cloud adoption ROI."
-              icon={faPoll}
+              icon={faPoll as IconProp}
             />
           </div>
           <div className="lg:w-2/4 md:col-span-2">
             <ChooseCard
               title="Cost-effective"
               text="We deliver cost-effective cloud consulting solutions for businesses and organisations around the world."
-              icon={faMoneyBillAlt}
+              icon={faMoneyBillAlt as IconProp}
             />
           </div>
         </div>

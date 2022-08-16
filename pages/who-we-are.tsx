@@ -21,8 +21,11 @@ export default function WhoWeAre() {
           We make cloud work for you.
         </h2>
       </Header>
-      <section className="grid grid-cols-1 mt-8 lg:mt-12 lg:grid-cols-2">
-          <div className='flex items-center'>
+      <section className="grid grid-cols-1 mt-8 lg:mt-16 lg:grid-cols-2">
+        <div>
+
+<SectionText text="What sets us apart?" />
+ <div className='flex items-center'>
           <div className="bg-hippiegreen items-center rounded p-4 grid m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               Mozstro is a global cloud consulting company operating from the UK.
@@ -30,7 +33,13 @@ export default function WhoWeAre() {
             <p className="text-rolling-stone px-4 my-4 text-xl">
               We are a cloud security, cloud application, and cloud infrastructure-focused company that delivers high-value consultancy services to clients through reliable and cost-effective solutions.
             </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
+          </div>
+          </div>     
+        </div>
+          <div className='flex items-center'>
+          <div className="bg-hippiegreen items-center rounded p-4 grid lg:mt-32 m-4 shadow-md">
+
+            <p className="text-rolling-stone px-4  my-4 text-xl">
               With our cutting-edge service approach, we can become a seamless extension of your team, providing dynamic, resilient, and scalable solutions that make a difference in your business.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
@@ -38,7 +47,7 @@ export default function WhoWeAre() {
             </p>
           </div>
           </div>     
-        <div>
+        <div className='mt:10 lg:mt-20'>
           <SectionText text="How to get started?" />
           <div className="bg-hippiegreen rounded p-4  m-4 shadow-md">
             <h5 className="text-rolling-stone px-4 my-4 text-2xl">

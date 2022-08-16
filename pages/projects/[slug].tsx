@@ -58,12 +58,12 @@ const ProjectPage = ({
           Problems solved.
         </h2>
       </Header>
-      <div className="mt-4 md:mb-0 md:ml-12 md:mt-16">
+      <div className="absolute mt-4 md:mb-0 md:ml-12 md:mt-16">
         <NavButton text="← Back" link="/work" />
       </div>
       <article>
         <div>
-          <div className="text-center">
+          <div className="text-center mt-10">
             <h3
               className="text-equator text-4xl bg-sundance inline-block p-6 mt-4 lg:mt-0 mb-2
                       transform -rotate-2"
@@ -71,13 +71,12 @@ const ProjectPage = ({
               {frontMatter.title}
             </h3>
           </div>
-          <div className="blog-image">
+          <div className="blog-image mt-2">
             <Image
               alt={frontMatter.imageAlt}
               src={frontMatter.image}
-                  
-              width={800}
-              height={400}
+              width={600}
+              height={300}
               priority
             />
           </div>

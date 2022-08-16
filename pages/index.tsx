@@ -52,7 +52,7 @@ export default function Home({
       </Header>
        <section>
          
-        <div className="mt-10 flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
+        <div className="mt-10 flex bg-rollingstone xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
           <div className="bg-hippiegreen rounded shadow border-ebonyclay
                   p-2 m-4 z-10"
           >
@@ -204,11 +204,12 @@ We can become embedded in your existing project creating a high-class, diverse w
         </div>
       </section>
       <section>
+         <div className="flex mt-16 mb-8 justify-center">
+          <SectionText text="Want to see how we can add value first hand?" />
+        </div>
         <div className="mt-10  flex justify-center rounded p-2">
           <div className="rounded p-4 bg-hippiegreen sm:p-6">
-            <h3 className="font-bold py-1 text-xl lg:text-2xl text-equator">
-              Find out what we bring to the table.
-            </h3>
+           
             <p className="font-serif py-1 text-lg lg:text-xl text-equator">
               Fill out and submit the form below and we will be in touch!
             </p>

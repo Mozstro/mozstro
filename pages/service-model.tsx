@@ -46,7 +46,7 @@ export default function Careers() {
             We will provide you with engaging knowledge that will remain timeless for your businesses lifespan and future performances. We are highly welcoming to new, fresh ideas brought forward. 
           </p>
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            Our team is highly effective at communicating with you at every stage of our journey. Information and updates are provided swiftly with all queries receiving  fast responses for your benefit. s
+            Our team is highly effective at communicating with you at every stage of our journey. Information and updates are provided swiftly with all queries receiving  fast responses for your benefit.
             
           </p>
         </ServiceModelCard>

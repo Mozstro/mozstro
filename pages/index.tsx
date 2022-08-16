@@ -143,7 +143,7 @@ export default function Home({
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
            Allow Mozstro to guide you through the cloud, maintaining your businesses cloud infrastructure.
 Our Cloud solutions are consistent and highly scalable brought to you by Cloud native specialists.
-Bette yet our migration facilities create a hassle free switch to the cloud for your businesses systems.
+Better yet our migration facilities create a hassle free switch to the cloud for your businesses systems.
            </p>
         </ServiceCard>
          <ServiceCard

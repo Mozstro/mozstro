@@ -18,7 +18,7 @@ export const ServiceModelCard: FunctionComponent<ServiceModelCardProps> = ({
     <div className='w-full'>
          <Image 
           className="rounded-3xl"
-          src={`/${image}.webp`}
+          src={`/${image}.jpg`}
           alt={`${image}`}
           width={700}
           height={400}

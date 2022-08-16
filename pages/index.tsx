@@ -97,17 +97,20 @@ export default function Home({
           title="Discovery."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-            It is important we understand your business and the needs it posses. This enables us to refine our work and approach needed to achieve the set goals and targets.
-          </p>
-          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-           Our interpersonal team will become an extension.
+           We work with your business and take your problems and ideas through our discovery process. 
+This consists of creating demonstrable deliverables which are estimable. Then action is taken to bring your vision into a reality. 
+It is important we understand your business and how we can add value. This is achieved by performing effective discovery in the early stages of a project coming into fruition. 
           </p>
         </ServiceCard>
           <ServiceCard
           title="Agile delivery."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-           You have access to Agile technologies allows us to deliver cloud solutions efficiently to our clients using a team of experience workers to lead the way.
+          We understand Agile and have experience working with this across a wide variety of project types. 
+
+The implementation will always be tailed to suit the needs of the project at hand. 
+
+We take pride in building highly performant teams and ensuring collaboration is at the forefront of all work produced.
           </p>
 
         </ServiceCard>
@@ -115,7 +118,11 @@ export default function Home({
           title="Cloud native solutions."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-            Our cloud native solutions fully optimise the most functional parts of the cloud and are able to implement them into cloud infrastructure for your business.
+            Our solutions take a cloud-native approach by default. This means we can achieve a faster time to market and ensure reliability, scalability, and high performance. 
+
+We opt for serverless, containers and manage services where sensible but are also capable to create custom solutions where required.
+
+
           </p>
 
         </ServiceCard>
@@ -128,8 +135,8 @@ export default function Home({
           title="Architecture and technical strategy consulting."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-            Forward thinking and ability to band together at the opening stage of a digital transformation allows a clear structure for the future of our work together. 
-            Our expertise and experience will be shown from start to finish.
+            Getting architecture right can be difficult. We can help with this by advising and working closely with your team to ensure the right solution is architected. 
+            It's important for us to really understand your pain points and how we can enable solving the big problems.
            </p>
         </ServiceCard>
           </details>
@@ -141,18 +148,18 @@ export default function Home({
           title="Cloud Migration."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-           Allow Mozstro to guide you through the cloud, maintaining your businesses cloud infrastructure.
+           Allow Mozstro to guide you through the cloud, maintaining your business's cloud infrastructure.
+
 Our Cloud solutions are consistent and highly scalable brought to you by Cloud native specialists.
-Better yet our migration facilities create a hassle free switch to the cloud for your businesses systems.
+
+Better yet our migration facilities create a hassle-free switch to the cloud for your business's systems.
            </p>
         </ServiceCard>
          <ServiceCard
           title="Cloud Security."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-           External threats are more prevalent than ever within the Cloud. 
-           We feel it is necessary to secure your place in the cloud with a solid security wall. 
-           Protecting your data and infrastructure will give you piece of mind for you and your business.
+External threats are more prevalent than ever within the Cloud. We feel it is necessary to make sure you are in the safe hands of certified consults who will secure your place in the cloud by adhering to best practices. Protecting your data, infrastructure and the integrity of your code will give you peace of mind you and your business need.
            </p>
         </ServiceCard>
          <ServiceCard
@@ -160,7 +167,8 @@ Better yet our migration facilities create a hassle free switch to the cloud for
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
           Having a strong team of Full stack engineers is vital within the Cloud which is why you are in safe hands with Mozstro.
-Our team becomes embedded in your current setup creating a high class, diverse workforce. Something we replicate in our values.
+
+We can become embedded in your existing project creating a high-class, diverse workforce. Something that we replicate in our company values. Or take full ownership of a new project and deliver from the ground up.
            </p>
         </ServiceCard>
           </details>
@@ -168,7 +176,7 @@ Our team becomes embedded in your current setup creating a high class, diverse w
         </div>
       </section>  
       <section>
-        <div className="flex my-4 justify-center">
+        <div className="flex mt-4 mb-8 justify-center">
           <SectionText text="What we bring." />
         </div>
         <div className="grid bg-hippiegreen justify-items-center py-10 text-center rounded p-6 grid-cols-1 md:grid-cols-2 gap-12">

@@ -93,17 +93,12 @@ const Footer = function Component() {
                 </Link>
               </li>
               <li>
-                 <Link href="/services">
-                <a className="text-sundance text-lg hover:text-hippiegreen" rel="noreferrer">Services</a>
+                <Link href="/posts">
+                <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">Posts</a>
                 </Link>
               </li>
             </ul>
             <ul className="mt-2">
-              <li>
-                 <Link href="/about">
-                <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">About us</a>
-              </Link>
-              </li>
               <li>
                 <Link href="/contact-us">
                 <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">Contact us</a>
@@ -114,6 +109,12 @@ const Footer = function Component() {
                 <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">Privacy policy</a>
                 </Link>
               </li>
+               <li>
+                <Link href="/careers">
+                <a className="text-sundance text-lg hover:text-hippiegreen"  rel="noreferrer">Careers</a>
+                </Link>
+              </li>
+              
             </ul>
           </div>
 

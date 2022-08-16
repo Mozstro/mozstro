@@ -38,6 +38,18 @@ export default function Careers() {
             and we will bring forth our knowledge and expertise to ensure prosperity.
           </p>
         </ServiceModelCard>
+         <ServiceModelCard image="upskill" title="Upskill" subtitle="Collaboration at its peak">
+          <p className="font-serif text-ebonyclay py-2   text-md lg:text-xl">
+           Digital is an ever changing industry so it is important to have current knowledge to remain up to date with the technicalities that are put in place. 
+          </p>
+          <p className="font-serif text-ebonyclay  py-y  text-md lg:text-xl">
+            We will provide you with engaging knowledge that will remain timeless for your businesses lifespan and future performances. We are highly welcoming to new, fresh ideas brought forward. 
+          </p>
+          <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
+            Our team is highly effective at communicating with you at every stage of our journey. Information and updates are provided swiftly with all queries receiving  fast responses for your benefit. s
+            
+          </p>
+        </ServiceModelCard>
         <ServiceModelCard image="builders" title="Builders" subtitle="Bringing forward the foundations.">
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
             At Mozstro we utilise cutting edge technologies,
@@ -48,38 +60,19 @@ export default function Careers() {
             service can meet its maximum potential. Your growth is our main priority.
           </p>
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            Our secure infrastructures allow for high levels of protection,
-            for your peace of mind.
+            With our tried and tested security first approach, it allows for high levels of protection, for your peace of mind right from the start.
           </p>
-          <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            We would love to be able to work alongside you and your team.
-            Enquire today and our team will get back to you in 24 hours!
-          </p>
+         
         </ServiceModelCard>
-        <ServiceModelCard image="upskill" title="Upskill" subtitle="Collaboration at its peak">
-          <p className="font-serif text-ebonyclay py-2   text-md lg:text-xl">
-            At Mozstro we utilise cutting edge technologies,
-            with those guiding them having a history of consistent results in previous projects.
-          </p>
-          <p className="font-serif text-ebonyclay  py-y  text-md lg:text-xl">
-            Through this we will ensure your product or
-            service can meet its maximum potential. Your growth is our main priority.
-          </p>
-          <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            We would love to be able to work alongside you and your team.
-            Enquire today and our team will get back to you in 24 hours!
-          </p>
-        </ServiceModelCard>
+       
       </section>
       <section className="mt-12">
         <SectionText text="Why Mozstro?" />
-
         <div className="bg-hippiegreen p-4">
           <p className="font-serif text-sundance bg-ebonyclay shadow p-4 text-md lg:text-xl">
             Our values are highly reflected in our attitudes
             and work and we feel this is important to ensure this is resonated in our services.
           </p>
-
           <details>
             <summary className=" text-sundance font-bold shadow p-4  text-2xl lg:text-3xl">
               Respect

@@ -58,34 +58,27 @@ const PostPage = ({
           What we are talking about.
         </h2>
       </Header>
-      <div className="mt-4 md:mb-0 md:ml-12 md:mt-16">
+      <div className="absolute mt-4 md:mb-0 md:ml-12 md:mt-16">
         <NavButton text="← Back" link="/posts" />
       </div>
       <article>
         <div>
-          <div className="text-center mt-8  lg:mt-0 mb-2">
+          <div className="text-center mt-10">
             <h3
-              className="text-equator text-4xl bg-sundance inline-block p-6 xl:mt-0
+              className="text-equator text-4xl bg-sundance inline-block p-6 mt-4 lg:mt-0 mb-2
                       transform -rotate-2"
             >
               {frontMatter.title}
             </h3>
-            <p
-              className="align-middle transform -rotate-2 text-sundance text-xl bg-ebonyclay
-                         xl:-ml-32 xl:mt-20 inline-block py-1 md:mt-3 lg:-mt-4 mb-2 shadow-sm px-2"
-            >
-              By&nbsp;
-              {frontMatter.author}
-            </p>
           </div>
-          <div className="blog-image">
+          <div className="blog-image mt-2">
             <Image
               alt={frontMatter.imageAlt}
               src={frontMatter.image}
-              width={800}
-              height={400}
+              width={600}
+              height={300}
               priority
-                  />
+            />
           </div>
         </div>
         <div className="flex flex-wrap lg:flex-nowrap mt-2 my-4 lg:my-8 justify-between w-full">

@@ -16,7 +16,7 @@ export const Layout: FunctionComponent<LayoutProps> = (
 ) => (
   <div>
     <Meta customMeta={customMeta} />
-    <main className="min-h-screen container mx-auto mt-4 px-6">
+    <main className="min-h-screen container mx-auto mt-4 px-3">
       <div>{children}</div>
       <Footer />
     </main>

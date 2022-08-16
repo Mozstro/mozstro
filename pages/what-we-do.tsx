@@ -9,12 +9,12 @@ export default function About() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro Cloud Consulting - Services"
-        description="Find out more about what we offer from cloud services to complete full stack engineering across."
+        title="Mozstro Cloud Consulting - What We Do"
+        description="Find out more about what we offer at Mozstro."
       />
       <Header>
         <h1 className="text-4xl font-bold lg:text-7xl text-center text-sundance">
-          What we offer.
+          What We Do.
         </h1>
         <h2 className="text-center text-sundance text-3xl">
           To make cloud work for you.

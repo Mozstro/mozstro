@@ -9,19 +9,16 @@ export const Nav = () => {
   };
 
   return (
-    <div>
-      <section className="bg-sundance hidden lg:block rounded drop-shadow-lg py-5 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 lg:-rotate-2 mx-auto my-0 lg:my-0">
+    <div className='flex justify-center'>
+      <section className="w-1/2 bg-sundance hidden lg:block rounded drop-shadow-lg py-5 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 lg:-rotate-2 mx-auto my-0 lg:my-0">
         <nav
           className="flex items-center flex-col justify-center transform rotate-2 md:flex-row md:space-x-3 lg:space-x-6
                    font-semibold w-full lg:w-auto md:my-4 space-y-3 md:space-y-0
                     p-6 md:p-0 "
         >
-          <NavButton text="Home" link="/" />
-          <NavButton text="Services" link="/services" />
-          <NavButton text="About" link="/about" />
-          <NavButton text="Work" link="/work" />
-          <NavButton text="Posts" link="/posts" />
-          <NavButton text="Careers" link="/careers" />
+            <NavButton text="What we do" link="/" />
+            <NavButton text="Who we are" link="/who-we-are" />
+            <NavButton text="Work" link="/work" />
         </nav>
       </section>
       <section className="bg-sundance text-center lg:hidden rounded drop-shadow-lg pt-5 pb-6 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 mx-auto my-0 lg:my-0">
@@ -42,12 +39,9 @@ export const Nav = () => {
         >
 
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full items-center items-start flex flex-col lg:h-auto">
-            <NavButton text="Home" link="/" />
-            <NavButton text="Services" link="/services" />
-            <NavButton text="About" link="/about" />
+            <NavButton text="What we do" link="/" />
+            <NavButton text="Who we are" link="/who-we-are" />
             <NavButton text="Work" link="/work" />
-            <NavButton text="Posts" link="/posts" />
-            <NavButton text="Careers" link="/careers" />
           </div>
         </nav>
       </section>

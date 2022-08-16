@@ -6,25 +6,24 @@ import { Header } from '../components/header';
 import ContactForm from '../components/contactForm';
 import { SectionText } from '../components/sectionText';
 
-export default function About() {
+export default function WhoWeAre() {
   return (
     <Layout>
       <NextSeo
-        title="Mozstro Cloud Consulting - About Us"
-        description="Find out more about who we are and what our cloud computing  mission is."
+        title="Mozstro Cloud Consulting - Who We Are"
+        description="Find out more about who we are and how to get started on your cloud journey."
       />
       <Header>
         <h1 className="text-4xl font-bold lg:text-7xl text-center text-sundance">
-          About us.
+          Who we are?
         </h1>
         <h2 className="text-center text-sundance text-3xl">
           We make cloud work for you.
         </h2>
       </Header>
       <section className="grid grid-cols-1 mt-8 lg:mt-12 lg:grid-cols-2">
-        <article>
-          <SectionText text="Who we are?" />
-          <div className="bg-hippiegreen rounded p-4  m-4 shadow-md">
+          <div className='flex items-center'>
+          <div className="bg-hippiegreen items-center rounded p-4 grid m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
               Mozstro is a global cloud consulting company operating from the UK.
             </p>
@@ -38,9 +37,8 @@ export default function About() {
               We gauge our success with results delivered while ensuring our clients are satisfied and derive value from using our services.
             </p>
           </div>
-        </article>
-       
-        <article>
+          </div>     
+        <div>
           <SectionText text="How to get started?" />
           <div className="bg-hippiegreen rounded p-4  m-4 shadow-md">
             <h5 className="text-rolling-stone px-4 my-4 text-2xl">
@@ -74,7 +72,7 @@ export default function About() {
             </p>
             <ContactForm />
           </div>
-        </article>
+        </div>
       </section>
     </Layout>
   );

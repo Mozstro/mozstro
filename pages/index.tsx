@@ -4,7 +4,7 @@ import { GetStaticProps } from 'next';
 import { faCloud, faPoll, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import home from '../public/home.png';
-import { PostCard } from '../components/postCard';
+import { ServiceCard } from '../components/serviceCard';
 
 import Layout from '../components/layout';
 import { Header } from '../components/header';
@@ -50,12 +50,10 @@ export default function Home({
           Reliable cloud consulting services.
         </h2>
       </Header>
-      <section>
-        <div className="flex mt-8 mb-0 justify-center">
-          <SectionText text="What we offer." />
-        </div>
-        <div className="flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
-          <div className="bg-hippiegreen  rounded shadow border-ebonyclay
+       <section>
+         
+        <div className="mt-10 flex bg-rollingstone p-2 xl:p-6 rounded inline-flex flex-wrap xl:flex-nowrap justify-center">
+          <div className="bg-hippiegreen rounded shadow border-ebonyclay
                   p-2 m-4 z-10"
           >
             <h3 className="text-2xl lg:text-4xl bg-sundance mt-4 mx-2 p-4 text-ebonyclay font-bold mt-0">
@@ -87,6 +85,88 @@ export default function Home({
           </div>
         </div>
       </section>
+        <section>
+         <div className="mb-6 mt-6 text-center justify-center">
+          <SectionText text="How we do it." />
+          <div className='flex text-left flex-col'>
+            <details className='details_home lg:p-8' open>
+            <summary className="text-sundance font-bold shadow p-4 text-5xl lg:text-8xl">
+              P<span className='hidden'>athfinding</span>
+            </summary>
+           <ServiceCard
+          title="Discovery."
+        >
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
+            It is important we understand your business and the needs it posses. This enables us to refine our work and approach needed to achieve the set goals and targets.
+          </p>
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
+           Our interpersonal team will become an extension.
+          </p>
+        </ServiceCard>
+          <ServiceCard
+          title="Agile delivery."
+        >
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
+           You have access to Agile technologies allows us to deliver cloud solutions efficiently to our clients using a team of experience workers to lead the way.
+          </p>
+
+        </ServiceCard>
+          <ServiceCard
+          title="Cloud native solutions."
+        >
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
+            Our cloud native solutions fully optimise the most functional parts of the cloud and are able to implement them into cloud infrastructure for your business.
+          </p>
+
+        </ServiceCard>
+          </details>
+           <details className='details_home lg:p-8' open>
+            <summary className=" text-sundance font-bold shadow p-4  text-5xl lg:text-8xl">
+              U<span className='hidden'>pskill</span>
+            </summary>
+            <ServiceCard
+          title="Architecture and technical strategy consulting."
+        >
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
+            Forward thinking and ability to band together at the opening stage of a digital transformation allows a clear structure for the future of our work together. 
+            Our expertise and experience will be shown from start to finish.
+           </p>
+        </ServiceCard>
+          </details>
+           <details className='details_home lg:p-8' open>
+            <summary className=" text-sundance font-bold shadow p-4 text-5xl  lg:text-8xl ">
+              B<span className='hidden'>uilders</span>
+            </summary>
+            <ServiceCard
+          title="Cloud Migration."
+        >
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
+           Allow Mozstro to guide you through the cloud, maintaining your businesses cloud infrastructure.
+Our Cloud solutions are consistent and highly scalable brought to you by Cloud native specialists.
+Bette yet our migration facilities create a hassle free switch to the cloud for your businesses systems.
+           </p>
+        </ServiceCard>
+         <ServiceCard
+          title="Cloud Security."
+        >
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
+           External threats are more prevalent than ever within the Cloud. 
+           We feel it is necessary to secure your place in the cloud with a solid security wall. 
+           Protecting your data and infrastructure will give you piece of mind for you and your business.
+           </p>
+        </ServiceCard>
+         <ServiceCard
+          title="Full-stack Development."
+        >
+          <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
+          Having a strong team of Full stack engineers is vital within the Cloud which is why you are in safe hands with Mozstro.
+Our team becomes embedded in your current setup creating a high class, diverse workforce. Something we replicate in our values.
+           </p>
+        </ServiceCard>
+          </details>
+          </div>
+        </div>
+      </section>  
       <section>
         <div className="flex my-4 justify-center">
           <SectionText text="What we bring." />
@@ -116,24 +196,8 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className="grid lg:mb-8 mt-12 grid-cols-1 lg:grid-cols-2">
-          <div>
-            <SectionText text="Hot topic." />
-            <div className="mt-4">
-              <PostCard post={post} />
-            </div>
-          </div>
-          <div className="my-8 lg:my-0 lg:ml-8">
-            <SectionText text="Our latest work." />
-            <div className="my-4">
-              <ProjectCard key={project.slug} project={project} />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="lg:mt-4 flex justify-center rounded p-2">
-          <div className="p-4 bg-hippiegreen sm:p-6">
+        <div className="mt-10  flex justify-center rounded p-2">
+          <div className="rounded p-4 bg-hippiegreen sm:p-6">
             <h3 className="font-bold py-1 text-xl lg:text-2xl text-equator">
               Find out what we bring to the table.
             </h3>
@@ -144,7 +208,6 @@ export default function Home({
           </div>
         </div>
       </section>
-    
     </Layout>
   );
 }

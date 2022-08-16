@@ -90,7 +90,7 @@ export default function Home({
           <SectionText text="How we do it." />
           <div className='flex text-left flex-col'>
             <details className='details_home lg:p-8' open>
-            <summary className="text-sundance font-bold shadow p-4 text-5xl lg:text-8xl">
+            <summary className="text-sundance font-bold shadow p-4 text-4xl lg:text-8xl">
               P<span className='hidden'>athfinding</span>
             </summary>
            <ServiceCard
@@ -121,7 +121,7 @@ export default function Home({
         </ServiceCard>
           </details>
            <details className='details_home lg:p-8' open>
-            <summary className=" text-sundance font-bold shadow p-4  text-5xl lg:text-8xl">
+            <summary className=" text-sundance font-bold shadow p-4  text-4xl lg:text-8xl">
               U<span className='hidden'>pskill</span>
             </summary>
             <ServiceCard
@@ -134,7 +134,7 @@ export default function Home({
         </ServiceCard>
           </details>
            <details className='details_home lg:p-8' open>
-            <summary className=" text-sundance font-bold shadow p-4 text-5xl  lg:text-8xl ">
+            <summary className=" text-sundance font-bold shadow p-4 text-4xl  lg:text-8xl ">
               B<span className='hidden'>uilders</span>
             </summary>
             <ServiceCard

@@ -24,43 +24,37 @@ export default function Careers() {
       <section className="mt-8 xl:mt-20">
         <ServiceModelCard image="pathfinders" title="Pathfinders" subtitle="Collaboration at its peak">
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            Having a clear plan for your project allows for
-            maximum performance for both now and also for in the future.
-            Landscapes are ever changing,
-            therefore it is important to have complete control over them.
+           Maximum performance for both the now and the future is made possible by having a clear plan for your project. Since landscapes are constantly changing, having total control over them is essential.
+
           </p>
           <p className="font-serif text-ebonyclay  py-y text-md lg:text-xl">
-            Our highly collaborative team of engineers
-            will aid you throughout your journey, bringing in crisp new ideas for your brand.
+            Your journey will be aided by our highly interdisciplinary engineering staff, which will offer you fresh new concepts for your business.
           </p>
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            Guide us through your processes and goals
-            and we will bring forth our knowledge and expertise to ensure prosperity.
+            Describe your procedures and objectives to us, and we'll apply our knowledge and experience to achieve success.
           </p>
         </ServiceModelCard>
-         <ServiceModelCard image="upskill" title="Upskill" subtitle="Collaboration at its peak">
+         <ServiceModelCard image="upskill" title="Upskill" subtitle="Scalable, trustworthy partnerships for the future.">
           <p className="font-serif text-ebonyclay py-2   text-md lg:text-xl">
-           Digital is an ever changing industry so it is important to have current knowledge to remain up to date with the technicalities that are put in place. 
+           Since the digital sector is always evolving, it's critical to stay up to date with the latest technical developments.
           </p>
           <p className="font-serif text-ebonyclay  py-y  text-md lg:text-xl">
-            We will provide you with engaging knowledge that will remain timeless for your businesses lifespan and future performances. We are highly welcoming to new, fresh ideas brought forward. 
+           We'll give you relevant knowledge that will help your firm grow and operate well in the future. We are quite receptive to new, original ideas.
           </p>
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            Our team is highly effective at communicating with you at every stage of our journey. Information and updates are provided swiftly with all queries receiving  fast responses for your benefit.
+           At every point of our journey, our staff communicates with you very effectively. For your benefit, all inquiries receive prompt responses, and information and updates are delivered quickly.
             
           </p>
         </ServiceModelCard>
         <ServiceModelCard image="builders" title="Builders" subtitle="Bringing forward the foundations.">
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            At Mozstro we utilise cutting edge technologies,
-            with those guiding them having a history of consistent results in previous projects.
+            At Mozstro, we use cutting-edge technologies, guided by experts that have a track record of producing reliable results in past projects.
           </p>
           <p className="font-serif text-ebonyclay  py-y  text-md lg:text-xl">
-            Through this we will ensure your product or
-            service can meet its maximum potential. Your growth is our main priority.
+This will guarantee that your product can reach its full potential. Our top priority is seeing you grow.
           </p>
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
-            With our tried and tested security first approach, it allows for high levels of protection, for your peace of mind right from the start.
+            With our tried-and-true security-first strategy, it is possible to provide high levels of protection from the outset, giving you peace of mind.
           </p>
          
         </ServiceModelCard>

@@ -71,11 +71,10 @@ export default function Home({
               </div>
               <div className="mt-4 xl:mt-20">
                 <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-6 py-2 lg:px-6 text-md lg:text-xl">
-                  Our team of cloud experts will work as an extension of your enterprise,
-                  solving your toughest challenges placing you on the path to digital success.
+                  Our team of cloud specialists will function as an extension of your business, tackling your most difficult problems and putting you on the road to digital success.
                 </p>
                 <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-                  Providing business value is at the core of our service model.
+                  At the basis of our service model is providing business value.
                 </p>
                 <div className="bg-equator text-center">
                   <CallToAction text="Discover our model" link="/service-model" />
@@ -107,22 +106,17 @@ export default function Home({
           title="Agile delivery."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-          We apply appropriate agile methodology on a project by project basis.
-          The implementation will always be tailored to suit the needs of the project at hand. 
-          We take pride in building highly performant teams and ensuring collaboration is at the forefront of all work produced.
+          On a project-by-project basis, we employ the appropriate agile technique. Every implementation will be customised to meet the requirements of the current project. We take pleasure in forming highly effective teams and making sure that teamwork is at the heart of all work done.
           </p>
-
         </ServiceCard>
           <ServiceCard
           title="Cloud native solutions."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-            Our solutions take a cloud-native approach by default. This means we can achieve a faster time to market and ensure reliability, scalability, and high performance. 
-            We opt for serverless functions, managed services and containers where suitable. 
-            Our certified consultants are competent in choosing the right services for the job.
+            By default, our products use a cloud-native strategy. As a result, we can provide dependability, scalability, and high performance while reducing the time to market. Where appropriate, we choose serverless functions, managed services, and containers. 
+            Our licenced experts are capable of selecting the best services for the task.
 
           </p>
-
         </ServiceCard>
           </details>
            <details className='details_home lg:p-8' open>
@@ -133,8 +127,7 @@ export default function Home({
           title="Architecture and technical strategy consulting."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-            Getting architecture right can be difficult. We can help with this by advising and working closely with your team to ensure the right solution is architected. 
-            It's important for us to really understand your pain points and how we can enable solving the big problems.
+            Getting architecture right can be tricky. By offering advice and collaborating closely with your team to ensure that the ideal solution is architected, we can assist with this. It's critical for us to fully comprehend your challenges and how we might help in their resolution.
            </p>
         </ServiceCard>
           </details>
@@ -146,19 +139,15 @@ export default function Home({
           title="Cloud Migration."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-           Allow Mozstro to guide you through the cloud, maintaining your business's cloud infrastructure.
-
-Our Cloud solutions are consistent and highly scalable brought to you by Cloud native specialists.
-
-Better yet our migration facilities create a hassle-free switch to the cloud for your business's systems.
+Allow Mozstro to manage the cloud infrastructure for your company while guiding you through it. We deliver consistent, highly scalable cloud solutions from cloud native experts. Even better, our migration services make it simple for your company's systems to migrate to the cloud.
            </p>
         </ServiceCard>
          <ServiceCard
           title="Cloud Security."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-External threats are more prevalent than ever within the Cloud. We feel it is necessary to make sure you are in the safe hands of certified consults who will secure your place in the cloud by adhering to best practices. Protecting your data, infrastructure and the integrity of your code will give you peace of mind you and your business need.
-           </p>
+            Within the Cloud, external risks are more common than ever. We believe it is essential to ensure that you are in the capable hands of professional consultants who will protect your position in the cloud by following best practises. You and your company will benefit from the piece of mind that comes with safeguarding your data, infrastructure, and code integrity.
+             </p>
         </ServiceCard>
          <ServiceCard
           title="Full-stack Development."
@@ -173,6 +162,11 @@ We can become embedded in your existing project creating a high-class, diverse w
           </div>
         </div>
       </section>  
+      <section>
+        <div className='bg-hippiegreen mb-16 p-6 inline-block'>
+        <h4 className='text-ebonyclay text-6xl'>When we're finished, we head to the pub.</h4>
+         </div>
+      </section>
       <section>
         <div className="flex mt-4 mb-8 justify-center">
           <SectionText text="What we bring." />
@@ -203,7 +197,7 @@ We can become embedded in your existing project creating a high-class, diverse w
       </section>
       <section>
          <div className="flex mt-16 mb-8 justify-center">
-          <SectionText text="Want to see how we can add value first hand?" />
+          <SectionText text="Want to experience first-hand how we can create value?" />
         </div>
         <div className="mt-10  flex justify-center rounded p-2">
           <div className="rounded p-4 bg-hippiegreen sm:p-6">

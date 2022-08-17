@@ -22,7 +22,7 @@ export default function Careers() {
         </h2>
       </Header>
       <section className="mt-8 xl:mt-20">
-        <ServiceModelCard image="pathfinders" title="Pathfinders" subtitle="Collaboration at its peak">
+        <ServiceModelCard image="pathfinders" title="Pathfinders" subtitle="Collaboration at its peak.">
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
             Having a clear plan for your project allows for
             maximum performance for both now and also for in the future.
@@ -38,7 +38,7 @@ export default function Careers() {
             and we will bring forth our knowledge and expertise to ensure prosperity.
           </p>
         </ServiceModelCard>
-         <ServiceModelCard image="upskill" title="Upskill" subtitle="Collaboration at its peak">
+         <ServiceModelCard image="upskill" title="Upskill" subtitle="Scalable, trustworthy partnerships for the future.">
           <p className="font-serif text-ebonyclay py-2   text-md lg:text-xl">
            Digital is an ever changing industry so it is important to have current knowledge to remain up to date with the technicalities that are put in place. 
           </p>

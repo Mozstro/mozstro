@@ -97,20 +97,19 @@ export default function Home({
           title="Discovery."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-           We work with your business and take your problems and ideas through our discovery process. 
-This consists of creating demonstrable deliverables which are estimable. Then action is taken to bring your vision into a reality. 
-It is important we understand your business and how we can add value. This is achieved by performing effective discovery in the early stages of a project coming into fruition. 
+           We work with your business, take your problems and ideas through our discovery process. 
+          This consists of creating demonstrable deliverables which are estimated. Then action is taken to bring your vision into a reality. 
+          It is important we understand your business and how we can add value. 
+          Effective discovery is key for success in the early stages of a project coming into fruition. 
           </p>
         </ServiceCard>
           <ServiceCard
           title="Agile delivery."
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
-          We understand Agile and have experience working with this across a wide variety of project types. 
-
-The implementation will always be tailed to suit the needs of the project at hand. 
-
-We take pride in building highly performant teams and ensuring collaboration is at the forefront of all work produced.
+          We apply appropriate agile methodology on a project by project basis.
+          The implementation will always be tailored to suit the needs of the project at hand. 
+          We take pride in building highly performant teams and ensuring collaboration is at the forefront of all work produced.
           </p>
 
         </ServiceCard>
@@ -119,9 +118,8 @@ We take pride in building highly performant teams and ensuring collaboration is 
         >
           <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-4 pb-2 lg:px-6 text-md lg:text-xl">
             Our solutions take a cloud-native approach by default. This means we can achieve a faster time to market and ensure reliability, scalability, and high performance. 
-
-We opt for serverless, containers and manage services where sensible but are also capable to create custom solutions where required.
-
+            We opt for serverless functions, managed services and containers where suitable. 
+            Our certified consultants are competent in choosing the right services for the job.
 
           </p>
 

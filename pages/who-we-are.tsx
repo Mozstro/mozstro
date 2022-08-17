@@ -25,13 +25,13 @@ export default function WhoWeAre() {
         <div>
 
 <SectionText text="What sets us apart?" />
- <div className='flex items-center'>
+ <div className='flex '>
           <div className="bg-hippiegreen items-center rounded p-4 grid m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              Mozstro is a global cloud consulting company operating from the UK.
+              We are Mozstro, a UK-based cloud consultancy business.
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              We are a cloud security, cloud application, and cloud infrastructure-focused company that delivers high-value consultancy services to clients through reliable and cost-effective solutions.
+             We are a cloud security, cloud application, and cloud infrastructure company that focuses on providing clients with high-value consulting services through dependable and affordable solutions.
             </p>
           </div>
           </div>     
@@ -40,10 +40,12 @@ export default function WhoWeAre() {
           <div className="bg-hippiegreen items-center rounded p-4 grid lg:mt-32 m-4 shadow-md">
 
             <p className="text-rolling-stone px-4  my-4 text-xl">
-              With our cutting-edge service approach, we can become a seamless extension of your team, providing dynamic, resilient, and scalable solutions that make a difference in your business.
+             With our state-of-the-art service methodology, we can seamlessly integrate with your team and offer solutions that are dynamic, resilient, and scalable and have a positive impact on your company.
+
             </p>
             <p className="text-rolling-stone px-4 my-4 text-xl">
-              We gauge our success with results delivered while ensuring our clients are satisfied and derive value from using our services.
+              
+While making sure that our clients are happy and get value from using our services, we measure our success based on the results we deliver.
             </p>
           </div>
           </div>     

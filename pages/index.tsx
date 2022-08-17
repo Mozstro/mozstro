@@ -163,11 +163,6 @@ We can become embedded in your existing project creating a high-class, diverse w
         </div>
       </section>  
       <section>
-        <div className='bg-hippiegreen mb-16 p-6 inline-block'>
-        <h4 className='text-ebonyclay text-6xl'>When we're finished, we head to the pub.</h4>
-         </div>
-      </section>
-      <section>
         <div className="flex mt-4 mb-8 justify-center">
           <SectionText text="What we bring." />
         </div>
@@ -175,21 +170,21 @@ We can become embedded in your existing project creating a high-class, diverse w
           <div className="lg:w-3/4">
             <ChooseCard
               title="Experience"
-              text="Mozstro professional cloud consultants have the experience to help you scale and secure your cloud technologies."
+              text="You can scale and safeguard your cloud technology with the help of Mozstro's qualified cloud experts."
               icon={faCloud as IconProp}
             />
           </div>
           <div className="lg:w-3/4">
             <ChooseCard
               title="Result-driven"
-              text="We have a track record of success implementing cloud strategies and driving cloud adoption ROI."
+              text="We have a proven track record of putting cloud adoption tactics into practise and increasing ROI."
               icon={faPoll as IconProp}
             />
           </div>
           <div className="lg:w-2/4 md:col-span-2">
             <ChooseCard
               title="Cost-effective"
-              text="We deliver cost-effective cloud consulting solutions for businesses and organisations around the world."
+              text="For companies and organisations around the world, we provide cost-effective cloud consulting solutions."
               icon={faMoneyBillAlt as IconProp}
             />
           </div>

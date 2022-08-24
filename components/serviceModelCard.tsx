@@ -16,7 +16,7 @@ export const ServiceModelCard: FunctionComponent<ServiceModelCardProps> = ({
 }) => (
   <article className=" bg-sundance p-12 mt-10 flex flex-wrap xl:flex-nowrap justify-center rounded p-2">
     <div className='xl:flex text-center'>
-    <div className='service-model-image'>
+    <div className='service-model-image xl:flex align-center'>
          <Image 
           className="rounded-3xl"
           src={`/${image}.png`}

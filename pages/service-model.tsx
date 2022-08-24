@@ -34,7 +34,7 @@ export default function Careers() {
             Describe your procedures and objectives to us, and we'll apply our knowledge and experience to achieve success.
           </p>
         </ServiceModelCard>
-         <ServiceModelCard image="upskill" title="Upskill" subtitle="Scalable, trustworthy partnerships for the future.">
+         <ServiceModelCard image="upskill-pic" title="Upskill" subtitle="Scalable, trustworthy partnerships for the future.">
           <p className="font-serif text-ebonyclay py-2   text-md lg:text-xl">
            Since the digital sector is always evolving, it's critical to stay up to date with the latest technical developments.
           </p>

@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo';
 import { GetStaticProps } from 'next';
 import { faCloud, faPoll, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import home from '../public/home.png';
+import serviceModel from '../public/service-model.png';
 import { ServiceCard } from '../components/serviceCard';
 
 import Layout from '../components/layout';
@@ -62,10 +62,10 @@ export default function Home({
             <div className="flex flex-wrap justify-center xl:flex-nowrap m-4">
               <div className="object-cover md:max-w-xl lg:mr-4 rounded-3xl">
                 <Image
-                  src={home}
+                  src={serviceModel}
                   alt="Home Mozstro image"
-                  width={1400}
-                  height={1000}
+                  width={1200}
+                  height={800}
                   priority
                 />
               </div>

@@ -97,12 +97,10 @@
   text-decoration: underline;
 }
 
+.service-model-image{
+  min-width: 300px;
+  min-height: 22px;
 
-.blog-image {
-  width: 100%;
-  max-height: 600px;
-  object-fit: contain;
-  text-align: center;
 }
 
 .details_home[open] > summary > span{

@@ -1,11 +1,11 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
-
+import whoWeAre from '../public/who-we-are.png';
 import Layout from '../components/layout';
 import { Header } from '../components/header';
 import ContactForm from '../components/contactForm';
 import { SectionText } from '../components/sectionText';
-
+import Image from 'next/image';
 export default function WhoWeAre() {
   return (
     <Layout>
@@ -33,12 +33,22 @@ export default function WhoWeAre() {
             <p className="text-rolling-stone px-4 my-4 text-xl">
              We are a cloud security, cloud application, and cloud infrastructure company that focuses on providing clients with high-value consulting services through dependable and affordable solutions.
             </p>
+             <div className='text-center'>
+        <Image
+                  src={whoWeAre}
+                  alt="Who we are image"
+                  width={400}
+                  height={240}
+                  priority
+                />
+    </div>
           </div>
+          
           </div>     
         </div>
           <div className='flex items-center'>
           <div className="bg-hippiegreen items-center rounded p-4 grid lg:mt-32 m-4 shadow-md">
-
+  
             <p className="text-rolling-stone px-4  my-4 text-xl">
              With our state-of-the-art service methodology, we can seamlessly integrate with your team and offer solutions that are dynamic, resilient, and scalable and have a positive impact on your company.
 

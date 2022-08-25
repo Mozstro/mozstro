@@ -63,15 +63,15 @@ const ProjectPage = ({
       </div>
       <article>
         <div>
-          <div className="text-center mt-10">
+          <div className="text-center mt-24 md:mt-28 xl:mt-10">
             <h3
-              className="text-equator text-4xl bg-sundance inline-block p-6 mt-4 lg:mt-0 mb-2
+              className="relative  z-50 text-equator text-4xl bg-sundance inline-block p-6 mt-4 lg:mt-0 mb-2
                       transform -rotate-2"
             >
               {frontMatter.title}
             </h3>
           </div>
-          <div className="blog-image text-center mt-0">
+          <div className="blog-image flex justify-center -mt-8 text-center ">
             <Image
               alt={frontMatter.imageAlt}
               src={frontMatter.image}

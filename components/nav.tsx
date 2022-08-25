@@ -18,7 +18,7 @@ export const Nav = () => {
         >
             <NavButton text="What we do" link="/" />
             <NavButton text="Who we are" link="/who-we-are" />
-            <NavButton text="Work" link="/work" />
+            <NavButton text="Our work" link="/work" />
         </nav>
       </section>
       <section className="bg-sundance text-center lg:hidden rounded drop-shadow-lg pt-5 pb-6 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 mx-auto my-0 lg:my-0">
@@ -41,7 +41,7 @@ export const Nav = () => {
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full items-center items-start flex flex-col lg:h-auto">
             <NavButton text="What we do" link="/" />
             <NavButton text="Who we are" link="/who-we-are" />
-            <NavButton text="Work" link="/work" />
+            <NavButton text="Our work" link="/work" />
           </div>
         </nav>
       </section>

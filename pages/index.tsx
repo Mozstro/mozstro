@@ -69,7 +69,7 @@ export default function Home({
                   priority
                 />
               </div>
-              <div className="mt-4 xl:mt-20">
+              <div className="mt-4 xl:mt-10">
                 <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-6 py-2 lg:px-6 text-md lg:text-xl">
                   Our team of cloud specialists will function as an extension of your business, tackling your most difficult problems and putting you on the road to digital success.
                 </p>

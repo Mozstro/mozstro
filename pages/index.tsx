@@ -56,7 +56,7 @@ export default function Home({
           <div className="bg-hippiegreen rounded shadow border-ebonyclay
                   p-2 m-4 z-10"
           >
-            <h3 className="text-2xl lg:text-4xl bg-sundance mt-4 mx-2 p-4 text-ebonyclay font-bold mt-0">
+            <h3 className="text-2xl lg:text-4xl bg-sundance mt-4 mx-4 p-4 text-ebonyclay font-bold mt-0">
               Exclusive Mozstro service model.
             </h3>
             <div className="flex flex-wrap justify-center xl:flex-nowrap m-4">

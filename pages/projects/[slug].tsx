@@ -71,7 +71,7 @@ const ProjectPage = ({
               {frontMatter.title}
             </h3>
           </div>
-          <div className="blog-image mt-2">
+          <div className="blog-image text-center mt-0">
             <Image
               alt={frontMatter.imageAlt}
               src={frontMatter.image}

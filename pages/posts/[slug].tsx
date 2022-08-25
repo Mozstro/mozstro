@@ -71,7 +71,7 @@ const PostPage = ({
               {frontMatter.title}
             </h3>
           </div>
-          <div className="blog-image mt-2">
+          <div className="blog-image text-center mt-4">
             <Image
               alt={frontMatter.imageAlt}
               src={frontMatter.image}

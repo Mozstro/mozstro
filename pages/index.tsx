@@ -60,7 +60,7 @@ export default function Home({
               Exclusive Mozstro service model.
             </h3>
             <div className="flex flex-wrap justify-center xl:flex-nowrap m-4">
-              <div className="object-cover md:max-w-xl lg:mr-4 rounded-3xl">
+              <div className="object-cover w-full relative md:max-w-xl lg:mr-4 rounded-3xl">
                 <Image
                   src={serviceModel}
                   alt="Home Mozstro image"

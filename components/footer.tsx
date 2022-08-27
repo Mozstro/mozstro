@@ -128,7 +128,7 @@ const Footer = function Component() {
             <span className="text-sundance"> Next.js </span>
             &
             <span className="text-sundance"> TypeScript</span>
-            . Powered by AWS Amplify.
+            . Powered by Vercel.
             Find my source
             <a
               className="text-sundance hover:text-hippiegreen"

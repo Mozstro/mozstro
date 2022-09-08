@@ -71,7 +71,7 @@ This will guarantee that your product can reach its full potential. Our top prio
               Respect
             </summary>
             <p className="font-serif text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
-              We enjoy thinking ahead and being open-book. Every choice we make is with the client's best interests in mind. In our approaches, we are ready for setbacks. To support our judgments, we are consistently equipped with evidence and supporting data.
+              We enjoy thinking ahead and being open-book. Every choice we make is with the client's best interests in mind. In our approaches, we are ready for setbacks. To support our judgements, we are consistently equipped with evidence and supporting data.
             </p>
           </details>
           <details>

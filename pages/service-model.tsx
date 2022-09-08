@@ -25,7 +25,6 @@ export default function Careers() {
         <ServiceModelCard image="pathfinders" title="Pathfinders" subtitle="Collaboration at its peak.">
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
            Maximum performance for both the now and the future is made possible by having a clear plan for your project. Since landscapes are constantly changing, having total control over them is essential.
-
           </p>
           <p className="font-serif text-ebonyclay  py-y text-md lg:text-xl">
             Your journey will be aided by our highly interdisciplinary engineering staff, which will offer you fresh new concepts for your business.
@@ -72,8 +71,7 @@ This will guarantee that your product can reach its full potential. Our top prio
               Respect
             </summary>
             <p className="font-serif text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
-              Outcomes achieved are honest and well
-              thought out ensuring the future is catered for.
+              We enjoy thinking ahead and being open-book. Every choice we make is with the client's best interests in mind. In our approaches, we are ready for setbacks. To support our judgments, we are consistently equipped with evidence and supporting data.
             </p>
           </details>
           <details>
@@ -81,34 +79,27 @@ This will guarantee that your product can reach its full potential. Our top prio
               Adversity
             </summary>
             <p className="font-serif text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
-              Any issue given to us is taken on with
-              full effort from a highly flexible team of keen problem solvers.
+              We take an open-minded approach to every project and handle issues in a way that puts all of the possibilities on the table and enables us to see the best option clearly by comparing ideas in our discovery sessions.
             </p>
           </details>
           <details>
             <summary className=" text-sundance font-bold shadow p-4  text-2xl lg:text-3xl">
-
               Competence
             </summary>
             <p className="font-serif text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
-              Efficiency is at the heart of our work
-              ethic as we are able to work effectively & concisely.
+              We work with self-starters who are incredibly eager to learn. In order for employees to fulfill their career goals, we want to accelerate their professional development.
             </p>
           </details>
           <details>
             <summary className=" text-sundance font-bold shadow p-4  text-2xl lg:text-3xl">
-
               Excellence
             </summary>
             <p className="font-serif text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
-              We will ensure only the finest of standards from start to finish.
-              Our thought out internal processes have proven this since our conception.
+              We make sure that only the best personnel are used for the work. We conduct due diligence as part of our hiring process to ensure that the candidate is qualified for the position and adheres to our core values. This ensures that the results of our engagement will be efficient and have high standards.
             </p>
           </details>
           <p className="font-serif  mt-6 text-sundance bg-ebonyclay shadow p-4  text-md lg:text-xl">
-            If you feel like our services would be beneficial to
-            any of your upcoming projects going forward,
-            then we would love to hear from you down below!
+            If you believe that using our services would help any of your future initiatives, please contact us using the form below.
           </p>
           <div className="bg-equator text-center">
             <CallToAction text="Get in touch" link="/contact-us" />

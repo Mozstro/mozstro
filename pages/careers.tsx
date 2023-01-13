@@ -30,18 +30,6 @@ export default function Careers() {
           email="elliot@mozstro.com"
           image="elliot.jpg"
         />
-          <TeamMember
-          name="Tom France"
-          role="Head Of Content"
-          email="tom@mozstro.com"
-          image="tom.png"
-        />
-         <TeamMember
-          name="Tawanda Chikura"
-          role="Head Of Strategy"
-          email="tawanda@mozstro.com"
-          image="tawanda.jpg"
-        />
       </div>
       <div className='flex justify-center my-4'>
       <div className="bg-hippiegreen -rotate-2 transform hover:scale-105 rounded shadow border-ebonyclay

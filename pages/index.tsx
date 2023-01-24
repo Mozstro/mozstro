@@ -64,7 +64,7 @@ export default function Home({
                 <Image
                   src={serviceModel}
                   alt="Home Mozstro image"
-                  width={1200}
+                  width={1400}
                   height={800}
                   priority
                 />

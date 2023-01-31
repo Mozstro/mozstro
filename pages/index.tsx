@@ -71,11 +71,9 @@ export default function Home({
               </div>
               <div className="mt-4 xl:mt-10">
                 <p className="font-serif text-sundance bg-ebonyclay shadow px-4 pt-6 py-2 lg:px-6 text-md lg:text-xl">
-                  Our team of cloud specialists will function as an extension of your business, tackling your most difficult problems and putting you on the road to digital success.
+                Unlock digital success with our team of expert cloud specialists, acting as a seamless extension of your business to conquer even your toughest challenges. Driving business value is at the heart of our service approach.
                 </p>
-                <p className="font-serif text-sundance bg-ebonyclay shadow px-4 py-2 lg:px-6 text-md lg:text-xl">
-                  At the basis of our service model is providing business value.
-                </p>
+ 
                 <div className="bg-equator text-center">
                   <CallToAction text="Discover our model" link="/service-model" />
                 </div>

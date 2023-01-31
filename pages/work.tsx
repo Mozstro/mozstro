@@ -33,14 +33,9 @@ export const Work = ({ projects }: WorkProps): JSX.Element => (
           </div>
           <div className="bg-hippiegreen rounded p-4 m-4 shadow-md">
             <p className="text-rolling-stone px-4 my-4 text-xl">
-             Through Mozstro, you are gaining access to a capable team of Cloud specialists who are here to guide you in your journey to the Cloud. 
+             To provide clients with unparalleled cloud security solutions through expert consultation and cutting-edge technology, while maintaining the highest standards of ethics and privacy.
             </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-             Our consulting team are highly collaborative and are determined to improve your businesses performance through secure cloud consulting solutions. 
-            </p>
-            <p className="text-rolling-stone px-4 my-4 text-xl">
-              Get in touch with us today. 
-            </p>
+
           </div>
         </article>
     </div>

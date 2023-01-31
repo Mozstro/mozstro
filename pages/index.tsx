@@ -47,7 +47,7 @@ export default function Home({
           </Link>
         </h1>
         <h2 className="text-center text-sundance text-3xl">
-          Reliable cloud consulting services.
+          Secure your digital world with our cloud expertise.
         </h2>
       </Header>
        <section>

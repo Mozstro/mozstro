@@ -45,7 +45,7 @@ export default function Careers() {
             
           </p>
         </ServiceModelCard>
-        <ServiceModelCard image="builders" title="Builders" subtitle="Bringing forward the foundations.">
+        <ServiceModelCard image="builders" title="Build" subtitle="Bringing forward the foundations.">
           <p className="font-serif text-ebonyclay py-2 text-md lg:text-xl">
             At Mozstro, we use cutting-edge technologies, guided by experts that have a track record of producing reliable results in past projects.
           </p>

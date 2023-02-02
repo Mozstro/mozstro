@@ -140,7 +140,7 @@ export default function Home({
           </details>
            <details className='details_home lg:p-8' open>
             <summary className=" text-sundance font-bold shadow p-4 text-4xl  lg:text-8xl ">
-              B<span className='hidden'>uilders</span>
+              B<span className='hidden'>uild</span>
             </summary>
             <ServiceCard
           title="Cloud Migration."

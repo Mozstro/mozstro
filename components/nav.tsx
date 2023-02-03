@@ -21,7 +21,7 @@ export const Nav = () => {
             <NavButton text="Our work" link="/work" />
         </nav>
       </section>
-      <section className="bg-sundance text-center lg:hidden rounded drop-shadow-lg pt-5 pb-6 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 mx-auto my-0 lg:my-0">
+      <section className="bg-sundance text-center lg:hidden rounded drop-shadow-lg py-5 sm:py-10 z-50 container transform -mt-2 sm:-mt-0 mx-auto my-0 lg:my-0">
         <button
           className=" text-ebonyclay hover:bg-hippiegreen rounded lg:hidden text-white ml-auto hover:text-white outline-none"
           onClick={handleClick}
